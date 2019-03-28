@@ -121,6 +121,13 @@ legend{
 fieldset{
  color: green;
  font-size: 25px;
- text-shadow: -2px -5px 10px #00000086;
- width: 500px;
+ text-shadow: -2px -5px 10px #012000a6;
+ width: 400px;
+ 
+}
+form{
+  border-radius: 50px;
+  box-shadow: -2px -5px 10px #04410254;
+  width: 600px;
+  padding: 15px;
 }
