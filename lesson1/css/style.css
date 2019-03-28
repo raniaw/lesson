@@ -1,70 +1,73 @@
 h1 {
-    color: green;
-    font-size: 30px;
+  color: green;
+  font-size: 30px;
 }
 
 p {
-    color: royalblue;
-    font-size: 20px;
+  color: royalblue;
+  font-size: 20px;
 }
 
 #mydiv {
-    width: 200px;
-    height: 200px;
-    background-color: #ad2f10;
+  width: 200px;
+  height: 200px;
+  background-color: #ad2f10;
 }
 
 h2 {
-    color: white;
-    /* font-size: 1.5em;   gleiche wie ohne font-size */
-    font-size: 1.8em;
+  color: white;
+  /* font-size: 1.5em;   gleiche wie ohne font-size */
+  font-size: 1.8em;
 }
 
 h2 {
-    color: white;
-    /* font-size: 1.5em;   gleiche wie ohne font-size */
-    font-size: 1.8em;
+  color: white;
+  /* font-size: 1.5em;   gleiche wie ohne font-size */
+  font-size: 1.8em;
 }
 
 h3 {
-    color: rgb(243, 230, 42);
-    /* font-size: 1.2em;   gleiche wie ohne font-size */
-    font-size: 1.4em;
+  color: rgb(243, 230, 42);
+  /* font-size: 1.2em;   gleiche wie ohne font-size */
+  font-size: 1.4em;
 }
 
 h4 {
-    color: hsl(111, 97%, 76%);
-    /* font-size: 1.0em;   gleiche wie ohne font-size */
-    font-size: 1.2em;
+  color: hsl(111, 97%, 76%);
+  /* font-size: 1.0em;   gleiche wie ohne font-size */
+  font-size: 1.2em;
 }
-h5{
-    color:#a0b1d6;
-    /* font-size: 0.8em;   gleiche wie ohne font-size */
-    font-size: 1.0em;
+
+h5 {
+  color: #a0b1d6;
+  /* font-size: 0.8em;   gleiche wie ohne font-size */
+  font-size: 1.0em;
 }
-h6{
-    color:red;
-    /* font-size: 0.7em;   gleiche wie ohne font-size */
-    font-size: 0.8em;
+
+h6 {
+  color: red;
+  /* font-size: 0.7em;   gleiche wie ohne font-size */
+  font-size: 0.8em;
 }
-* Red border */
+
+/* Red border */ 
 hr.new1 {
   border-top: 1px solid red;
 }
 
 /* Dashed red border */
 hr.new2 {
-  border-top: 1px dashed red;
+  border-top: 2px dashed red;
 }
 
 /* Dotted red border */
 hr.new3 {
-  border-top: 1px dotted red;
+  border-top: 2px dotted red;
 }
 
 /* Thick red border */
 hr.new4 {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 /* Large rounded green border */
@@ -72,12 +75,13 @@ hr.new5 {
   border: 10px solid green;
   border-radius: 15px;
 }
-table{
+
+table {
   border-collapse: collapse;
   border-radius: 1.5em;
   overflow: hidden;
   border-width: 15px !important;
-  border:1px;
+  border: 1px;
   /* border-radius: 25px !important;
   border-width: 5px !important;
   border-style: solid !important;
@@ -87,15 +91,20 @@ table{
   margin: 0px auto;
   float: none; */
 }
-th, tr, td {
+
+th,
+tr,
+td {
   padding: 15px;
-  border-radius: 1.5em 50px ;
+  border-radius: 1.5em 50px;
 }
-th{
+
+th {
   background-color: #123562;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 td {
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
   /* font-family: Time Burner; */
@@ -104,28 +113,32 @@ td {
   border-radius: 50px 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-input{
+
+input {
   border-radius: 50px 20px;
   box-shadow: -2px -2px 5px rgba(134, 116, 235, 0.363);
   color: rgb(21, 42, 131);
   font-size: 25px;
-  padding-left:25px; 
+  padding-left: 25px;
 }
-legend{
+
+legend {
   border-radius: 50px 20px;
   box-shadow: -2px -5px 10px #2a5cb954;
   color: rgb(21, 42, 131);
   font-size: 30px;
   padding: 10px;
 }
-fieldset{
- color: green;
- font-size: 25px;
- text-shadow: -2px -5px 10px #012000a6;
- width: 400px;
- 
+
+fieldset {
+  color: green;
+  font-size: 25px;
+  text-shadow: -2px -5px 10px #012000a6;
+  width: 400px;
+
 }
-form{
+
+form {
   border-radius: 50px;
   box-shadow: -2px -5px 10px #04410254;
   width: 600px;
