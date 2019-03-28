@@ -24,7 +24,12 @@
     <b>bold text</b>
     <br>
     <i>This text is italic</i>
-    <em>This text is emphasized</em>
+    <em>Emphasized text</em><br>
+    <p>This is <strong>Strong</strong> text.</p>
+    <code>A piece of computer code</code><br>
+    <samp>Sample output from a computer program</samp><br>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var>
     <h4>HTML <small>Small</small> Formatting</h4>
     <h5>HTML <mark style="color: rgb(255, 230, 6); background-color: rgb(255, 0, 0);">Marked</mark> Formatting</h5>
     <p>My favorite color is <del>blue</del> <span style="color:red;">red</span> </p>
@@ -33,7 +38,7 @@
     <p>This is <sup>superscripted</sup> text.</p>
     <p>This is <ins>inserted</ins> text.</p>
     <p>This is <del>deleted</del> text.</p>
-    <p>This is <strong>Strong</strong> text.</p>
+
     <address>
         <b> Adresse:</b>
         <br><br>
@@ -49,7 +54,7 @@
 
     <article>
 
-        <h1>Google Chrome hier ist article</h1>
+        <h1>Google Chrome hier ist <mark> article </mark></h1>
         <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
     </article>
     <br>
@@ -57,9 +62,15 @@
     <p>My family and I visited The Epcot center this summer.</p>
 
     <aside>
-        <h4>Epcot Center - hier ist aside</h4>
+        <h4>Epcot Center - hier ist <mark> aside </mark></h4>
         <p>The Epcot Center is a theme park in Disney World, Florida.</p>
     </aside>
+    <br>
+    <footer>
+            <p>Posted by: Hege Refsnes. here is <mark>footer</mark></p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+            someone@example.com</a>.</p>
+          </footer> 
     <br>
     Audio<br>
     <audio controls>
@@ -115,10 +126,110 @@
     <p><strong>Note:</strong> The canvas tag is not supported in Internet
         Explorer 8 and earlier versions.</p>
     <br>
-  
-    <img src="img/img_the_scream.jpg" title="The Scream" style="float:left; border: 1px solid red;" width="220" height="277" alt="The Scream">
-    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
 
+
+    <div width="100%" style="border: 2px solid red;">
+        <div width="50%" style="border: 2px solid rgb(136, 255, 0);">
+            <img src="img/img_the_scream.jpg" title="The Scream" style="float:left; border: 1px solid red;" width="220"
+                height="277" alt="The Scream">
+            <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+            <br>
+            <table>
+                <colgroup>
+                    <col span="2" style="background-color:rgb(21, 255, 0)">
+                    <col style="background-color:yellow">
+                </colgroup>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>3476896</td>
+                    <td>The Scream</td>
+                    <td>100,000,000$</td>
+                </tr>
+            </table>
+        </div>
+        <div width="50%" style="border: 1px solid rgb(0, 26, 255);">
+            <p>The following example displays product names but also associates each name with a product number:</p>
+
+            <ul>
+                <li><data value="21053">Cherry Tomato</data></li>
+                <li><data value="21054">Beef Tomato</data></li>
+                <li><data value="21055">Snack Tomato</data></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <form action="/action_page.php" method="get">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <p><strong>Note:</strong> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in
+        Safari.</p>
+    <br><br>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <br>
+    <details>
+        <summary>Copyright 1999-2018.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
+
+    <p><b>Note:</b> The details tag is not supported in Internet Explorer.</p>
+
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages. with <b> dfn</b></p>
+    <br><br>
+    <p><b>Note:</b> The dialog tag is not supported in Edge/Internet Explorer.</p>
+
+    <table>
+        <tr>
+            <th>January <dialog close>This is an close dialog window</dialog>
+                <dialog open>This is an <i> open </i> dialog window</dialog>
+            </th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <form>
+        <fieldset >
+            <legend>Personalia:</legend>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Date of birth: <input type="text">
+        </fieldset>
+    </form>
+    <br><br>
+    h2>Places to Visit</h2>
+
+<p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+
+<figure>
+  <img src="img/pic_trulli.jpg" " alt="Trulli" style="width:50%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
 </body>
 
 </html>
