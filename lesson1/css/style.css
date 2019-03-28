@@ -1,13 +1,49 @@
-h1{
+h1 {
     color: green;
-    font-size: 30px; 
+    font-size: 30px;
 }
+
 p {
-    color: royalblue; 
-    font-size: 20px; 
+    color: royalblue;
+    font-size: 20px;
 }
-#mydiv{
+
+#mydiv {
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: #ad2f10;
+}
+
+h2 {
+    color: white;
+    /* font-size: 1.5em;   gleiche wie ohne font-size */
+    font-size: 1.8em;
+}
+
+h2 {
+    color: white;
+    /* font-size: 1.5em;   gleiche wie ohne font-size */
+    font-size: 1.8em;
+}
+
+h3 {
+    color: rgb(243, 230, 42);
+    /* font-size: 1.2em;   gleiche wie ohne font-size */
+    font-size: 1.4em;
+}
+
+h4 {
+    color: hsl(111, 97%, 76%);
+    /* font-size: 1.0em;   gleiche wie ohne font-size */
+    font-size: 1.2em;
+}
+h5{
+    color:#a0b1d6;
+    /* font-size: 0.8em;   gleiche wie ohne font-size */
+    font-size: 1.0em;
+}
+h6{
+    color:red;
+    /* font-size: 0.7em;   gleiche wie ohne font-size */
+    font-size: 0.8em;
 }
