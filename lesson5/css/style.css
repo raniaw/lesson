@@ -1,16 +1,19 @@
-@media screen and (max-width:420px) and (min-width:300px) {
+@media screen and (max-width:1000px) and (min-width:300px) {
     .header {
         background-color: beige;
         color: blue;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         padding: 15px;
+        margin-bottom: 5px;
     }
-
+    
     .nav a {
+    
         display: block;
         padding: 10px;
-        width: 150px;
+        /* width: 150px; */
+        width: 100%;
         background-color: rgb(4, 0, 255);
         color: white;
         border-bottom: 1px solid white;
@@ -25,16 +28,24 @@
         color: blue;
         font-weight: bold;
     }
+    p{
+        text-align: justify;
+    }
 }
 
-@media screen and (max-width:1200px) and (min-width:600px) {
+@media screen and (max-width:1280px) and (min-width:1000px) {
     .header {
         background-color: beige;
         color: blue;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         padding: 15px;
+        margin-bottom:20px;
     }
+/* .nav{
+     position: fixed;
+  top: 0;
+} */
 
     .nav a {
         display: inline;
@@ -52,5 +63,8 @@
         background-color: rgb(236, 236, 245);
         color: blue;
         font-weight: bold;
+    }
+    p{
+        text-align: justify;
     }
 }
