@@ -51,6 +51,7 @@
         padding: 20px;
         width: 15%;
         float: left;
+        color:rgb(255, 51, 0);
     }
 
     .main2 {
@@ -67,10 +68,11 @@
         padding: 20px;
         width: 18%;
         float: left;
+        color:rgb(255, 51, 0);
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:420px) and (min-width:200px) {
     .left2 {
         background-color: aqua;
         padding: 20px;
