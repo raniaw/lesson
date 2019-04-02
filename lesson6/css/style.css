@@ -77,7 +77,7 @@ footer {
   nav.desk a.desk {
     background-color: #000000;
     /* background-image: linear-gradient();  */
-    background-image: -moz-linear-gradient(#000000, #000000, #000000, #979696, #c9c3c3, #ffffff);
+    background-image: -moz-linear-gradient(#a0a0a0,#4b4b4b,#333333,#222222,#000000,#000000,#303030,#4b4b4b, #979696, #c9c3c3, #ffffff);
     color: #ffffff;
     float: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
