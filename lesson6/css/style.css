@@ -101,19 +101,13 @@ nav.desk a.desk:active {
     background-image: -moz-linear-gradient(#ffffff, #ffffff, #f8d9d9, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
 }
 
-nav.overlay-content, .overlay{
+nav.overlay-content, .overlay, span{
     display:none;
 }
 }
-@media screen and (max-width:900px) and (min-width:450px) {}
-
-@media only screen and (max-height: 450px) {
-    nav.desk, a.desk {
+@media screen and (max-width:900px) and (min-width:450px) {
+    nav.desk a.desk {
         display: none;
-    }
-
-    .overlay-content, .overlay{
-        display: block;
     }
     .overlay {
         height: 100%;
@@ -134,6 +128,7 @@ nav.overlay-content, .overlay{
         width: 100%;
         text-align: center;
         margin-top: 30px;
+        display: block;
       }
       
       .overlay a {
@@ -146,7 +141,61 @@ nav.overlay-content, .overlay{
       }
       
       .overlay a:hover, .overlay a:focus {
-        color: #f1f1f1;
+        color: #ff0000;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      span{
+          color: #ff0000;
+      }
+}
+
+@media only screen and (max-height: 450px) {
+    nav.desk a.desk {
+        display: none;
+    }
+
+    /* .overlay-content{
+        display: block;
+    } */
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #ff0000;
       }
       
       .overlay .closebtn {
