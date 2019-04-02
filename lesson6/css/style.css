@@ -64,7 +64,7 @@ footer {
     border-radius: 0 0 15px 15px;
 }
 
-@media screen and (max-width:1300px) and (min-width:800px) {
+@media screen and (max-width:2000px) and (min-width:900px) {
 
 
 nav.desk {
@@ -155,7 +155,7 @@ nav.overlay-content, .overlay, span{
       }
 }
 
-@media only screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     nav.desk a.desk {
         display: none;
     }
