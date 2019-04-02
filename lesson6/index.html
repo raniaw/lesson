@@ -6,22 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive HTML5</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
         <h1><u>First Header</u></h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </header>
-    <nav>
-        <a href="index.html">Homepage</a>
-        <a href="#">HTML</a>
-        <a href="#">CSS</a>
-        <a href="#">JavaScript</a>
-        <a href="#">Angular</a>
-        <a href="#">React</a>
+    <nav class="desk">
+        <a class="desk" href="index.html">Homepage</a>
+        <a class="desk" href="#">HTML</a>
+        <a class="desk" href="#">CSS</a>
+        <a class="desk" href="#">JavaScript</a>
+        <a class="desk" href="#">Angular</a>
+        <a class="desk" href="#">React</a>
     </nav>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+            <span> &times;</span></a>
+        <nav class="overlay-content">
+            <a href="index.html">Homepage</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Angular</a>
+            <a href="#">React</a>
+        </nav>
+    </div>
     <div class="main">
         <article>
+                
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -52,6 +67,7 @@
     </div>
 
     <footer>
+        <hr>
         © Copyright DCI digitalcareerinstitute.org
     </footer>
 </body>
