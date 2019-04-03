@@ -11,7 +11,7 @@ body {
 header {
     border-radius: 15px;
     border: 2px solid #fd0000;
-    height: 150px;
+    height: 145px;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
     border-radius: 12px;
     border: 2px solid #0000ff;
     right: 15px;
-    bottom: 770px;
+    bottom: 780px;
     display: inline-block;
     width: 25%;
 }
@@ -29,8 +29,9 @@ nav {
 }
 
 img#logo {
-    width: 70px;
+    width: 50px;
     margin: 5px;
+    float:left;
 }
 
 nav a {
@@ -129,11 +130,18 @@ aside {
     text-align: justify;
 
 }
+h1{
+    float:left;
+}
 
 h2 {
 
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3#logo{
+    padding-left:10px;
+    
 }
 
 .autor {
