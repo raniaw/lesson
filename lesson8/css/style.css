@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: aquamarine;
 }
@@ -12,10 +15,12 @@ body{
     width:80%;
     background-color: yellow;
     padding:40px;
+    
 }    
 #div2{
     width:100px;
     height:100px;
     background-color: orange;
     margin: 0 auto;
+
 }
