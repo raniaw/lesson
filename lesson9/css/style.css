@@ -1,10 +1,10 @@
 body {
     background-color: aqua;
-    height:2000px;
+    height: 2000px;
 }
 
 #header {
-    width: 100%;
+    width: 60%;
     height: 200px;
     background-color: #3333f5;
     color: aliceblue;
@@ -12,10 +12,23 @@ body {
     /* top: 50%;  in die Mitte verschieben */
     position: absolute;
     /* positionieren */
-    margin:auto;
-    top:0;
-    left:0;
+    margin: auto;
+    top: 0;
+    left: 0;
     bottom: 0;
-    right:0;
+    right: 0;
 
+    /* display: table-cell; */
+
+    /* line-height:200px;   */
+}
+
+#h {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }

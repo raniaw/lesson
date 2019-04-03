@@ -1,73 +1,155 @@
-body{
-    background-color:black;
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff4d6;
+    
+}
 
+
+header {
+    border-radius: 15px;
+    border: 2px solid #fd0000;
 }
-.main{
-    background-color: #fde7cc;
-}
+
 nav {
     border-radius: 12px;
-    border:2px solid red;
+    border: 2px solid #0000ff;
 }
-.logo{
-    float:left;
+
+.logo {
+    float: left;
 }
+
 img#logo {
-    width:70px;
-    margin:5px;
+    width: 70px;
+    margin: 5px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav ul{
+
+.nav ul {
     float: right;
     /* text-align: right; */
     list-style: none;
-    border:2px solid blau;
-    border-radius:15px;
-   
-    
+    border: 2px solid blau;
+    border-radius: 15px;
+
+
 }
+
 li {
-    list-style: none; 
+    list-style: none;
 
 }
-figure{
-    margin:0px;
+
+figure {
+    margin: 0px;
 }
-figcaption{
-    background-color: black;
+
+figcaption {
+    background-color: hsl(0, 0%, 0%, 0.9);
     color: white;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
 
 }
+
 button {
-    background-color: red;
-    border-radius: 5px;
+    background-color: #8e2b2c;
+    border-radius: 7px;
     float: right;
-    color:white;
-    font-size:15px;
+    color: white;
+    font-size: 15px;
     overflow: hidden;
     height: 30px;
-    
+
 }
-a.button{
+
+a.button {
     color: white;
     font-size: 15px;
     padding: 10px;
-text-decoration: none;
+    text-decoration: none;
 
 }
-    
-#article{
+
+#article {
     margin: 0px;
     border: 2px solid orange;
-    border-radius:15px;
+    border-radius: 15px;
 }
-img#figure{
+
+img#figure {
     margin: 5px;
-    width:99%;
+    width: 99.5%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+section {
+    border: 2px solid #004400;
+    border-radius: 15px;
    
+}
+
+article {
+    width:67%;
+    border: 2px solid #440089;
+    border-radius: 15px;
+}
+
+img#trav {
+    float: left;
+    margin: 10px 10px 5px 15px;
+}
+article, aside{
+    float:left;
+    text-align: justify;
+
+}
+h2 {
+
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.autor{
+    color: white;
+}
+p{
+    padding:0 20px 0 20px ;
+}
+aside{
+    width:29%;
+    padding-left:10px;
+    border: 2px solid #ff0088;
+    border-radius: 15px;
+    background-color: #706b64;
+
+}
+
+footer{
+    border:2px solid #000000;
+    border-radius: 15px;
+    display:inline-block;
+    width: 100%;
+}
+div#tweeter{
+    border:2px solid #000000;
+    border-radius: 15px;
+    width:30%;
+}
+div#picture{
+    border:2px solid #000000;
+    border-radius: 15px;
+    width:30%;
+}
+div#friends{
+    border:2px solid #000000;
+    border-radius: 15px;
+    width:30%;
 }

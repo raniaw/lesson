@@ -1,0 +1,23 @@
+body{
+    background-color: #fff4d6;
+}
+header{
+    widows: 100%;
+    height:200px;
+    border: 2px solid #9e4141;
+
+}
+nav{
+border:2px solid blue;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#banner_image{
+    height:200px;
+    width:100%;
+    border: 2px solid orange;
+    margin:15px 0 15px 0;
+}
