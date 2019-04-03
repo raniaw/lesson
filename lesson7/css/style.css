@@ -1,20 +1,27 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     background-color: #fff4d6;
-    
+
 }
 
 
 header {
     border-radius: 15px;
     border: 2px solid #fd0000;
+    height: 150px;
 }
 
 nav {
+    position: absolute;
     border-radius: 12px;
     border: 2px solid #0000ff;
+    right: 15px;
+    bottom: 770px;
+    display: inline-block;
+    width: 25%;
 }
 
 .logo {
@@ -27,24 +34,28 @@ img#logo {
 }
 
 nav a {
+
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#000000;
 }
 
+nav a:hover {
+    color: #2eb915;
+}
 .nav ul {
     float: right;
     /* text-align: right; */
     list-style: none;
     border: 2px solid blau;
     border-radius: 15px;
-
-
 }
 
 li {
     list-style: none;
-
+    display: inline-block;
+    padding: 0px 2px;
 }
 
 figure {
@@ -82,6 +93,8 @@ a.button {
     margin: 0px;
     border: 2px solid orange;
     border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 img#figure {
@@ -94,11 +107,13 @@ img#figure {
 section {
     border: 2px solid #004400;
     border-radius: 15px;
-   
+    height: 50vh;
+
+
 }
 
 article {
-    width:67%;
+    width: 67%;
     border: 2px solid #440089;
     border-radius: 15px;
 }
@@ -107,49 +122,61 @@ img#trav {
     float: left;
     margin: 10px 10px 5px 15px;
 }
-article, aside{
-    float:left;
+
+article,
+aside {
+    float: left;
     text-align: justify;
 
 }
+
 h2 {
 
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.autor{
+
+.autor {
     color: white;
 }
-p{
-    padding:0 20px 0 20px ;
+
+p {
+    padding: 0 20px 0 20px;
 }
-aside{
-    width:29%;
-    padding-left:10px;
+
+aside {
+    width: 29%;
+    padding-left: 10px;
     border: 2px solid #ff0088;
     border-radius: 15px;
     background-color: #706b64;
 
 }
 
-footer{
-    border:2px solid #000000;
+footer {
+    border: 2px solid #000000;
     border-radius: 15px;
-    display:inline-block;
+    display: inline-block;
     width: 100%;
 }
-div#tweeter{
-    border:2px solid #000000;
+
+div#tweeter {
+    border: 2px solid #000000;
     border-radius: 15px;
-    width:30%;
+    width: 20%;
+    float: left;
 }
-div#picture{
-    border:2px solid #000000;
+
+div#picture {
+    border: 2px solid #000000;
     border-radius: 15px;
-    width:30%;
+    width: 40%;
+    float: left;
 }
-div#friends{
-    border:2px solid #000000;
+
+div#friends {
+    border: 2px solid #000000;
     border-radius: 15px;
-    width:30%;
+    width: 30%;
+    float: left;
 }
