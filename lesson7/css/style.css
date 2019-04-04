@@ -95,8 +95,8 @@ header h2 {
 
 #logo,
 header h1 {
-  display: inline-block;
-  margin-bottom: 0;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 img.netw-logo {
@@ -152,27 +152,24 @@ footer {
     width: 100%;
 }
 
-div#picture {
 
+div#picture {
     border-radius: 15px;
     width: 35%;
     float: left;
     text-align: center;
-
 }
 
-div#friends {
-
-    border-radius: 15px;
-    float: left;
-    padding-left: 10px;
-
-}
-
+div#friends,
 div#tweeter {
     border-radius: 15px;
     float: left;
     padding-left: 10px;
+}
+
+div#tweeter p {
+    margin-top: 35px;
+    font-size: 13px;
 }
 
 div.pict img {
@@ -186,14 +183,13 @@ ul#friend {
     color: #741e1e;
     margin: 25px 0;
     font-size: 12px;
+    text-align: left;
 }
-
 
 h3#pict {
     text-transform: uppercase;
     font-size: 12px;
 }
-
 
 @media screen and (min-width:799px) {
     #main {
@@ -222,7 +218,6 @@ h3#pict {
         width: 100%;
 
     }
-
 
     article {
         width: 60%;
@@ -291,8 +286,7 @@ h3#pict {
     .logo,
     img#logo {
         display: inline-block;
-        margin-left: 0;
-        margin-right: 0;
+
     }
 
     ul.nav {
@@ -313,7 +307,7 @@ h3#pict {
         float: left;
         margin: 10px 10px 5px 15px;
     }
-    
+
     article,
     aside {
         width: 100%;
@@ -338,13 +332,18 @@ h3#pict {
         border: 2px solid #000000;
         width: 100%;
         margin: 5px 0;
+        text-align: center;
+    }
+
+    div#tweeter p {
+        margin-top: 35px;
+        font-size: 13px;
+        text-align: center;
     }
 
     div.pict img {
         width: 50px;
     }
-
-
 
 }
 
