@@ -21,3 +21,10 @@ nav a{
     border: 2px solid orange;
     margin:15px 0 15px 0;
 }
+ul{
+    list-style-image: url('../img/list.png');
+    /* display: inline-block; */
+    vertical-align: top;
+
+    margin: 0 0 25px 0;
+}
