@@ -14,8 +14,8 @@ body {
 
 img#logo {
     width: 50px;
-    margin: 5px;
-    float: left;
+
+
 }
 
 nav a {
@@ -95,7 +95,7 @@ header h2 {
 
 #logo,
 header h1 {
-    display: inline-block;
+    /* display: inline-block; */
     margin-bottom: 0;
 }
 
@@ -130,7 +130,7 @@ header {
 aside {
 
     padding-left: 10px;
-    box-shadow: 0 0 2px 1px rgba(24, 24, 24, 0.5);
+    box-shadow: 0px 0px 2px 3px rgba(24, 24, 24, 0.5);
     border-radius: 15px;
     background-color: #706b64;
 }
@@ -197,10 +197,11 @@ h3#pict {
     }
 
     .logo {
-        /* float: left; */
+        padding: 10px;
     }
 
     img#logo {
+        /* display: inline-block; */
         float: left;
     }
 
@@ -268,11 +269,17 @@ h3#pict {
 
     nav,
     nav a,
-    .logo,
-    img#logo,
-    section {
+    /* .logo, */
+    section
+    /* img#logo  */
+    {
         display: block;
+    }
 
+    img#logo {
+
+        margin-left: 0;
+        margin-right: 0;
     }
 
     nav {
@@ -283,10 +290,10 @@ h3#pict {
         width: 100%;
     }
 
-    .logo,
-    img#logo {
-        display: inline-block;
-
+    .logo {
+        /* display: inline-block; */
+        width: 100%;
+        text-align: center;
     }
 
     ul.nav {
@@ -321,6 +328,11 @@ h3#pict {
         text-align: center;
     }
 
+    img.netw-logo {
+        margin-top: 25px;
+        width: 40px;
+    }
+
     footer {
         display: block;
         width: 100%;
@@ -339,10 +351,6 @@ h3#pict {
         margin-top: 35px;
         font-size: 13px;
         text-align: center;
-    }
-
-    div.pict img {
-        width: 50px;
     }
 
 }
