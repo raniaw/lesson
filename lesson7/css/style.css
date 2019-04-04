@@ -7,8 +7,38 @@ body {
 
 }
 
+figure {
+    margin: 0px;
+}
+
+figcaption {
+    background-color: hsl(0, 0%, 0%, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+
+}
+
+#article {
+    margin: 0px;
+    border: 2px solid rgba(44, 19, 11, 0.794);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+img#figure {
+    margin: 0 autox;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+
 div#img {
-    text-align: center
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 img.netw-logo {
@@ -54,10 +84,54 @@ p.autor {
     margin: 0;
 }
 
+footer {
+  
+    border-radius: 15px;
+   
+    width: 100%;
+}
+div#picture {
+
+    border-radius: 15px;
+    width: 35%;
+    float: left;
+    text-align: center;
+
+}
+
+div#friends {
+
+    border-radius: 15px;
+    float: left;
+    padding-left: 10px;
+
+}
+
+div#tweeter {
+
+    border-radius: 15px;
+    float: left;
+    padding-left: 10px;
+}
+
+div.pict{
+    margin-top:35px;
+}
+
+
+p.friends {
+    color: #741e1e;
+    font-size: 5px;
+}
+
+#main {
+    margin: 0 auto;
+}
+
 @media screen and (min-width:900px) {
     #main {
         width: 70%;
-        margin: 0 auto;
+       
     }
 
 
@@ -110,17 +184,7 @@ p.autor {
         padding: 0px 2px;
     }
 
-    figure {
-        margin: 0px;
-    }
-
-    figcaption {
-        background-color: hsl(0, 0%, 0%, 0.9);
-        color: white;
-        padding: 15px;
-        border-radius: 0 0 15px 15px;
-
-    }
+  
 
     button {
         background-image: -moz-linear-gradient(#a95e5f, #7d0c0e);
@@ -143,20 +207,7 @@ p.autor {
 
     }
 
-    #article {
-        margin: 0px;
-        border: 2px solid orange;
-        border-radius: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    img#figure {
-        margin: 0 autox;
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-
-    }
+ 
 
     section {
         /* border: 2px solid #004400;
@@ -212,40 +263,17 @@ p.autor {
 
     footer {
         border: 2px solid #000000;
-        border-radius: 15px;
         display: inline-block;
         width: 100%;
     }
 
     div#tweeter {
-        /* border: 2px solid #000000; */
-        border-radius: 15px;
         width: 15%;
-        float: left;
-        padding-left: 10px;
     }
 
-    div#picture {
-        /* border: 2px solid #000000; */
-        border-radius: 15px;
-        width: 35%;
-        float: left;
-        text-align: center;
-
-    }
 
     div#friends {
-        /* border: 2px solid #000000; */
-        border-radius: 15px;
         width: 50%;
-        float: left;
-        padding-left: 10px;
-
-    }
-
-    p.friends {
-        color: #741e1e;
-        font-size: 5px;
     }
 
     ul.friends {
@@ -267,7 +295,6 @@ p.autor {
 @media screen and (max-width:899px) {
     #main {
         width: 100%;
-        margin: 0 auto;
     }
 
 
@@ -322,17 +349,7 @@ p.autor {
         padding: 0px 2px;
     }
 
-    figure {
-        margin: 0px;
-    }
 
-    figcaption {
-        background-color: hsl(0, 0%, 0%, 0.9);
-        color: white;
-        padding: 15px;
-        border-radius: 0 0 15px 15px;
-
-    }
 
     button {
         background-image: -moz-linear-gradient(#a95e5f, #7d0c0e);
@@ -355,36 +372,19 @@ p.autor {
 
     }
 
-    #article {
-        margin: 0px;
-        border: 2px solid orange;
-        border-radius: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    img#figure {
-        margin: 0 autox;
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-
-    }
 
     section {
         /* border: 2px solid #004400; */
         border-radius: 15px;
         display: block;
 
-
     }
 
     article {
-
         border: 2px solid #2f1c09;
         border-radius: 15px;
         margin: 0 auto;
     }
-
     img#trav {
         float: left;
         margin: 10px 10px 5px 15px;
@@ -393,7 +393,7 @@ p.autor {
     article,
     aside {
         width: 100%;
-        margin: 0 auto;
+        margin: 5px 0 auto;
 
     }
 
@@ -419,48 +419,20 @@ p.autor {
 
     }
 
-
-
-
-
-
-    footer {
-        /* border: 2px solid #000000; */
-        border-radius: 15px;
+    footer{
         display: block;
         width: 100%;
     }
 
-    div#tweeter {
-        border: 2px solid #000000;
-        border-radius: 15px;
-        width: 100%;
-        float: left;
-        padding-left: 10px;
-    }
-
-    div#picture {
-        border: 2px solid #000000;
-        border-radius: 15px;
-        width: 100%;
-        float: left;
-        text-align: center;
-
-    }
-
+   
+    div#tweeter,
+    div#picture,
     div#friends {
         border: 2px solid #000000;
-        border-radius: 15px;
         width: 100%;
-        float: left;
-        padding-left: 10px;
-
+        margin: 5px 0;
     }
 
-    p.friends {
-        color: #741e1e;
-        font-size: 5px;
-    }
 
     ul.friends {
         /* list-style-image: url('sqpurple.gif'); */
