@@ -7,18 +7,60 @@ body {
 
 }
 
+div#img {
+    text-align: center
+}
+
+img.netw-logo {
+    margin-top: 25px;
+
+}
+
+article,
+aside {
+    float: left;
+    text-align: justify;
+    vertical-align: middle;
+    margin: 10px 8px;
+}
+
+img.autor {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+}
+
+header {
+    border-radius: 15px;
+    border: 2px solid #833b11;
+    height: 145px;
+    position: relative;
+}
+
+aside {
+
+    padding-left: 10px;
+    box-shadow: 0 0 2px 1px rgba(24, 24, 24, 0.5);
+    border-radius: 15px;
+    background-color: #706b64;
+}
+
+p,
+p.autor {
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+    margin: 0;
+}
+
 @media screen and (min-width:900px) {
     #main {
         width: 70%;
         margin: 0 auto;
     }
 
-    header {
-        border-radius: 15px;
-        border: 2px solid #fd0000;
-        height: 145px;
-        position: relative;
-    }
+
 
     nav {
         position: absolute;
@@ -117,16 +159,14 @@ body {
     }
 
     section {
-        border: 2px solid #004400;
-        border-radius: 15px;
+        /* border: 2px solid #004400;
+        border-radius: 15px; */
         /* height: 60%; */
-
-
     }
 
     article {
-        width: 67%;
-        border: 2px solid #440089;
+        width: 60%;
+        border: 2px solid #2f1c09;
         border-radius: 15px;
     }
 
@@ -135,15 +175,7 @@ body {
         margin: 10px 10px 5px 15px;
     }
 
-    article,
-    aside {
-        float: left;
-        text-align: justify;
-        vertical-align: middle;
-        margin: 10px 0;
 
-
-    }
 
     h1 {
         font-style: italic;
@@ -155,7 +187,7 @@ body {
     }
 
     h3#logo {
-        padding: 0px 15px;
+        padding: 0px 40px;
         float: left;
         font-weight: normal;
         font-size: 18px;
@@ -167,27 +199,16 @@ body {
 
     }
 
-    img.autor {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    p,
-    p.autor {
-        padding: 0 20px 20px 20px;
-        text-align: justify;
-        margin: 0;
-    }
+
 
     aside {
-        width: 33%;
-        padding-left: 10px;
-        border: 2px solid #ff0088;
-        border-radius: 15px;
-        background-color: #706b64;
+        /* border: 2px solid #ff0088; */
+
+        width: 35%;
 
     }
+
 
     footer {
         border: 2px solid #000000;
@@ -240,11 +261,7 @@ body {
         font-size: 12px;
     }
 
-    img.netw-logo {
-        margin-top: 25px;
-        /* padding: 5px 5px 5px; */
-        padding: 4px;
-    }
+
 }
 
 @media screen and (max-width:899px) {
@@ -253,12 +270,7 @@ body {
         margin: 0 auto;
     }
 
-    header {
-        border-radius: 15px;
-        border: 2px solid #fd0000;
-        height: 145px;
-        position: relative;
-    }
+
 
     nav {
         position: absolute;
@@ -368,8 +380,9 @@ body {
 
     article {
 
-        border: 2px solid #440089;
+        border: 2px solid #2f1c09;
         border-radius: 15px;
+        margin: 0 auto;
     }
 
     img#trav {
@@ -380,10 +393,8 @@ body {
     article,
     aside {
         width: 100%;
-        float: left;
-        text-align: justify;
-        vertical-align: middle;
-        margin: 10px 0;
+        margin: 0 auto;
+
     }
 
     h1 {
@@ -408,28 +419,10 @@ body {
 
     }
 
-    img.autor {
 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    p,
-    p.autor {
-        padding: 0 20px 20px 20px;
-        text-align: justify;
-        margin: 0;
-    }
 
-    aside {
-        /* width: 33%; */
-        padding-left: 10px;
-        border: 2px solid #ff0088;
-        border-radius: 15px;
-        background-color: #706b64;
 
-    }
 
     footer {
         /* border: 2px solid #000000; */
@@ -482,9 +475,5 @@ body {
         font-size: 12px;
     }
 
-    img.netw-logo {
-        margin: 0 auto;
-        /* padding: 5px 5px 5px; */
-        padding: 4px;
-    }
+
 }
