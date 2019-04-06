@@ -14,8 +14,6 @@ body {
 
 img#logo {
     width: 50px;
-
-
 }
 
 nav a {
@@ -191,32 +189,38 @@ h3#pict {
     font-size: 12px;
 }
 
-@media screen and (min-width:799px) {
+@media screen and (min-width:800px) {
     #main {
         width: 70%;
     }
 
     .logo {
-        padding: 10px;
+        width:100%;
     }
 
     img#logo {
-        /* display: inline-block; */
         float: left;
+        padding: 10px;
     }
 
     nav {
-        display: inline;
-        position: absolute;
-        bottom: 10px;
-        right: 20px;
-
+        width: 100%;
+        display: inline-block;
+        
     }
 
-    ul.nav {
 
+    nav ul.nav li{
+        display: inline-block;
         list-style: none;
-        width: 100%;
+       /*    position: relative;
+      top: 0px;
+        left:50%; 
+        right: 10%;*/
+        /* width: 100%; */
+     
+        /* left: 50%; */
+        /* right:-60%; */
 
     }
 
@@ -261,39 +265,42 @@ h3#pict {
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:799px) {
     #main {
         /* margin:0 auto; */
         width: 100%;
     }
 
     nav,
-    nav a,
-    /* .logo, */
-    section
-    /* img#logo  */
-    {
+    nav ul li a,
+    .logo,
+    section {
         display: block;
-    }
-
-    img#logo {
-
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    nav {
-        position: relative;
-        text-align: center;
-        bottom: 0;
-        right: 0;
         width: 100%;
     }
 
     .logo {
-        /* display: inline-block; */
-        width: 100%;
         text-align: center;
+    }
+
+    img#logo,
+    h1.logo {
+        display: inline-block;
+    }
+
+    img#logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    ul.nav{
+        position: relative;
+        text-align: center;
+        top: 0px;
+        left:-20px;
+        bottom: 0;
+        right: 0;
+        width: 100%;
     }
 
     ul.nav {
