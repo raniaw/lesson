@@ -1,6 +1,6 @@
 .styling {
     color: #ff0000;
-/* 1em = 16px */
+    /* 1em = 16px */
     font-size: 2.2em;
     background-color: aqua;
 }
@@ -9,12 +9,12 @@
     color: #9bffff;
     font-size: 1.2em;
     background-color: rgb(4, 36, 36);
-    border: 0.2em dashed lightgreen;  
+    border: 0.2em dashed lightgreen;
     height: 50px;
     display: box;
     margin-left: 0;
     margin-right: 0;
-   
+
 }
 
 .styling3 {
@@ -33,13 +33,44 @@
     background-color: rgb(4, 36, 36);
     /* display: inline; */
     display: block;
-    width:300px;
+    width: 300px;
     padding-left: 50px;
     padding-right: 50px;
-    
+    border: 10px solid red;
+
 }
+
 .styling4:hover {
     color: rgba(235, 239, 0, 0.8);
     font-size: 1.6em;
     background-color: rgb(4, 36, 36);
+    box-sizing: border-box;
+}
+
+.main {
+    height: 200px;
+    width: 600px;
+    background-color: rgba(48, 63, 58, 0.3);
+    border: 2px solid rgb(42, 47, 42);
+}
+
+.main div {
+    float: left;
+    border: 1px solid rgb(34, 209, 34);
+    /* width:200px; */
+    width: 33%;
+    height: 150px;
+
+}
+
+.div1 {
+    background-color: aliceblue;
+}
+
+.div2 {
+    background-color: rgb(159, 205, 245);
+}
+
+.div3 {
+    background-color: rgb(83, 174, 253);
 }
