@@ -56,11 +56,14 @@
 
 .main div {
     float: left;
-    border: 1px solid rgb(34, 209, 34);
-    /* width:200px; */
-    width: 33%;
+    border: 1px solid rgb(34, 209, 34); 
     height: 150px;
-
+    /* OHNE BOX-SIZING */
+    /* width: 33%;  */
+    /* mit box-sizing:border-box; */
+    width:200px;
+    box-sizing: border-box;
+    padding: 40px;
 }
 
 .div1 {
