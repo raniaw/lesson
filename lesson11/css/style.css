@@ -19,12 +19,27 @@
 
 .styling3 {
     color: #f03000;
-    font-size: 2.2em;
+    font-size: 1.6em;
     background-color: rgb(4, 36, 36, 0.8);
+    /* display: block;
+    height: 50px; 
+    width:50%*/
+    display: inline;
 }
 
 .styling4 {
     color: rgb(239, 47, 0, 0.8);
-    font-size: 2.2em;
+    font-size: 1.6em;
+    background-color: rgb(4, 36, 36);
+    /* display: inline; */
+    display: block;
+    width:300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.styling4:hover {
+    color: rgba(235, 239, 0, 0.8);
+    font-size: 1.6em;
     background-color: rgb(4, 36, 36);
 }
