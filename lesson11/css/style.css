@@ -1,6 +1,30 @@
 .styling {
-    color:#ff0000;
+    color: #ff0000;
+/* 1em = 16px */
     font-size: 2.2em;
     background-color: aqua;
 }
 
+.styling2 {
+    color: #9bffff;
+    font-size: 1.2em;
+    background-color: rgb(4, 36, 36);
+    border: 0.2em dashed lightgreen;  
+    height: 50px;
+    display: box;
+    margin-left: 0;
+    margin-right: 0;
+   
+}
+
+.styling3 {
+    color: #f03000;
+    font-size: 2.2em;
+    background-color: rgb(4, 36, 36, 0.8);
+}
+
+.styling4 {
+    color: rgb(239, 47, 0, 0.8);
+    font-size: 2.2em;
+    background-color: rgb(4, 36, 36);
+}
