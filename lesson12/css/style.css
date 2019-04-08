@@ -1,0 +1,95 @@
+p {
+    color: rgb(41, 6, 194);
+}
+
+.para1 {
+    display: inline;
+    margin-top: 100px;
+    float: left;
+    height: 300px;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.para2 {
+    display: block;
+}
+
+.para3 {
+    display: none;
+}
+
+.para4 {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+div#A {
+    color: #0a4704;
+    background-color: rgb(248, 248, 36);
+}
+
+div#B {
+    color: #fa4949;
+    background-color: #0a4704;
+}
+
+div#C {
+    color: #f1f7fc;
+    background-color: #cc0f38;
+}
+
+div#D {
+    color: #21056e;
+    background-color: rgb(108, 231, 231);
+}
+
+div#E {
+    color: #cc0f38;
+    background-color: rgb(241, 197, 255);
+}
+
+div#F {
+    color: #663508;
+    background-color: rgb(231, 152, 152);
+}
+
+.flex {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #35275a;
+    display: flex;
+    justify-content: center;
+    /* fängt sie spalten von hinten anzuzeigen zeilenweide */
+    /* flex-direction: row-reverse; */
+
+     /* fängt sie spalten von hinten anzuzeigen spaltenweide, 
+     von unten nach oben
+    flex-direction: column-reverse; */
+    
+    /* flex-direction: row; */
+
+    /*  flex-wrap: wrap; positioniert nicht angepasste divs unten */
+    /* flex-wrap: wrap; */
+
+    /* anapasst alle divs in der breite parents-divs */
+    /* flex-wrap: nowrap; */
+
+    /* positioniert divs revers von hinten von untennach oben, 
+    nicht gepasste nach der breite divs positioeniert oben */
+    /* flex-wrap: wrap-reverse; */
+
+    /* positioniert divs spalteweise von oben nach unten, fängt von rechts nach nach unten */
+    /* flex-flow: column wrap-reverse; */
+
+}
+
+.flex div {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+}
