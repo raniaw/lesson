@@ -52,16 +52,27 @@
     width: 600px;
     background-color: rgba(48, 63, 58, 0.3);
     border: 2px solid rgb(42, 47, 42);
+    padding: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px; */
+    padding: 6px 14px 70px 20px;
+
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 200p;
+    margin-left: 90px;
+    margin: 0px 10px 70px 20px;
 }
 
 .main div {
     float: left;
-    border: 1px solid rgb(34, 209, 34); 
+    border: 1px solid rgb(34, 209, 34);
     height: 150px;
     /* OHNE BOX-SIZING */
     /* width: 33%;  */
     /* mit box-sizing:border-box; */
-    width:200px;
+    width: 200px;
     box-sizing: border-box;
     padding: 40px;
 }
