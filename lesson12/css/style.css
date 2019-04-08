@@ -63,7 +63,7 @@ div#F {
     height: 400px;
     border: 2px solid #35275a;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     /* fängt sie spalten von hinten anzuzeigen zeilenweide */
     /* flex-direction: row-reverse; */
 
