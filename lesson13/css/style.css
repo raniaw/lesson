@@ -52,15 +52,24 @@ body {
     background-color: #b3f9ff;
     width: 100%;
     padding: 20px;
+    
 
 }
 
 #noimg1 {
-    height: 200px;
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
 }
 
-#noimg2 {
-    height: 50px;
+#noimg2{
+    height: 150px;
+    background-image: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+
 }
 
 .main {
@@ -78,13 +87,18 @@ body {
 @media screen and (max-width:700px) {
 
     .row,
-    .nav {
+    .nav,
+    .noimg,
+    img {
         flex-direction: column;
     }
 
     .nav a {
         /* text-align: center; */
         border-bottom: 1px solid #01353a;
-        border-top:1px solid #01353a;
+        border-top: 1px solid #01353a;
+    }
+    #noimg1{
+        background-size: 100%;
     }
 }
