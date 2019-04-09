@@ -92,14 +92,33 @@ a:active {
     flex: 70%;
     padding: 20px;
 }
-.rowimg{
-    display:flex;
-    flex-wrap:wrap;
+
+.rowimg {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
 }
-.rowimg img{
-    /* max-width: 25%; */
-    flex:25%;
-    
+
+.rowimg img {
+    /****
+        * max-width kann man benutzen für chrome, 
+        * aber dann flex funktioniert nicht im Firefox 
+        ** */
+    /* max-width: 25%;
+    max-height: 25%; */
+    /* object-fit:cover; */
+
+    /***
+        ** FLEX funktionoiert nicht im Chrome  **
+        **/
+    flex: 25%;
+    margin-top: 8px;
+    vertical-align: middle;
+
 }
 
 .footer {
@@ -109,7 +128,7 @@ a:active {
     text-align: center;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:750px)and (min-width:449px) {
 
     .row,
     .nav,
@@ -119,13 +138,54 @@ a:active {
     }
 
     .nav a {
-        /* text-align: center; */
+        text-align: center;
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
     }
-    .rowimg img{
-        /* max-width: 50%; */
+
+    .rowimg img {
+        /****
+        * max-width kann man benutzen für chrome, 
+        * aber dann flex funktioniert nicht im Firefox 
+        ** */
+        /* max-width: 50%;
+        max-height: 50%; */
+
+        /***
+        ** FLEX funktionoiert nicht im Chrome  **
+        **/
         flex: 50%;
     }
-    
+
+}
+
+@media screen and (max-width:450px) {
+
+    .row,
+    .nav,
+    .noimg,
+    img {
+        flex-direction: column;
+    }
+
+    .nav a {
+        border-bottom: 1px solid #01353a;
+        border-top: 1px solid #01353a;
+    }
+
+    .rowimg img {
+
+        /****
+        * max-width kann man benutzen für chrome, 
+        * aber dann flex funktioniert nicht im Firefox 
+        ** */
+        /* max-width:100%;
+        max-height: 100%; */
+
+        /***
+        ** FLEX funktionoiert nicht im Chrome  **
+        **/
+        flex: 100%;
+    }
+
 }
