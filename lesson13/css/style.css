@@ -92,8 +92,15 @@ a:active {
     flex: 70%;
     padding: 20px;
 }
-
-.rowimg {}
+.rowimg{
+    display:flex;
+    flex-wrap:wrap;
+}
+.rowimg img{
+    /* max-width: 25%; */
+    flex:25%;
+    
+}
 
 .footer {
     background-color: #01353a;
@@ -116,4 +123,9 @@ a:active {
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
     }
+    .rowimg img{
+        /* max-width: 50%; */
+        flex: 50%;
+    }
+    
 }
