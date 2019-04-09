@@ -73,7 +73,7 @@ body {
     background-color: #01353a;
     /* display: flex; */
     color: #d0fbff;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -86,5 +86,7 @@ body {
 
     .nav a {
         text-align: center;
+        border-bottom: 1px solid #01353a;
+        border-top:1px solid #01353a;
     }
 }
