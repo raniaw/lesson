@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,14 +17,16 @@ body {
 .nav {
     background-color: #01353a;
     display: flex;
+    justify-content: center;
 }
 
 .nav a {
-    color: #d0fbff;
+    color: #e7fdff;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 15px 10px;
     font-weight: bold;
     /* align-items: center; */
+    /* width:100% */
 
 }
 
@@ -28,28 +34,57 @@ body {
     background-color: #d0fbff;
     color: #004147;
     font-weight: bold;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .side {
-    background-color:  #e7fdff;
-}
-
-.class {}
-
-.noimg{
-    background-color:  #b3f9ff;
-    width:100%;
+    background-color: #e7fdff;
+    flex: 30%;
     padding: 20px;
 }
-#noimg1  {
-    height:200px;
+
+
+.noimg {
+    background-color: #b3f9ff;
+    width: 100%;
+    padding: 20px;
+
 }
-#noimg2  {
-    height:50px;
+
+#noimg1 {
+    height: 200px;
 }
+
+#noimg2 {
+    height: 50px;
+}
+
+.main {
+    flex: 70%;
+    padding: 20px;
+}
+
 .footer {
     background-color: #01353a;
-    display: flex;
+    /* display: flex; */
     color: #d0fbff;
-    height:60px;
+    padding: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+
+    .row,
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        text-align: center;
+    }
 }
