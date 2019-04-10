@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.row{
+.row2{
     display: flex;
     flex-wrap: wrap;
 }
@@ -17,7 +17,7 @@ body {
 }
 .column img{
     width: 100%;
-    margin-top:4px;
+    margin-top: 4px;
     vertical-align: middle;
 }
 @media screen and (max-width:800px){
