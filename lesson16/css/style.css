@@ -6,14 +6,19 @@ body {
     margin: 0 auto;
 }
 
+img{
+    float: left;
+}
 #img-float {
     width: 200px;
     max-width: 70%;
     padding: 20px;
-    float: left;
-    box-shadow: 1px 1px 2px 1px hsla(103, 99%, 29%, 0.682);
+    box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
     margin-right: 15px;
     margin-bottom: 8px;
+}
+#first{
+    float: left;
 }
 
 .article {
@@ -25,7 +30,7 @@ body {
     /* width: calc(100%/3.1); */
     width: 30%;
     /* overflow: auto; */
-    float: left;
+    float: none;
     /* margin-top: 0px; */
     background-color: rgb(240, 255, 250);
 }
