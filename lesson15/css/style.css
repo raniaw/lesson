@@ -6,85 +6,8 @@ body {
     margin: 0 auto;
 }
 
-/* .ex1 {
-    width: 600px;
-    border: 2px solid #940121;
-    padding: 20px;
-    margin: 10 auto;
-}
-
-.ex2 {
-    max-width: 600px;
-    border: 2px solid blue;
-    padding: 40px;
-    margin: 0 auto;
-}
-
-.no-overflow {
-
-    width: 50%;
-    border: 2px solid rgb(144, 226, 21);
-    height: 100px;
-    background-color: rgb(180, 255, 255);
-    color: blue;
-    margin: 10px auto;
-    text-align: justify;
-}
-
-.overflow-scroll {
-
-    width: 50%;
-    border: 2px solid rgb(144, 226, 21);
-    height: 100px;
-    overflow: scroll;
-    background-color: rgb(180, 255, 255);
-    color: blue;
-    margin: 10px auto;
-    text-align: justify;
-}
-
-.overflow-hidden {
-    width: 50%;
-    border: 2px solid rgb(144, 226, 21);
-    height: 100px; */
-    /* overflow:scroll; */
-    /* overflow: hidden;
-    background-color: rgb(180, 255, 255);
-    color: blue;
-    margin: 0px auto;
-    text-align: justify;
-}
-
-.overflow-auto {
-    width: 20%;
-    border: 2px solid rgb(144, 226, 21);
-    height: 100px; */
-    /* overflow:scroll; */
-    /* overflow: auto;
-    background-color: rgb(180, 255, 255);
-    color: blue;
-    margin: 0px auto;
-    text-align: justify;
-}
-
-.overflow-scroll-x-y {
-    width: 20%;
-    border: 2px solid rgb(144, 226, 21);
-    height: 100px;
-    overflow-x: scroll;
-    overflow-y: scroll;
-    background-color: rgb(180, 255, 255);
-    color: blue;
-    margin: 10px auto;
-    text-align: justify;
-}
-
-h3 {
-    margin: 0 auto;
-} */
-
 #img-float {
-    width:100px;
+    width: 100px;
     /* max-width: 50%; */
     padding: 20px;
     float: left;
@@ -96,10 +19,9 @@ h3 {
     padding: 15px;
     /* margin-left: 10px; */
     text-align: justify;
-    width: calc(100%/4);
+    width: calc(100%/3);
     /* width: 30%; */
-    overflow: auto;
-    float: right;
+    /* overflow: auto; */
+    float: left;
     /* margin-top: 0px; */
 }
-
