@@ -3,10 +3,10 @@
 }
 
 body {
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
-.ex1 {
+/* .ex1 {
     width: 600px;
     border: 2px solid #940121;
     padding: 20px;
@@ -46,9 +46,9 @@ body {
 .overflow-hidden {
     width: 50%;
     border: 2px solid rgb(144, 226, 21);
-    height: 100px;
+    height: 100px; */
     /* overflow:scroll; */
-    overflow: hidden;
+    /* overflow: hidden;
     background-color: rgb(180, 255, 255);
     color: blue;
     margin: 0px auto;
@@ -58,9 +58,9 @@ body {
 .overflow-auto {
     width: 20%;
     border: 2px solid rgb(144, 226, 21);
-    height: 100px;
+    height: 100px; */
     /* overflow:scroll; */
-    overflow: auto;
+    /* overflow: auto;
     background-color: rgb(180, 255, 255);
     color: blue;
     margin: 0px auto;
@@ -81,10 +81,11 @@ body {
 
 h3 {
     margin: 0 auto;
-}
+} */
 
 #img-float {
-    max-width: 50%;
+    width:100px;
+    /* max-width: 50%; */
     padding: 20px;
     float: left;
 }
@@ -93,8 +94,12 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid #940121;
     padding: 15px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     text-align: justify;
-    width:90%;
-    overflow:auto
+    width: calc(100%/4);
+    /* width: 30%; */
+    overflow: auto;
+    float: right;
+    /* margin-top: 0px; */
 }
+
