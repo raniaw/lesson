@@ -6,19 +6,17 @@ body {
     margin: 0 auto;
 }
 
-img{
+img {
     float: left;
+    max-width: 100%;
 }
+
 #img-float {
-    width: 200px;
-    max-width: 70%;
+    
     padding: 20px;
     box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
     margin-right: 15px;
     margin-bottom: 8px;
-}
-#first{
-    float: left;
 }
 
 .article {
@@ -33,4 +31,31 @@ img{
     float: none;
     /* margin-top: 0px; */
     background-color: rgb(240, 255, 250);
+}
+
+#first {
+    float: left;
+}
+
+#second {
+    /* float: right; */
+    float: left;
+}
+
+#third {
+    /* clear: both; */
+    float: right;
+
+}
+
+@media screen and (max-width:800px) {
+    .article {
+        width: 100%;
+        margin:0 ;
+        margin-bottom:10px;
+    }
+    img{
+        float: none;
+        max-width:100%;
+    }
 }
