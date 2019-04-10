@@ -39,7 +39,7 @@ body {
     overflow: scroll;
     background-color: rgb(180, 255, 255);
     color: blue;
-    margin: 0px auto;
+    margin: 10px auto;
     text-align: justify;
 }
 
@@ -54,6 +54,34 @@ body {
     margin: 0px auto;
     text-align: justify;
 }
+.overflow-auto {
+    width: 20%;
+    border: 2px solid rgb(144, 226, 21);
+    height: 100px;
+    /* overflow:scroll; */
+    overflow: auto;
+    background-color: rgb(180, 255, 255);
+    color: blue;
+    margin: 0px auto;
+    text-align: justify;
+}
+
+.overflow-scroll-x-y{
+    width: 20%;
+    border: 2px solid rgb(144, 226, 21);
+    height: 100px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    background-color: rgb(180, 255, 255);
+    color: blue;
+    margin: 10px auto;
+    text-align: justify;
+}
+
 h3{
     margin: 0 auto;
+}
+img{
+    width:100%;
+    float: right;
 }
