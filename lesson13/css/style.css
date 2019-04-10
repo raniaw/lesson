@@ -95,7 +95,7 @@ a:active {
 
 .rowimg {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -103,7 +103,7 @@ a:active {
 
 }
 
-.rowimg img {
+.rowimg div {
     /****
         * max-width kann man benutzen für chrome, 
         * aber dann flex funktioniert nicht im Firefox 
@@ -119,6 +119,13 @@ a:active {
     margin-top: 8px;
     vertical-align: middle;
 
+
+}
+
+.rowimg div img {
+    width: 100%;
+    height: 100%;
+    
 }
 
 .footer {
@@ -128,14 +135,8 @@ a:active {
     text-align: center;
 }
 
-@media screen and (max-width:750px)and (min-width:449px) {
-
-    .row,
-    .nav,
-    .noimg,
-    img {
-        flex-direction: column;
-    }
+@media screen and (max-width:800px) {
+   
 
     .nav a {
         text-align: center;
@@ -143,10 +144,13 @@ a:active {
         border-top: 1px solid #01353a;
     }
 
-    .rowimg img {
+    .rowimg div {
         /****
+
+         .rowimg img {
+
         * max-width kann man benutzen für chrome, 
-        * aber dann flex funktioniert nicht im Firefox 
+        * dann flex funktioniert nicht im Firefox 
         ** */
         /* max-width: 50%;
         max-height: 50%; */
@@ -154,30 +158,30 @@ a:active {
         /***
         ** FLEX funktionoiert nicht im Chrome  **
         **/
+
         flex: 50%;
+        max-width: 50%;
     }
 
+    /* .rowimg div img{
+        max-width:100%;
+       
+    }*/
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:600px) {
 
-    .row,
-    .nav,
-    .noimg,
-    img {
-        flex-direction: column;
-    }
 
     .nav a {
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
     }
 
-    .rowimg img {
+    .rowimg div {
 
         /****
         * max-width kann man benutzen für chrome, 
-        * aber dann flex funktioniert nicht im Firefox 
+        * dann flex funktioniert nicht im Firefox 
         ** */
         /* max-width:100%;
         max-height: 100%; */
@@ -186,6 +190,15 @@ a:active {
         ** FLEX funktionoiert nicht im Chrome  **
         **/
         flex: 100%;
+        max-width: 100%;
+        
     }
 
 }
+ /* 
+    .row,
+    .nav,
+    .noimg,
+    div {
+        flex-direction: column;
+    } */
