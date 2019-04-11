@@ -1,0 +1,101 @@
+body{
+    /* background-color: #553308; */
+}
+.main{
+    
+    width:400px;
+}
+.row1{
+    position:static;
+    top:0px;
+    left:0px;
+    background-color: #ffce8f;
+    height:50px;
+    
+}
+.row2{
+    position:relative;
+    top:0px;
+    left:0px;
+    background-color: #ffce8f;
+    height:50px;
+    
+}
+
+.hell{
+    position: relative;
+    left:0px;
+    top:0px;
+    background-color:transparent;
+    height:50px;
+    width:50px;
+}
+.hell1{
+    position: relative;
+    left:50px;
+    top:-50px;
+    background-color:transparent;
+    height:50px;
+    width:50px;
+}
+/* .hell2{
+    position: relative;
+    left:0px;
+    top:0px;
+    background-color:transparent;
+    height:50px;
+    width:50px;
+} */
+.dark{
+    position: relative;
+    left:50px;
+    top:-50px;
+    background-color:#553308;
+    height:50px;
+    width:50px;
+}
+.dark1{
+    position: relative;
+    left:0px;
+    top:0px;
+    background-color:#553308;
+    height:50px;
+    width:50px;
+}
+/* .dark2{
+    position: relative;
+    left:200px;
+    top:0px;
+    background-color:#553308;
+    height:50px;
+    width:50px;
+} */
+.column1{
+    width:100px;
+    height:50px;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+.column2{
+    width:100px;
+    height:50px;
+    position: relative;
+    top:-50px;
+    left:100px;
+}
+
+.column3{
+    width:100px;
+    height:0px;
+    position: relative;
+    top:-100px;
+    left:200px;
+}
+.column4{
+    width:100px;
+    height:0px;
+    position: relative;
+    top:-100px;
+    left:300px;
+}
