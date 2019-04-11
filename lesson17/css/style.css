@@ -1,0 +1,45 @@
+body{
+    background-color: #b8cbff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 2000px;
+}
+.static{
+    position:static;
+    border: 2px solid #580000;
+    background-color: #030383;
+    box-shadow: 1px 1px 15px 6px #fdd2d2d2;
+    color:#b8cbff;
+    padding: 20px;
+}
+.relative{
+    width:500px;
+    margin:10px;
+    position: relative;
+    border:2px solid blue;
+    left: 20px;
+    box-shadow: 1px 1px 20px 2px #fdd2d2d2;
+    padding: 30px;
+}
+.absolute{
+    width:200px;
+    margin:10px;
+    position: absolute;
+    border:2px solid rgb(3, 10, 105);
+    top:150px;
+    right: 20px;
+    box-shadow: 1px 1px 20px 5px hsl(237, 100%, 78%);
+    padding: 30px;
+    background-color:rgb(67, 69, 97);
+    color:#ffffff;
+}
+.fixed{
+    width:500px;
+    margin:10px;
+    position: fixed;
+    border:2px solid rgb(168, 168, 255);
+    left: 120px;
+    box-shadow: 1px 2px 25px 1px #382b2bd2;
+    padding: 30px;
+    background-color:  rgb(80, 80, 255);
+    color:#ffffff;
+}
