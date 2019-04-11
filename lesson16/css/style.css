@@ -44,7 +44,8 @@ img {
 
 #third {
     /* clear: both; */
-    float: right;
+    /* float: right; */
+    float: left;
 
 }
 

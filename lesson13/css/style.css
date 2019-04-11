@@ -144,6 +144,7 @@ a:active {
         flex-direction: column;
     } */
     .row,
+    .noimg,
     .nav{
         flex-direction: column;
     }
@@ -181,7 +182,11 @@ a:active {
 
 @media screen and (max-width:600px) {
 
-
+    /* .row,
+    .noimg,
+    .nav{
+        flex-direction: column;
+    } */
     .nav a {
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
