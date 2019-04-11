@@ -23,7 +23,7 @@ img {
     margin: 0 auto;
 }
 
-.rad1 {
+.circle1 {
     background-color: aqua;
     position: absolute;
     top: 0px;
@@ -31,8 +31,9 @@ img {
     width: 800px;
     border-radius: 50%;
     z-index: -1;
+    border: 2px solid blue
 }
-.rad2 {
+.circle2 {
     background-color: rgb(0, 255, 34);
     position: absolute;
     top: 50px;
@@ -42,7 +43,7 @@ img {
     border-radius: 50%;
     z-index: 0;
 }
-.rad3 {
+.circle3 {
     background-color: rgb(251, 255, 0);
     position: absolute;
     top: 100px;
@@ -52,7 +53,7 @@ img {
     border-radius: 50%;
     z-index: 1;
 }
-.rad4 {
+.circle4 {
     background-color: rgb(255, 145, 0);
     position: absolute;
     top: 150px;
@@ -62,7 +63,7 @@ img {
     border-radius: 50%;
     z-index: 2;
 }
-.rad5 {
+.circle5 {
     background-color: rgb(255, 38, 0);
     position: absolute;
     top: 200px;
@@ -72,7 +73,7 @@ img {
     border-radius: 50%;
     z-index: 3;
 }
-.rad6 {
+.circle6 {
     background-color: rgb(255, 0, 221);
     position: absolute;
     top: 250px;
@@ -82,7 +83,7 @@ img {
     border-radius: 50%;
     z-index: 4;
 }
-.rad7 {
+.circle7 {
     background-color: rgb(140, 0, 255);
     position: absolute;
     top: 300px;
@@ -92,7 +93,7 @@ img {
     border-radius: 50%;
     z-index: 5;
 }
-.rad8 {
+.circle8 {
     background-color: rgb(0, 81, 255);
     position: absolute;
     top: 350px;
