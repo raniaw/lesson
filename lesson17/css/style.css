@@ -5,7 +5,7 @@ body{
 }
 .static{
     position:static;
-    border: 2px solid #580000;
+    border: 2px solid #5f0e0e;
     background-color: #030383;
     box-shadow: 1px 1px 15px 6px #fdd2d2d2;
     color:#b8cbff;
@@ -25,11 +25,12 @@ body{
     margin:10px;
     position: absolute;
     border:2px solid rgb(3, 10, 105);
-    top:150px;
+    top:50px;
     right: 20px;
-    box-shadow: 1px 1px 20px 5px hsl(237, 100%, 78%);
+    box-shadow: 1px 1px 20px 10px hsl(237, 100%, 78%);
     padding: 30px;
-    background-color:rgb(67, 69, 97);
+    background-color:rgb(108, 108, 116);
+    /* background-color:rgb(67, 69, 97); */
     color:#ffffff;
 }
 .fixed{
