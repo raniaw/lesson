@@ -33,6 +33,7 @@ img {
     z-index: -1;
     border: 2px solid blue;
 }
+
 .circle2 {
     background-color: rgb(0, 255, 34);
     position: absolute;
