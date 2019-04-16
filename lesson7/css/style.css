@@ -64,6 +64,8 @@ div#img {
 
 button {
     background-image: -moz-linear-gradient(#a95e5f, #7d0c0e);
+    background-image: -webkit-linear-gradient(#a95e5f, #7d0c0e);
+    background-image: -ms-linear-gradient(#a95e5f, #7d0c0e);
     /* background-color: #8e2b2c; */
     border-radius: 7px;
     border: 1px solid #7d0c0e;
