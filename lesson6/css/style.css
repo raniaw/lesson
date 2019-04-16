@@ -5,6 +5,8 @@ body {
 header {
     background: #c9c3c3;
     background-image: -moz-linear-gradient(#ffffff, #cecece);
+    background-image: -webkit-linear-gradient(#ffffff, #cecece);
+    background-image: -ms-linear-gradient(#ffffff, #cecece);
     color: #ff0000;
     text-align: right;
     border-radius: 0 0 15px 15px;
@@ -96,6 +98,8 @@ footer {
         background-color: #000000;
         /* background-image: linear-gradient();  */
         background-image: -moz-linear-gradient(#a0a0a0, #4b4b4b, #333333, #222222, #000000, #000000, #303030, #4b4b4b, #979696, #c9c3c3, #ffffff);
+        background-image: -webkit-linear-gradient(#a0a0a0, #4b4b4b, #333333, #222222, #000000, #000000, #303030, #4b4b4b, #979696, #c9c3c3, #ffffff);
+        background-image: -ms-linear-gradient(#a0a0a0, #4b4b4b, #333333, #222222, #000000, #000000, #303030, #4b4b4b, #979696, #c9c3c3, #ffffff);
         color: #ffffff;
         float: left;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -112,11 +116,15 @@ footer {
     nav.desk a.desk:hover {
         background-color: #ff0000;
         background-image: -moz-linear-gradient(#ffffff, #ffffff, #f7dfdf, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+        background-image: -webkit-linear-gradient(#ffffff, #ffffff, #f7dfdf, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+        background-image: -ms-linear-gradient(#ffffff, #ffffff, #f7dfdf, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
     }
 
     nav.desk a.desk:active {
         background-color: #ff0000;
         background-image: -moz-linear-gradient(#ffffff, #ffffff, #f8d9d9, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+        background-image: -webkit-linear-gradient(#ffffff, #ffffff, #f7dfdf, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+        background-image: -ms-linear-gradient(#ffffff, #ffffff, #f7dfdf, #fdb7b7, #faaaaa, #fd8383, #fa4d4d, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
     }
 
     .overlay,
