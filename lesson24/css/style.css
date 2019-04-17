@@ -1,0 +1,26 @@
+.mydiv {
+    background-color: aqua;
+    height: 150px;
+    width: 100px;
+    transition: 1s;
+}
+
+.mydiv:hover {
+    background-color: rgb(255, 14, 6);
+    color:#ffffff;
+    /* bewegt sich zur position x=65px, y=45px 
+    transform: translate(65px,45px) ;*/
+    /* rotation 45° = 0.785rad 
+    transform: rotate(0.785rad);
+    */
+    /* skewX 30° = 0.523rad
+       skewY 60° = 1.467rad*/
+     /* transform: translate(65px, 45px) 
+    skew(1.467rad,0.523rad)
+    rotate(0.785rad)
+    scale(1) 
+    ;*/
+    /* rotate(6.28rad)=rotate(380°) */
+    transform: matrix(1,0.523,1.467,1,65,45) rotate(6.28rad);
+    
+}
