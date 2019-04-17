@@ -11,7 +11,7 @@ body {
     border: 2px solid rgba(255, 0, 255, 1);
     margin: 50px;
     font-size: 20px;
-    perspective: 600px;
+    perspective: 250px;
     display: inline-box;
 }
 
