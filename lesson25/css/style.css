@@ -1,0 +1,25 @@
+div{
+    width: 300px;
+    height:350px;
+    background-color: white;
+    border:2px solid grey;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px  grey;
+}
+img{
+    padding: 25px 18px;
+    width: 260px;
+    height:200px;
+  
+}
+#pol1{
+  
+    transform: matrix(1,-0.785,0.785,1,265,245)
+
+}
+#pol2{
+    transform: matrix(1,0.785,-0.785,1,465,345)
+}
+h4{
+    text-align: center;
+}
