@@ -1,0 +1,48 @@
+@-moz-keyframes mymovecolor{
+    0% {top:0px; left:20px; background:red;}
+    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
+    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
+    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
+    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
+    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
+    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+}
+
+@-webkit-keyframes mymovecolor{
+    0% {top:0px; left:20px; background:red;}
+    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
+    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
+    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
+    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
+    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
+    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+}
+@-o-keyframes mymovecolor{
+    0% {top:0px; left:20px; background:red;}
+    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
+    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
+    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
+    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
+    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
+    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+}
+@keyframes mymovecolor{
+    0% {top:0px; left:20px; background:red;}
+    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
+    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
+    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
+    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
+    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
+    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+}
+.div1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymovecolor 5s infinite;
+    -moz-animation: mymovecolor 5s infinite;
+    -webkit-animation: mymovecolor 5s infinite;
+    -o-animation: mymovecolor 5s infinite;
+    
+}
