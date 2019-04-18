@@ -24,3 +24,39 @@
     transform: matrix(1,0.523,1.467,1,65,45) rotate(6.28rad);
     
 }
+.parent{
+    position: absolute;
+    top:300px;
+    left:300px;
+    border:3px solid green;
+
+}
+.div2{
+    position: relative;
+    left:0px;
+    top:0px;
+    width: 200px;
+    height: 200px;
+    background: #2be277;
+    text-align: center;
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: #2be277;
+    padding: 20px ;
+    transition: all 7s; 
+    transform-origin: top left;
+    transform-style: preserve-3D; 
+ 
+}
+
+.div2:hover {
+    /* width: 400px; */
+    background: yellow;
+    border: 5px solid green;
+    /* border-radius: 40px; */
+    color: blue;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transform: rotate(360deg);
+   
+}

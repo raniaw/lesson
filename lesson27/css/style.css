@@ -1,0 +1,180 @@
+.div1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    text-align: center;
+    /* -webkit-transition: width 2s; */
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: red;
+    padding: 20px ;
+    transition:all 5s;
+    transition-timing-function: linear;
+    margin: 20px;
+}
+
+.div1:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+}
+.div2 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    text-align: center;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    
+    transition: all 5s;
+   
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    color: blue;
+    padding: 20px ;
+    margin: 20px;
+}
+
+.div2:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+}
+.div3{
+    width: 200px;
+    height: 200px;
+    background: green;
+    text-align: center;
+  
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: green;
+    padding: 20px ;
+    transition:ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    margin: 20px;
+}
+
+.div3:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+}
+.div4{
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    text-align: center;
+   
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: blueviolet;
+    padding: 20px ;
+    transition:ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    margin: 20px;
+}
+
+.div4:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+.div5{
+    width: 200px;
+    height: 200px;
+    background: rgb(226, 116, 43);
+    text-align: center;
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: rgb(226, 116, 43);
+    padding: 20px ;
+    transition:ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    margin: 20px;
+}
+
+.div5:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+}
+.div6{
+    width: 200px;
+    height: 200px;
+    background: #2be2d3;
+    text-align: center;
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: #2be2d3;
+    padding: 20px ;
+    transition: all 7s; 
+    -webkit-transition-timing-function:cubic-bezier(0.1,0.73,1,0.093);
+    -moz-transition-timing-function: cubic-bezier(0.1,0.73,1,0.093);
+    -o-transition-timing-function: cubic-bezier(0.1,0.73,1,0.093);
+    margin: 20px;
+}
+
+.div6:hover {
+    width: 400px;
+    height:400px;
+    background: rgb(255, 0, 0);
+    border: 5px solid green;
+    border-radius: 40px;
+    color: rgb(246, 246, 248);
+    text-transform: uppercase;
+    opacity: 0.557;
+    transform: translate(200px,200px) rotate(360deg);
+}
+
+.div7{
+    width: 200px;
+    height: 200px;
+    background: #2be277;
+    text-align: center;
+    /* For Safari 3.1 to 6.0 */
+    /* transition: background 3s, width 6s, border 3s, border-radius 6s, color 6s, text-transform 6s; */
+    color: #2be277;
+    padding: 20px ;
+    transition: all 7s; 
+
+    -webkit-transition-timing-function:cubic-bezier(.49,1.36,.67,1.4);
+    -moz-transition-timing-function: cubic-bezier(.49,1.36,.67,1.4);
+    -o-transition-timing-function: cubic-bezier(.49,1.36,.67,1.4);
+    margin: 20px;
+}
+
+.div7:hover {
+    width: 400px;
+    background: yellow;
+    border: 5px solid green;
+    border-radius: 40px;
+    color: blue;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
