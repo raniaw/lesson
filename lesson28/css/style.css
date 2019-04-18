@@ -1,41 +1,318 @@
-@-moz-keyframes mymovecolor{
-    0% {top:0px; left:20px; background:red;}
-    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
-    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
-    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
-    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
-    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
-    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+/* @keyframes mymovecolor */
+
+@keyframes mymovecolor {
+    0% {
+        top: 0px;
+        left: 20px;
+        background: red;
+    }
+    18% {
+        top: 0px;
+        left: 60px;
+        background: rgb(255, 94, 0);
+    }
+    36% {
+        top: 60px;
+        left: 80px;
+        background: rgb(255, 238, 0);
+    }
+    48% {
+        top: 80px;
+        left: 60px;
+        background: rgb(7, 150, 14);
+    }
+    66% {
+        top: 80px;
+        left: 20px;
+        background: rgb(4, 0, 255);
+    }
+    84% {
+        top: 60px;
+        left: 0px;
+        background: rgb(153, 0, 255);
+    }
+    100% {
+        top: 0px;
+        left: 20px;
+        background: rgb(255, 0, 255);
+    }
 }
 
-@-webkit-keyframes mymovecolor{
-    0% {top:0px; left:20px; background:red;}
-    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
-    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
-    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
-    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
-    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
-    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+@-moz-keyframes mymovecolor {
+    0% {
+        top: 0px;
+        left: 20px;
+        background: red;
+    }
+    18% {
+        top: 0px;
+        left: 60px;
+        background: rgb(255, 94, 0);
+    }
+    36% {
+        top: 60px;
+        left: 80px;
+        background: rgb(255, 238, 0);
+    }
+    48% {
+        top: 80px;
+        left: 60px;
+        background: rgb(7, 150, 14);
+    }
+    66% {
+        top: 80px;
+        left: 20px;
+        background: rgb(4, 0, 255);
+    }
+    84% {
+        top: 60px;
+        left: 0px;
+        background: rgb(153, 0, 255);
+    }
+    100% {
+        top: 0px;
+        left: 20px;
+        background: rgb(255, 0, 255);
+    }
 }
-@-o-keyframes mymovecolor{
-    0% {top:0px; left:20px; background:red;}
-    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
-    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
-    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
-    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
-    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
-    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+
+@-webkit-keyframes mymovecolor {
+    0% {
+        top: 0px;
+        left: 20px;
+        background: red;
+    }
+    18% {
+        top: 0px;
+        left: 60px;
+        background: rgb(255, 94, 0);
+    }
+    36% {
+        top: 60px;
+        left: 80px;
+        background: rgb(255, 238, 0);
+    }
+    48% {
+        top: 80px;
+        left: 60px;
+        background: rgb(7, 150, 14);
+    }
+    66% {
+        top: 80px;
+        left: 20px;
+        background: rgb(4, 0, 255);
+    }
+    84% {
+        top: 60px;
+        left: 0px;
+        background: rgb(153, 0, 255);
+    }
+    100% {
+        top: 0px;
+        left: 20px;
+        background: rgb(255, 0, 255);
+    }
 }
-@keyframes mymovecolor{
-    0% {top:0px; left:20px; background:red;}
-    18% {top:0px; left:60px; background:rgb(255, 94, 0);}
-    36% {top:60px; left:80px; background:rgb(255, 238, 0);}
-    48% {top:80px; left:60px; background:rgb(7, 150, 14);}
-    66% {top:80px; left:20px; background:rgb(4, 0, 255);}
-    84% {top:60px; left:0px; background:rgb(153, 0, 255);}
-    100% {top:0px; left:20px; background:rgb(255, 0, 255);}
+
+@-o-keyframes mymovecolor {
+    0% {
+        top: 0px;
+        left: 20px;
+        background: red;
+    }
+    18% {
+        top: 0px;
+        left: 60px;
+        background: rgb(255, 94, 0);
+    }
+    36% {
+        top: 60px;
+        left: 80px;
+        background: rgb(255, 238, 0);
+    }
+    48% {
+        top: 80px;
+        left: 60px;
+        background: rgb(7, 150, 14);
+    }
+    66% {
+        top: 80px;
+        left: 20px;
+        background: rgb(4, 0, 255);
+    }
+    84% {
+        top: 60px;
+        left: 0px;
+        background: rgb(153, 0, 255);
+    }
+    100% {
+        top: 0px;
+        left: 20px;
+        background: rgb(255, 0, 255);
+    }
 }
-.div1{
+
+/* @keyframes changedcolor */
+
+@keyframes changedcolor {
+    from {
+        background-color: brown;
+    }
+    to {
+        background-color: rgb(0, 60, 255);
+    }
+}
+@-moz-keyframes changedcolor {
+    from {
+        background-color: brown;
+    }
+    to {
+        background-color: rgb(0, 60, 255);
+    }
+}
+@-webkit-keyframes changedcolor {
+    from {
+        background-color: brown;
+    }
+    to {
+        background-color: rgb(0, 60, 255);
+    }
+}
+@-o-keyframes changedcolor {
+    from {
+        background-color: brown;
+    }
+    to {
+        background-color: rgb(0, 60, 255);
+    }
+}
+
+/* @keyframes transform */
+
+@keyframes transformed {
+    from {
+       width: 100px;
+       height:100px;
+    }
+    to {
+        width:200px;
+        height:200px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+    }
+}
+
+@-moz-keyframes transformed {
+    from {
+       width: 100px;
+       height:100px;
+    }
+    to {
+        width:200px;
+        height:200px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+    }
+}
+@-webkit-keyframes transformed {
+    from {
+       width: 100px;
+       height:100px;
+    }
+    to {
+        width:200px;
+        height:200px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+    }
+}
+@-o-keyframes transformed {
+    from {
+       width: 100px;
+       height:100px;
+    }
+    to {
+        width:200px;
+        height:200px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+        
+    }
+}
+
+@keyframes transformed2 {
+    from {
+       width: 100px;
+       height:100px;
+       background: url(../img/Blume_klein.gif) no-repeat;
+       background-size: 100% 100%;
+    }
+    to {
+        width:300px;
+        height:300px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+        background: url(../img/1.jpg)  no-repeat;
+        background-size: cover;
+    }
+}
+@-moz-keyframes transformed2 {
+    from {
+       width: 100px;
+       height:100px;
+       background: url(../img/Blume_klein.gif) no-repeat;
+       background-size: 100% 100%;
+    }
+    to {
+        width:300px;
+        height:300px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+        background: url(../img/1.jpg)  no-repeat;
+        background-size: cover;
+    }
+}
+@-webkit-keyframes transformed2 {
+    from {
+       width: 100px;
+       height:100px;
+       background: url(../img/Blume_klein.gif) no-repeat;
+       background-size: 100% 100%;
+    }
+    to {
+        width:300px;
+        height:300px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+        background: url(../img/1.jpg)  no-repeat;
+        background-size: cover;
+    }
+}
+@-o-keyframes transformed2 {
+    from {
+       width: 100px;
+       height:100px;
+       background: url(../img/Blume_klein.gif) no-repeat;
+       background-size: 100% 100%;
+    }
+    to {
+        width:300px;
+        height:300px;
+        background-color: blue;
+        border-radius:50%;
+        transform:translate(250px,250px) rotateY(450deg) rotateX(360deg);
+        background: url(../img/1.jpg)  no-repeat;
+        background-size: cover;
+    }
+}
+.div1 {
     width: 100px;
     height: 100px;
     background: red;
@@ -44,5 +321,44 @@
     -moz-animation: mymovecolor 5s infinite;
     -webkit-animation: mymovecolor 5s infinite;
     -o-animation: mymovecolor 5s infinite;
-    
 }
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    background: rgb(114, 36, 36);
+    /*  animation-iteration-count: infinite;
+   animation-duration: 8s; */
+    -moz-animation: changedcolor 8s;
+    -webkit-animation: changedcolor 8s;
+    -o-animation: changedcolor transformed 8s;
+}
+.div3 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 300px;
+    background: rgb(248, 1, 1);
+    animation: transformed 8s infinite; 
+    /*  animation-iteration-count: infinite;
+   animation-duration: 8s; */
+    -moz-animation: transformed 8s infinite;
+    -webkit-animation: transformed 8s infinite;
+    -o-animation: transformed 8s infinite;
+}
+
+.div4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 500px;
+    background: rgb(248, 1, 1);
+    animation: transformed2 8s infinite alternate-reverse; 
+    -moz-animation: transformed2 8s infinite alternate-reverse; 
+    -webkit-animation: transformed2 8s infinite alternate-reverse; 
+    -o-animation: transformed2 8s infinite alternate-reverse; 
+   
+} 
+
