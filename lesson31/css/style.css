@@ -7,12 +7,13 @@ div>p {
 div+h1 {
     color: white;
     background: blue;
-    padding-block-start: 20px;
+    padding-block-start: 50px;
 }
-
+/*  with tilde */
 div~p {
     background: yellow;
-    padding-block-end: 20px;
+    padding-block-end: 60px;
+    text-align: end;
 }
 
 a:link {
@@ -65,4 +66,16 @@ div.see p:first-child{
 }
 div.see:hover p{
     display: block;
+}
+p:first-child{
+    background: green;
+}
+p:nth-child(2n){
+    background-color: aqua;
+    color:blue;
+    padding-inline-end: 80px;
+    text-align: right;
+}
+:not(p){
+    background-color: rgb(173, 238, 130);
 }
