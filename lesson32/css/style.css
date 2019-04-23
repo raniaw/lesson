@@ -1,0 +1,217 @@
+p::first-letter {
+    color: #0000ff;
+    font-size: xx-large;
+    font-family: 'Poiret One';
+}
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+    /*  font-size:2rem;  == font-size: 32px; */
+    font-size: 2rem;
+    font-family: 'Poiret One'
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: red;
+    background: yellow;
+    font-family: 'Great Vibes';
+}
+
+::selection {
+    color: rgb(217, 255, 5);
+    background: rgb(9, 255, 0);
+    font-family: 'Great Vibes';
+}
+
+p::after {
+    content: " Hier ist "attr(p)"Barcode";
+    color: blue;
+    font-size: xx-large;
+    font-family: 'Libre Barcode 128 Text';
+}
+
+s h1 {
+    color: blue;
+    font-family: 'Libre Barcode 128 Text';
+}
+
+h1::after {
+    content: " Here is "attr(h1) "Barcode 128";
+    color: rgb(4, 150, 4);
+    font-size: xx-large;
+    font-family: 'Libre Barcode 128 Text';
+}
+
+h2 {
+    color: blue;
+    font-family: 'Michroma';
+}
+
+h2::before {
+    content: " here is  ::before attr(h2) "attr(h2) "monoton";
+    color: rgb(4, 150, 4);
+    font-size: 30px;
+    font-family: 'Monoton';
+}
+
+h2::after {
+    content: " here is  ::after attr(h2) "attr(h2) "Petit Formal Script";
+    color: rgb(4, 150, 4);
+    font-size: 30px;
+    font-family: 'Petit Formal Script';
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ff0000;
+    border-radius: 45px;
+    color: white;
+    padding: 20px;
+    font-family: 'Press Start 2P';
+}
+
+.btn:hover {
+    box-shadow: 12px 10px 20px rgba(109, 1, 1, 0.7);
+    transition: scale(1.5, 1.5);
+}
+
+.btn:hover::after {
+    content: "Do you want to play Mario-Game?";
+    transition: all 0.7s;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.btn2 {
+
+    width: 30%;
+    /* display: block; */
+    display: flex;
+    display: -webkit-flexbox;
+    display: -ms-flexbox; 
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #5798fa;
+    border-radius: 45px;
+    color: white;
+    padding: 20px;
+    font-family: 'Syncopate';
+    animation: moved 2s;
+    animation-delay: 0s;
+}
+
+.btn2:hover {
+    box-shadow: 12px 10px 20px rgba(0, 8, 77, 0.7);
+    transition: scale(1.5, 1.5);
+}
+
+.btn2:hover::after {
+    content: "";
+    transition: all 0.7s;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes moved {
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.my-btn, h3, span {
+    /* display: block; */
+   
+    display: flex;
+    display: -webkit-flexbox;
+    display: -ms-flexbox; 
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.my-btn {
+    text-align: center;
+    color: #5798fa;
+    line-height: 50px;
+    font-family: 'Syncopate';
+    display: flex;
+    display: -webkit-flexbox;
+    display: -ms-flexbox; 
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+h3>span:first-child {
+    letter-spacing: 6px;
+    color: #5798fa;
+    font-size: 30px;
+    
+    /* display: block; */
+    letter-spacing: 10px;
+    /* font-weight: bolder; */
+    animation: moveright 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+h3>span:nth-child(2) {
+    /* display: block; */
+    font-size: 20px;
+    letter-spacing: 7px;
+    animation: moveleft 2s;
+    animation-delay: .5s;
+    /* color: #1e55a7; */
+}
+
+@keyframes moveright {
+    from {
+        transform: translateX(-40px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveleft {
+    from {
+        transform: translateX(40px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
