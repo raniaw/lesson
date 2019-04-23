@@ -212,6 +212,7 @@ li {
 }
 
 li {
+    font-family:'Montserrat';
     border-right: 1px solid #ccc;
     padding: 10px 5px;
     margin: 0;
@@ -229,7 +230,7 @@ li {
 }
 
 .nav-menu>ul>li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
     text-align: center;
 }
