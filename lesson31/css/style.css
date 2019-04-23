@@ -1,0 +1,68 @@
+div>p {
+    color: white;
+    background: red;
+    padding-inline-start: 20px;
+}
+
+div+h1 {
+    color: white;
+    background: blue;
+    padding-block-start: 20px;
+}
+
+div~p {
+    background: yellow;
+    padding-block-end: 20px;
+}
+
+a:link {
+    text-decoration-color: crimson;
+    text-decoration-line: overline;
+    text-decoration-style: dotted;
+    color: blueviolet;
+}
+a.f:link {
+    text-decoration-color: crimson;
+    text-decoration-line: overline;
+    text-decoration-style: dotted;
+    color: rgb(46, 43, 226);
+    transition: linear 2s;
+}
+a:hover{
+    color:blue;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: aqua;
+}
+a.s:visited {
+    color: green;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: aqua; 
+}
+a.f:active{
+    color: rgb(155, 252, 0);
+    /* text-decoration-line: underline;
+    text-decoration-style: double; */
+    text-decoration-color: rgb(255, 0, 221); 
+    background: yellow;
+}
+
+/* a.f:visited {
+    color: rgb(160, 93, 7);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: aqua; 
+} */
+
+div.see{
+    height:150px;
+    background: blue;
+    color:white;
+}
+div.see p:first-child{
+    display: none;
+}
+div.see:hover p{
+    display: block;
+}
