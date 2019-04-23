@@ -171,13 +171,6 @@ nav {
     max-width: 770px;
 }
 
-.content-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .nav-collapse {
     -ms-flex-preferred-size: 100%;
@@ -261,7 +254,7 @@ li {
 }
 
 .gradient {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -282,6 +275,8 @@ li {
 .content {
     position: relative;
     text-align: center;
+    top:0px;
+    left:0px;
 }
 
 .content-fluid {
@@ -292,9 +287,9 @@ li {
     margin-left: auto;
     /* display: flex;
     display: -webkit-flexbox;
-    display: -ms-flexbox; */
+    display: -ms-flexbox; 
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 .bg h1 {
