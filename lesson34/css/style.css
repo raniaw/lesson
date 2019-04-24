@@ -79,7 +79,7 @@ a {
     transition: ease-in-out 170ms;
     /* display:none; 
      visibility: hidden; */
-    width: 150px;
+    width: 140px;
     background-color: #fa0a0a;
     color: #fff;
     text-align: center;
@@ -99,4 +99,84 @@ a {
     visibility: visible;*/
     opacity: 0.7;
     font-size: 20px;
+}
+
+.article2 {
+    padding: 10px 200px;
+    font-size: 2rem;
+    font-family: Poiret One;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgb(252, 0, 0);
+}
+
+.article2 a::before {
+    content: attr(info);
+    /* display: block; */
+    border-bottom: 1px dotted black;
+    /* transform: scale(0), display:none und visibility:hidden 
+    versteckt tooltip*/
+    transform: scale(0);
+    transition: ease-in-out 170ms;
+    /* display:none; 
+     visibility: hidden; */
+    width: 140px;
+    background-color: #fa0a0a;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    /* nowrap wird nicht lange text  in zeile verteilen */
+    white-space: wrap;
+}
+
+.article2 a:hover::before {
+    transform: scale(1);
+    /*  display: block;
+    visibility: visible;*/
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.center{
+    text-align: center;
+}
+.btn-hover{
+    padding: 15px;
+    border-radius: 25px;
+    background-color: blue;
+    color:white;
+    font-family: Syncopate;
+    font-size: 1.2em;
+    font-weight: bolder;
+    position: relative;
+    border:1px solid blue;
+    box-shadow: 2px 3px 20px #0011fd;
+}
+.btn-hover::after{
+    content: " Sorry , we have any info";
+    color:white;
+    /* display: block; */
+    position: absolute;
+    left:0;
+    bottom:120%;
+    transform:scale(0);
+    background-color: rgba(0, 195, 255, 0.671);
+    border-radius: 15px;
+
+}
+.btn-hover:hover{
+    cursor: pointer;
+}
+.btn-hover:hover::after{
+    transform: scale(1);
 }
