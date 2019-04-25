@@ -1,0 +1,17 @@
+.parent{
+    background-color: aquamarine;
+    /* 75vh=75% von height 
+     * 75vw=75% von width */
+    height:75vh;
+    width:75vw;
+    padding:50px;
+}
+.child{
+    background-color: blue;
+    width:50px;
+    height:50px;
+    color:white;
+    position:relative;
+    top:100px;
+    right:0px;
+}

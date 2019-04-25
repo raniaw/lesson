@@ -40,6 +40,7 @@ h1 {
     padding-block-start: 20px;
     text-align: right;
     height: 40px;
+    white-space: wrap;
 }
 
 h2 {
