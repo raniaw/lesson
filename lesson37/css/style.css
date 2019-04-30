@@ -1,0 +1,113 @@
+:root {
+    --txt-color: blue;
+    --my-bg: rgb(218, 246, 255);
+    --div-height: 500px;
+}
+
+* {
+    /* defeniert font-farbe einzeln */
+    color: var(--txt-color);
+}
+
+.main {
+    --div-height: 100px;
+    background-color: azure;
+    height: var(--div-height);
+}
+
+.main h1 {
+    color: var(--txt-color);
+    background-color: var(--my-bg);
+}
+
+.mydiv {
+    height: var(--div-height);
+    background-color: rgb(0, 141, 141);
+}
+
+.new {
+    padding: 100px;
+    --txt-color: gold;
+    border-radius: 25px;
+    font-size: 2.5em;
+}
+
+#alert {
+    --txt-color: red;
+    border: 1px solid yellow;
+    font-size: 1.6em;
+}
+
+#ok {
+    --txt-color: green;
+    border: 1px solid yellow;
+    font-size: 1rem;
+}
+
+.btn {
+    /* width: 200px; */
+    width: 20%;
+    border: 2px solid green;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 25px;
+    color: white;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    /* --my-bg:var(--my-bg); */
+}
+
+.btn:hover {
+    background-color: var(--bg-color, black);
+}
+
+.btn.red {
+    --bg-color: red;
+    filter:brightness(50%);
+}
+
+/* .btn.black{
+    --bg-color:black;
+} */
+
+.btn.gold {
+    --bg-color: gold;
+    filter:brightness(80%);
+}
+
+@media screen and (max-width:799px) {
+    .main{
+        clear:both;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .btn, .new{
+        /* display: block; */
+       
+        margin:18px;
+        padding: 10px 15px;
+    }
+    .btn {
+        width: 80%;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1279px) {
+    .main{
+        clear:both;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .btn, .new{
+        /* display: block; */
+       
+        margin:25px;
+        padding: 10px 15px;
+    }
+    .btn {
+        width: 20%;
+        /* flex-wrap: nowrap; */
+    }
+}
