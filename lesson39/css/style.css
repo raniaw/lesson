@@ -3,7 +3,7 @@
     
 }
 body{
-    background-image: url(/lesson38/img/winterberge.jpg);
+    background-image: url(../img/winterberge.jpg);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
