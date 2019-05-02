@@ -2,3 +2,64 @@
     font-family: 'Josefin Slab', serif;
     font-family: 'Montserrat Alternates', sans-serif;
 **/
+
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', serif;
+    font-weight: bolder;
+}
+
+.header {
+    grid-area: header;
+}
+
+.left {
+    grid-area: left;
+}
+
+.center {
+    grid-area: center;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'header header header header header header header header header header header header' 'left left center center center center center center center right right right' 'footer footer footer footer footer footer footer footer footer footer footer footer '
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (min-width:501px) and (max-width:740px) {
+    .grid {
+        display: grid;
+        grid-template-areas: 'header header header header header header header header header''left  left  center center center center center center center' 'left left  right right right right right right right' 'footer footer footer footer footer footer footer footer footer'
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid {
+        display: grid;
+        grid-template-areas: 'header''left' 'center' 'right''footer'
+    }
+}
