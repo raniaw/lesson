@@ -1,0 +1,56 @@
+/**
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+}
+
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+    color: rgb(1, 192, 245);
+}
+
+h1::first-letter {
+    color: blue;
+    font-size: 60px;
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(auto, minmax(5px, auto));
+    grid-gap: 3px;
+    /* grid-auto-rows: minmax(50px, auto); */
+}
+
+.wo {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 25px;
+}
+
+.tg {
+    background-color: rgb(241, 252, 255);
+    color: rgb(1, 192, 245);
+    border: 2px solid rgb(1, 192, 245);
+    padding: 20px;
+}
+
+.not-actuell {
+    background-color: rgb(68, 215, 255);
+    color: rgb(200, 238, 225);
+    border: 2px double rgb(1, 192, 245);
+    padding: 20px;
+}
