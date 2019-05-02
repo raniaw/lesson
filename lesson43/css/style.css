@@ -53,4 +53,5 @@ h1::first-letter {
     color: rgb(200, 238, 225);
     border: 2px double rgb(1, 192, 245);
     padding: 20px;
+    font-weight: bolder;
 }
