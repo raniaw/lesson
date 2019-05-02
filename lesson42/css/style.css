@@ -1,0 +1,24 @@
+/**
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+.module {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    grid-auto-rows: minmax(150px, auto);
+}
