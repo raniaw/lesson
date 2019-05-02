@@ -4,7 +4,9 @@
 
 body {
     margin: 0 auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Poiret One';
+    font-weight: bolder;
 }
 
 .header {
@@ -26,7 +28,6 @@ body {
     padding: 15px 10px;
     font-weight: bold;
     text-align: center;
-
 }
 
 .nav a:hover,
@@ -34,14 +35,12 @@ a:active {
     background-color: #d0fbff;
     color: #004147;
     font-weight: bold;
-
 }
 
 #active {
     background-color: #d0fbff;
     color: #004147;
     font-weight: bold;
-
 }
 
 .row {
@@ -55,15 +54,12 @@ a:active {
     padding: 20px;
 }
 
-
 .noimg {
     background-color: #b3f9ff;
     width: 100%;
     padding: 20px;
     /* scaliert auf höhe und breite */
     background-size: 100% 100%;
-
-
 }
 
 #noimg1 {
@@ -74,7 +70,6 @@ a:active {
     background-size: 100%;
     /* scaliert auf höhe und breite */
     /* background-size: 100% 100%;  */
-
 }
 
 #noimg2 {
@@ -85,7 +80,6 @@ a:active {
     /* background-size: 100%; */
     /* scaliert auf höhe und breite */
     /* background-size: 100% 100%;  */
-
 }
 
 .main {
@@ -100,7 +94,6 @@ a:active {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
 }
 
 .rowimg div {
@@ -111,21 +104,17 @@ a:active {
     /* max-width: 25%;
     max-height: 25%; */
     /* object-fit:cover; */
-
     /***
         ** FLEX funktionoiert nicht im Chrome  **
         **/
     flex: 25%;
     margin-top: 8px;
     vertical-align: middle;
-
-
 }
 
 .rowimg div img {
     width: 100%;
     height: 100%;
-    
 }
 
 .footer {
@@ -136,8 +125,6 @@ a:active {
 }
 
 @media screen and (max-width:800px) {
-   
-     
     /* .row,
     .nav,
     .noimg{
@@ -145,16 +132,14 @@ a:active {
     } */
     .row,
     .noimg,
-    .nav{
+    .nav {
         flex-direction: column;
     }
-
     .nav a {
         text-align: center;
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
     }
-
     .rowimg div {
         /****
 
@@ -165,15 +150,12 @@ a:active {
         ** */
         /* max-width: 50%;
         max-height: 50%; */
-
         /***
         ** FLEX funktionoiert nicht im Chrome  **
         **/
-
         flex: 50%;
         max-width: 50%;
     }
-
     /* .rowimg div img{
         max-width:100%;
        
@@ -181,7 +163,6 @@ a:active {
 }
 
 @media screen and (max-width:600px) {
-
     /* .row,
     .noimg,
     .nav{
@@ -191,22 +172,17 @@ a:active {
         border-bottom: 1px solid #01353a;
         border-top: 1px solid #01353a;
     }
-
     .rowimg div {
-
         /****
         * max-width kann man benutzen für chrome, 
         * dann flex funktioniert nicht im Firefox 
         ** */
         /* max-width:100%;
         max-height: 100%; */
-
         /***
         ** FLEX funktionoiert nicht im Chrome  **
         **/
         flex: 100%;
         max-width: 100%;
-        
     }
-
 }
