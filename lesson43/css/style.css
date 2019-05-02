@@ -55,3 +55,7 @@ h1::first-letter {
     padding: 20px;
     font-weight: bolder;
 }
+
+abbr {
+    cursor: help;
+}
