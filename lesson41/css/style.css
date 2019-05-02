@@ -1,0 +1,118 @@
+/**
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 100px 500px 60px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.center {
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+
+.right {
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+.menu ul>li {
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (min-width:501px) and (max-width:740px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: 100px 200px auto auto 100px 60px;
+    }
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 6;
+    }
+    .center {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .right {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    .header,
+    .center,
+    .left,
+    .right,
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* text-align: center; */
+    }
+    .menu ul>li {
+        display: block;
+    }
+}
