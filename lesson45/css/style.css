@@ -232,9 +232,18 @@ li {
 
 .fa-envelope {
     color: blue;
+    text-shadow: -1px 0 rgb(255, 0, 0), 0 1px rgb(255, 0, 0), 1px 0 rgb(255, 0, 2), 0 -1px rgb(252, 4, 4);
 }
 
 .fa-check-square {
     color: yellow;
-    border: 2px solid yellowgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-chess-rook {
+    text-shadow: -2px 0 black, 0 2px rgb(252, 5, 5), 2px 0 rgb(137, 253, 4), 0 -2px rgb(1, 240, 248);
+}
+
+.fa-gamepad {
+    text-shadow: -1px 0 rgb(250, 1, 1), 0 1px rgb(157, 255, 0), 1px 0 rgb(4, 21, 255), 0 -1px rgb(247, 210, 1);
 }
