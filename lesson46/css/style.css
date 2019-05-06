@@ -42,6 +42,8 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
 }
 
 body {
@@ -56,8 +58,18 @@ section,
 summary,
 details {
     width: 100%;
-    padding: 4px;
+    padding: 14px;
     text-align: center;
+    font-family: 'Tangerine', cursive;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+summary,
+h3 {
+    font-size: 40px;
 }
 
 
@@ -70,10 +82,10 @@ details {
 article,
 p {
     padding: 10px;
-    font-family: verdana;
     font-size: 17px;
     text-align: justify;
     color: #333;
+    font-family: 'Muli', sans-serif;
 }
 
 nav {
@@ -81,6 +93,9 @@ nav {
     border: 1px solid rgb(0, 0, 255);
     overflow: hidden;
     text-align: center;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
 }
 
 nav a {
@@ -94,6 +109,35 @@ nav a {
 nav a:hover {
     background-color: rgb(255, 255, 255);
     color: #0000ff;
+}
+
+.fa-html5,
+.fa-css3,
+.fa-js,
+.fa-node-js {
+    font-size: 30px;
+    padding: 10px;
+}
+
+h3>.fa-node-js {
+    font-size: 50px;
+    color: rgb(95, 175, 3);
+}
+
+h3>.fa-css3 {
+    font-size: 50px;
+    color: #0099ff;
+}
+
+details>.fa-html5 {
+    font-size: 50px;
+    color: rgb(255, 115, 0);
+}
+
+h3>.fa-js {
+    font-size: 50px;
+    color: #ffee00;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @media screen and (max-width:600px) {
