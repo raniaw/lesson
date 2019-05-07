@@ -2,50 +2,379 @@
 <html lang="en">
 
 <head>
-    <title>Font-Awesome CSS</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W3 CSS-Example</title>
+
+    <meta charset="UTF-8"></meta>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
     <link href="https://fonts.googleapis.com/css?family=Allura|Architects+Daughter|Black+Ops+One|Cinzel+Decorative|Didact+Gothic|Diplomata|Great+Vibes|Gugi|Indie+Flower|Josefin+Slab|Lobster|Modak|Montserrat+Alternates|Muli|Nixie+One|Orbitron|Pacifico|Petit+Formal+Script|Pinyon+Script|Quicksand|Rajdhani|Raleway+Dots|Reem+Kufi|Righteous|Rochester|Satisfy|Syncopate|Tangerine|Ubuntu|Uncial+Antiqua"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Barcode+39|Michroma|Monoton|Petit+Formal+Script|Press+Start+2P|Syncopate|Tangerine" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="css/style.css" rel="stylesheet">
+        rel="stylesheet"></link>
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Barcode+39|Michroma|Monoton|Petit+Formal+Script|Press+Start+2P|Syncopate|Tangerine" rel="stylesheet"></link>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></link>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+
+    <link href="css/style.css" rel="stylesheet"></link>
 </head>
 
 <body>
     <div class="w3-container w3-teal w3-center">
-        <h1>Header</h1>
+        <h1 class="w3-round">Header</h1>
     </div>
-    <img class="w3-image" src="https://picsum.photos/id/16/2500/1656" alt="">
-    <table class="w3-table">
-        <!-- <tr class="w3-blue"> -->
-        <tr class=" w3-hover-amber w3-wide w3-border-amber">
-            <th>Name
-            </th>
-            <th>Vorname</th>
-        </tr>
-        <tr class=" w3-hover-red w3-border-red">
-            <td class="  w3-hover-purple">Maria</td>
-            <td>Rempel</td>
-        </tr>
-        <tr class=" w3-hover-blue w3-border-blue">
-            <td class="  w3-hover-purple">Denissa</td>
-            <td>Rempel</td>
-        </tr>
-    </table>
+
+    <img class="w3-image w3-circle w3-opacity-max w3-hover-opacity-off  w3-card-4 w3-padding  w3-border w3-border-blue" src="https://picsum.photos/id/16/2500/1656" alt="">
+
+    <br>
+    <br>
+    <!-- <p>The w3-table-all class combines the w3-table, w3-bordered, w3-striped, and 
+            w3-border classes:</p>
+          
+    <table class="w3-table-all w3-centered"> -->
+
+    <div class="w3-responsive w3-card-4">
+        <table class="w3-table w3-striped w3-hoverable w3-bordered w3-centered">
+            <!-- <tr class="w3-blue"> -->
+
+            <thead>
+                <tr class="w3-hover-amber w3-wide w3-border">
+                    <th>Name</th>
+
+                    <th>Vorname</th>
+                </tr>
+            </thead>
+
+            <tr class="w3-hover-red w3-border w3-border-red">
+                <td class="w3-hover-purple">Maria</td>
+
+                <td>Rempel</td>
+            </tr>
+
+            <tr class="w3-hover-blue w3-border-bottom w3-border-blue">
+                <td class="w3-border w3-hover-purple">Denissa</td>
+
+                <td>Rempel</td>
+            </tr>
+
+            <tr class="">
+                <td class="">Drackula</td>
+
+                <td>Drakulova</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
     <ul class="w3-ul">
-        <li>Name</li>
+        <li class="">Name</li>
+
         <li>Vorname</li>
+
         <li>Alt</li>
     </ul>
+
     <br>
-    <button class=" w3-hover-white w3-wide w3-border-blue w3-animate-bottom w3-round-xxlarge w3-blue w3-block">Senden</button>
-    <div class=" w3-container w3-blue w3-right-align w3-border">
-        <h3>footer</h3>
+
+    <div id="btn">
+        <button class="btn w3-center w3-hover-white w3-wide w3-border-blue w3-animate-bottom w3-round-xxlarge w3-blue">Senden</button>
+    </div>
+
+    <br>
+
+    <div>
+        <button class="w3-block w3-center w3-hover-blue w3-wide w3-border-blue w3-animate-bottom w3-round-xxlarge w3-darkblue">Senden</button>
+    </div>
+
+    <br>
+
+    <div class="w3-container">
+        <div class="w3-bar w3-darkblue w3-center">
+            <button class="w3-button w3-bar-item w3-hover-blue w3-ripple w3-mobile">Home</button>
+
+            <button class="w3-button w3-bar-item w3-hover-blue w3-ripple w3-mobile">about Us</button>
+
+            <button class="w3-button w3-bar-item w3-hover-blue w3-ripple w3-mobile">Contact</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="w3-container w3-blue">
+        <h2>Input Form</h2>
+    </div>
+
+    <form class="w3-container">
+        <p>
+            <label>First Name</label>
+
+            <input class="w3-input" type="text"></input>
+        </p>
+
+        <p>
+            <label>Last Name</label>
+
+            <input class="w3-input" type="text"></input>
+        </p>
+
+        <p>
+            <label>Email</label>
+
+            <input class="w3-input" type="text"></input>
+        </p>
+    </form>
+
+    <br>
+
+    <div class="w3-container">
+        <h2>Dropdown Button</h2>
+
+        <p>
+            Move the mouse over the button to open the dropdown content.
+        </p>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-hover-white w3-blue">Hover Over Me!</button>
+
+            <div class="w3-dropdown-content w3-bar-blue w3-border">
+                <a href="#" class="w3-bar-item w3-hover-blue w3-button">Link 1</a>
+
+                <a href="#" class="w3-bar-item w3-hover-blue w3-button">Link 2</a>
+
+                <a href="#" class="w3-bar-item w3-hover-blue w3-button">Link 3</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <button class="w3-circle w3-hover-white w3-blue w3-xlarge">+</button>
+
+    <br>
+    <hr>
+
+    <div class="w3-container">
+        <h2>Accordions</h2>
+
+        <p>
+            An accordion is used to show (and hide) HTML content:
+        </p>
+
+        <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-blue w3-left-align">Open Section 1</button>
+
+        <div id="Demo1" class="w3-container w3-hide">
+            <h4>Section 1</h4>
+
+            <p>Some text..</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <br>
+
+    <div class="w3-container">
+        <p>
+            Flat Design often uses colors we know from marketing, road signs, and sticky notes:
+        </p>
+
+        <div class="w3-row">
+            <div class="w3-quarter">
+                <div class="w3-container w3-red w3-center">
+                    <p>Red</p>
+                </div>
+
+                <div class="w3-container w3-green w3-center">
+                    <p>Green</p>
+                </div>
+
+                <div class="w3-container w3-blue w3-center">
+                    <p>Blue</p>
+                </div>
+
+                <div class="w3-container w3-black w3-center">
+                    <p>Black</p>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-container w3-pink w3-center">
+                    <p>Pink</p>
+                </div>
+
+                <div class="w3-container w3-teal w3-center">
+                    <p>Teal</p>
+                </div>
+
+                <div class="w3-container w3-indigo w3-center">
+                    <p>Indigo</p>
+                </div>
+
+                <div class="w3-container w3-brown w3-center">
+                    <p>Brown</p>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-container w3-orange w3-center">
+                    <p>Orange</p>
+                </div>
+
+                <div class="w3-container w3-cyan w3-center">
+                    <p>Cyan</p>
+                </div>
+
+                <div class="w3-container w3-purple w3-center">
+                    <p>Purple</p>
+                </div>
+
+                <div class="w3-container w3-grey w3-center">
+                    <p>Grey</p>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-container w3-yellow w3-center">
+                    <p>Yellow</p>
+                </div>
+
+                <div class="w3-container w3-lime w3-center">
+                    <p>Lime</p>
+                </div>
+
+                <div class="w3-container w3-khaki w3-center">
+                    <p>Khaki</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-center">
+                    <p>Light Grey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <form class="w3-container w3-card-4" action="index.html">
+        <h2 class="w3-text-blue">Input Form</h2>
+
+        <p>
+            Use any of the w3-text-color classes to color your labels.
+        </p>
+
+        <p>
+            <label class="w3-text-blue">
+                <b>First Name</b>
+            </label>
+
+            <input class="w3-input w3-border" name="first" type="text"></input>
+        </p>
+
+        <p>
+            <label class="w3-text-blue">
+                <b>Last Name</b>
+            </label>
+
+            <input class="w3-input w3-border" name="last" type="text"></input>
+        </p>
+
+        <p>
+            <button class="w3-btn w3-blue">Register</button>
+        </p>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="w3-container">
+        <h2>Displaying Notes</h2>
+
+        <p>
+            The w3-panel class can be used to display all sorts of notes:
+        </p>
+
+        <div class="w3-panel w3-yellow">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-border">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-light-grey w3-border w3-round">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-pale-red w3-leftbar w3-rightbar w3-border-red">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-pale-yellow w3-topbar w3-bottombar w3-border-yellow">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <div class="w3-panel w3-yellow w3-bottombar w3-border-amber">
+            <p>
+                Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+            </p>
+        </div>
+
+        <br>
+        <br>
+        <div class="w3-container w w3-padding w3-blue">
+            <div class="w3-container w3-center w3-half">
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="w3-container w3-half w3-yellow">
+                <h3>Lorem Ipsum</h3>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="w3-container w3-blue w3-right-align w3-border">
+            <h3>footer</h3>
+        </div>
     </div>
 </body>
 
 </html>
+
+s
