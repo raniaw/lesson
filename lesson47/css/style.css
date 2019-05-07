@@ -1,0 +1,50 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+
+
+/* h1,
+h3 {
+    text-align: center;
+} */
+
+h1 {
+    font-family: 'Petit Formal Script', cursive;
+    padding: 15px;
+}
+
+h3 {
+    font-family: 'Michroma';
+    padding: 10px;
+}

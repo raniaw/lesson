@@ -64,7 +64,7 @@ summary {
 
 details {
     width: 100%;
-    padding: 20px 80px 20px;
+    padding: 20px 100px 20px;
     text-align: center;
     font-family: 'Tangerine', cursive;
 }
@@ -110,7 +110,7 @@ nav a {
     color: white;
     padding: 16px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 nav a:hover {
