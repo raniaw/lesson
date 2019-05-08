@@ -37,77 +37,73 @@
           box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0 auto;
-  padding: 0px;
-}
-
-h1 {
   margin: 0;
-  font: 100% "Montserrat", sans-serif;
-  color: blue;
-  font-size: 30px;
-  height: 100px;
-  background-color: lightblue;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 10rem;
+  background-color: rgba(255, 255, 0, 0.39);
   text-align: center;
-  padding: 30px;
+  padding-top: 2rem;
 }
 
-nav {
-  margin: 0 auto;
-  background: blue;
-  overflow: hidden;
+header h1 {
+  font-family: "Orbitron", sans-serif;
 }
 
-nav ul {
-  margin: 0 auto;
-  padding: 20px 0px;
-  list-style: none;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: bolder;
+main {
+  margin: .5rem;
+  font-family: "Josefin Slab", serif;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav li a {
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-}
-
-nav li a:hover {
-  background-color: lightblue;
+main .huge {
+  font-size: 10rem;
   color: blue;
 }
 
-@media screen and (max-width: 500px) {
-  h1,
-  nav,
-  ul,
-  li,
-  a {
-    width: 100%;
-    text-align: center;
-  }
-  nav {
-    padding: 0px;
-  }
-  nav ul li {
-    padding: 20px 20px;
-  }
-  nav ul li a {
-    width: 100%;
-  }
-  nav ul li:hover {
-    background: lightblue;
-    padding: 20px 0;
-  }
-  nav ul li:hover a:hover {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-  }
+main .big {
+  font-size: 8rem;
+  color: blue;
+}
+
+main .medium {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: purple;
+}
+
+main .middle {
+  font-size: 3rem;
+  color: purple;
+}
+
+main .small {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  color: green;
+}
+
+main .tiny {
+  font-family: "Quicksand", sans-serif;
+  font-size: .5rem;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+footer {
+  height: 10rem;
+  background-color: rgba(255, 255, 0, 0.39);
+  text-align: center;
+  padding-top: 1rem;
+}
+
+footer h2 {
+  font-family: "Orbitron", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
