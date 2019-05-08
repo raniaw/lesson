@@ -33,10 +33,90 @@
 
 */
 
+//variablen
 $font-stack:'Montserrat',
 sans-serif;
+$font-nav:'Rajdhani',
+sans-serif;
+$font-wt: bolder;
 $font-color: blue;
+$font-nav-color:white;
+$bg-color: lightblue;
+$bg-nav-color:blue;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+}
+
 h1 {
+    margin: 0;
     font: 100% $font-stack;
     color: $font-color;
+    font-size: 30px;
+    height: 100px;
+    background-color: $bg-color;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    margin: 0 auto;
+    background: $bg-nav-color;
+    overflow: hidden;
+    ul {
+        margin: 0 auto;
+        padding: 20px 0px;
+        list-style: none;
+        font-family: $font-nav;
+        font-weight: $font-wt;
+    }
+    li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            padding: 20px;
+            color: $font-nav-color;
+        }
+        a:hover {
+            background-color: $bg-color;
+            color: $font-color;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1,
+    nav,
+    ul,
+    li,
+    a {
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        padding: 0px;
+        ;
+        ul {
+            // padding: 0px 20px;
+            li {
+                padding: 20px 20px;
+                a {
+                    width: 100%;
+                }
+            }
+            li:hover {
+                background: $bg-color;
+                padding: 20px 0;
+                a:hover {
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
