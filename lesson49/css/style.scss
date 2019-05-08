@@ -41,10 +41,15 @@ serif;
 $font-m:'Quicksand',
 sans-serif;
 $font-wt: bolder;
+$font-col-blue:blue;
 $font-col-gr:green;
 $font-col-purple:purple;
 $bg-color: rgba(255, 255, 0, 0.39);
-$font-col-blue:blue;
+$f-size1:2em;
+$f-size2:3em;
+$f-size3:.5em;
+$f-size4:8em;
+$f-size5:10em;
 * {
     box-sizing: border-box;
 }
@@ -61,7 +66,7 @@ header {
     height: 10rem;
     background-color: $bg-color;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: $f-size1;
     h1 {
         font-family: $font-stack;
     }
@@ -71,32 +76,32 @@ main {
     margin: .5rem;
     font-family: $font-main;
     .huge {
-        font-size: 10rem;
+        font-size: $f-size5;
         color: $font-col-blue;
     }
     .big {
-        font-size: 8rem;
+        font-size: $f-size4;
         color: $font-col-blue;
     }
     .medium {
         font-family: $font-m;
-        font-size: 3rem;
+        font-size: $f-size2;
         color: $font-col-purple;
     }
     .middle {
-        font-size: 3rem;
+        font-size: $f-size2;
         color: $font-col-purple;
     }
     .small {
         font-family: $font-m;
-        font-size: 2rem;
+        font-size: $f-size1;
         color: $font-col-gr;
     }
     .tiny {
         font-family: $font-m;
-        font-size: .5rem;
+        font-size: $f-size3;
         color: $font-col-gr;
-        margin-bottom: 2rem;
+        margin-bottom: $f-size1;
     }
 }
 

@@ -50,7 +50,7 @@ header {
   height: 10rem;
   background-color: rgba(255, 255, 0, 0.39);
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2em;
 }
 
 header h1 {
@@ -63,37 +63,37 @@ main {
 }
 
 main .huge {
-  font-size: 10rem;
+  font-size: 10em;
   color: blue;
 }
 
 main .big {
-  font-size: 8rem;
+  font-size: 8em;
   color: blue;
 }
 
 main .medium {
   font-family: "Quicksand", sans-serif;
-  font-size: 3rem;
+  font-size: 3em;
   color: purple;
 }
 
 main .middle {
-  font-size: 3rem;
+  font-size: 3em;
   color: purple;
 }
 
 main .small {
   font-family: "Quicksand", sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   color: green;
 }
 
 main .tiny {
   font-family: "Quicksand", sans-serif;
-  font-size: .5rem;
+  font-size: 0.5em;
   color: green;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 footer {

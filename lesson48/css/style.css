@@ -55,8 +55,10 @@ h1 {
 
 nav {
   margin: 0 auto;
+  padding: 0 px;
   background: blue;
   overflow: hidden;
+  text-align: center;
 }
 
 nav ul {
@@ -83,26 +85,25 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  h1,
   nav,
   ul,
   li,
   a {
     width: 100%;
     text-align: center;
+    padding: 0;
+    margin: 0 auto;
   }
   nav {
     padding: 0px;
   }
   nav ul li {
-    padding: 20px 20px;
-  }
-  nav ul li a {
-    width: 100%;
+    padding: 20px;
   }
   nav ul li:hover {
     background: lightblue;
-    padding: 20px 0;
+    padding: 20px;
+    color: blue;
   }
   nav ul li:hover a:hover {
     margin: 0;
