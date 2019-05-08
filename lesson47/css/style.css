@@ -61,3 +61,7 @@ h3 {
 hr {
     color: blue;
 }
+
+.city {
+    display: none
+}

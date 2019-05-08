@@ -4,22 +4,30 @@
 <head>
     <title>W3 CSS-Example</title>
 
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
+    </meta>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
 
     <link href="https://fonts.googleapis.com/css?family=Allura|Architects+Daughter|Black+Ops+One|Cinzel+Decorative|Didact+Gothic|Diplomata|Great+Vibes|Gugi|Indie+Flower|Josefin+Slab|Lobster|Modak|Montserrat+Alternates|Muli|Nixie+One|Orbitron|Pacifico|Petit+Formal+Script|Pinyon+Script|Quicksand|Rajdhani|Raleway+Dots|Reem+Kufi|Righteous|Rochester|Satisfy|Syncopate|Tangerine|Ubuntu|Uncial+Antiqua"
-        rel="stylesheet"></link>
+        rel="stylesheet">
+    </link>
 
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Barcode+39|Michroma|Monoton|Petit+Formal+Script|Press+Start+2P|Syncopate|Tangerine" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Libre+Barcode+39|Michroma|Monoton|Petit+Formal+Script|Press+Start+2P|Syncopate|Tangerine" rel="stylesheet">
+    </link>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </link>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </link>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
-
-    <link href="css/style.css" rel="stylesheet"></link>
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </link> -->
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="css/style.css" rel="stylesheet">
+    </link>
 </head>
 
 <body>
@@ -153,7 +161,7 @@
 
     <br>
 
-    <button class="w3-circle w3-hover-white w3-blue w3-xlarge">+</button>
+    <button class="w3-circle w3-hover-white w3-blue w3-xxlarge">+</button>
 
     <br>
     <hr>
@@ -358,16 +366,168 @@
 
         <br>
         <br>
+
         <div class="w3-container w w3-padding w3-blue">
             <div class="w3-container w3-center w3-half">
                 <h3>Lorem Ipsum</h3>
             </div>
+
             <div class="w3-container w3-half w3-yellow">
                 <h3>Lorem Ipsum</h3>
             </div>
         </div>
+
+        <br>
+        <hr>
+
+        <div class="w3-container">
+            <h2>Modal Tabs</h2>
+
+            <p>
+                In this example we add tabbed content inside the modal.
+            </p>
+
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-hover-red w3-blue">Open Tabbed Modal</button>
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-red">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-hover-white w3-red w3-xlarge w3-display-topright">&times;</span>
+
+                        <h2>Header</h2>
+                    </header>
+
+                    <div class="w3-bar w3-border-bottom">
+                        <button class="tablink w3-hover-red w3-bar-item w3-button" onclick="openCity(event, 'Erste')">Erste</button>
+
+                        <button class="tablink  w3-hover-red w3-bar-item w3-button" onclick="openCity(event, 'Zweite')">Zweite</button>
+
+                        <button class="tablink  w3-hover-red w3-bar-item w3-button" onclick="openCity(event, 'Dritte')">Dritte</button>
+                    </div>
+
+                    <div id="Erste" class="w3-container city">
+                        <h1>Erste</h1>
+
+                        <p>
+                            Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+                        </p>
+
+                        <p>
+                            Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+                        </p>
+                    </div>
+
+                    <div id="Zweite" class="w3-container city">
+                        <h1>Zweite</h1>
+
+                        <p>
+                            Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+
+                    <div id="Dritte" class="w3-container city">
+                        <h1>Dritte</h1>
+
+                        <p>
+                            Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.
+                        </p>
+
+                        <br>
+                    </div>
+
+                    <div class="w3-container  w3-padding">
+                        <button class="w3-button  w3-hover-red w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementsByClassName("tablink")[0].click();
+
+            function openCity(evt, cityName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].classList.remove("w3-light-red");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.classList.add("w3-light-red");
+            }
+        </script>
+
         <br>
         <br>
+        <hr>
+
+        <div class="w3-container">
+            <h2>Tooltips</h2>
+            <p>
+                Hover over the sentence below!
+            </p>
+            <p class="w3-tooltip">
+                London
+
+                <span class="w3-text">
+                    (<em>9 million inhabitants</em>)
+                </span> is the capital of England.
+            </p>
+        </div>
+        <br>
+        <hr>
+
+        <div class="w3-container">
+            <h2>Tooltips</h2>
+
+            <p>
+                Hover over the sentence below!
+            </p>
+
+            <p class="w3-tooltip">
+                London
+
+                <span class="w3-text w3-round-xxlarge w3-red w3-tag  w3-animate-opacity">
+                    <b>9 million inhabitants</b>
+                </span> is the capital of England.
+            </p>
+        </div>
+
+        <hr>
+        <br>
+
+        <div class="w3-container">
+            <h2>Image as a Tooltip</h2>
+
+            <h2>Hover Over the Picture!</h2>
+
+            <div class="w3-tooltip">
+                <p class="w3-text">
+                    A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars typically have four wheels.(Wikipedia)
+                </p>
+
+                <img src="img/car.jpg" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="w3-container">
+            <h2>Image as a Tooltip</h2>
+            <h2>Hover Over the Picture!</h2>
+
+            <div class="w3-tooltip">
+                <img src="img/car.jpg" alt="Car" style="width:100%">
+                <p class="w3-text">A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars typically have four wheels.(Wikipedia)</p>
+            </div>
+        </div>
 
         <div class="w3-container w3-blue w3-right-align w3-border">
             <h3>footer</h3>
@@ -376,5 +536,3 @@
 </body>
 
 </html>
-
-s
