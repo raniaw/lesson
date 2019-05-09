@@ -42,16 +42,21 @@ $font-m:'Quicksand',
 sans-serif;
 $font-wt: bolder;
 $font-col-white:white;
-$font-col-card1:#652011;
+$font-col-h4:#652011;
 $font-col-head:#34320c;
 $font-col-txt:#544b4c;
 $bg-nav-color1: #d22129;
 $bg-nav-color2:#ff5b61;
-$f-size1:2em;
-$f-size2:3em;
-$f-size3:.5em;
-$f-size4:8em;
-$f-size5:10em;
+$bg-bord-col:#652011;
+$bg-box-shad-col1: 2px 4px 8px 3px #652011;
+$bg-box-shad-col2: 2px 1px 12px 3px #652011;
+$f-size1:1em;
+$f-size2:1.5em;
+$f-size3:2em;
+$f-size4:3em;
+$f-size5:4em;
+$f-txt-al-center:center;
+$f-txt-al-justify: justify;
 * {
     box-sizing: border-box;
 }
@@ -76,13 +81,14 @@ footer {
 }
 
 header {
-    height: 100px;
     h1 {
         padding: 30px;
+        font-size: $f-size5;
     }
 }
 
 nav {
+    box-shadow: $bg-box-shad-col1;
     ul {
         li {
             list-style: none;
@@ -90,6 +96,29 @@ nav {
             a {
                 color: $font-col-white;
                 text-decoration: none;
+                font-size: $f-size3;
+            }
+        }
+    }
+}
+
+main {
+    .cards {
+        text-align: $f-txt-al-center;
+        .card {
+            box-shadow: $bg-box-shad-col2;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid $bg-bord-col;
+            display: inline-block;
+            h4 {
+                color: $font-col-h4;
+                text-align: $f-txt-al-center;
+                font-size: $f-size2;
+            }
+            p {
+                color: $font-col-txt;
+                font-size: $f-size1;
             }
         }
     }
@@ -103,6 +132,7 @@ footer {
             a {
                 color: $font-col-white;
                 text-decoration: none;
+                font-size: $f-size2;
             }
         }
     }
@@ -125,5 +155,11 @@ footer {
         text-align: center;
         margin: 0 auto;
         padding: 0px;
+    }
+    nav {
+        margin: 0;
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }
