@@ -124,6 +124,23 @@ main {
     }
 }
 
+.portion {
+    margin: 10px;
+    text-align: $f-txt-al-center;
+    max-width: 100%;
+    figure {
+        padding: 20px;
+        border: 1px solid #652011;
+        box-shadow: $bg-box-shad-col2;
+        img {
+            max-width: 100%;
+        }
+    }
+    article {
+        p {}
+    }
+}
+
 footer {
     ul {
         li {
