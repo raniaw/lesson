@@ -65,22 +65,37 @@ html,
 body {
     margin: 0;
     border: 0;
-    padding: 0;
+    // padding: 0;
     box-sizing: border-box;
 }
 
+// header {
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     width: 100%;
+// }
+// nav {
+//     position: relative;
+//     margin-top: 0;
+//     left: 0;
+//     top: 0;
+// }
 header,
 nav,
 footer {
     margin: 0 auto;
-    padding: 30px;
+    // padding: 20px;
     background-color: $bg-nav-color1;
     color: $font-col-white;
     font-family: $font-stack;
     text-align: center;
+    width: 100%;
 }
 
 header {
+    position: relative;
+    top: 0px;
     h1 {
         padding: 30px;
         font-size: $f-size5;
@@ -88,15 +103,23 @@ header {
 }
 
 nav {
+    position: relative;
+    top: 0px;
     box-shadow: $bg-box-shad-col1;
+    text-align: $f-txt-al-center;
     ul {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: -44px;
         li {
             list-style: none;
             display: inline-block;
+            padding: 20px 0px;
             a {
                 color: $font-col-white;
                 text-decoration: none;
                 font-size: $f-size3;
+                padding: 20px 30px;
             }
         }
     }
@@ -126,9 +149,11 @@ main {
 
 .portion {
     margin: 10px;
+    padding: 10px;
     text-align: $f-txt-al-center;
     max-width: 100%;
     figure {
+        max-width: 100%;
         padding: 20px;
         border: 1px solid #652011;
         box-shadow: $bg-box-shad-col2;
@@ -137,13 +162,14 @@ main {
         }
     }
     article {
-        p {}
+        // p {}
     }
 }
 
 footer {
     ul {
         li {
+            padding: 10px;
             list-style: none;
             display: inline-block;
             a {
@@ -171,12 +197,18 @@ footer {
         width: 100%;
         text-align: center;
         margin: 0 auto;
-        padding: 0px;
+        // padding: 0px;
     }
-    nav {
-        margin: 0;
-        position: relative;
-        left: 0;
-        top: 0;
-    }
+    // header {
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    //     // position: relative;
+    // }
+    // nav {
+    //     position: relative;
+    //     margin-top: 0px;
+    //     left: 0;
+    //     top: 0;
+    // }
 }

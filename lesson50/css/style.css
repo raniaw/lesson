@@ -41,7 +41,6 @@ html,
 body {
   margin: 0;
   border: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -50,11 +49,16 @@ header,
 nav,
 footer {
   margin: 0 auto;
-  padding: 30px;
   background-color: #d22129;
   color: white;
   font-family: "Didact Gothic", sans-serif;
   text-align: center;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  top: 0px;
 }
 
 header h1 {
@@ -63,19 +67,30 @@ header h1 {
 }
 
 nav {
+  position: relative;
+  top: 0px;
   -webkit-box-shadow: 2px 4px 8px 3px #652011;
           box-shadow: 2px 4px 8px 3px #652011;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: -44px;
 }
 
 nav ul li {
   list-style: none;
   display: inline-block;
+  padding: 20px 0px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 2em;
+  padding: 20px 30px;
 }
 
 main .cards {
@@ -104,11 +119,13 @@ main .cards .card p {
 
 .portion {
   margin: 10px;
+  padding: 10px;
   text-align: center;
   max-width: 100%;
 }
 
 .portion figure {
+  max-width: 100%;
   padding: 20px;
   border: 1px solid #652011;
   -webkit-box-shadow: 2px 1px 12px 3px #652011;
@@ -120,6 +137,7 @@ main .cards .card p {
 }
 
 footer ul li {
+  padding: 10px;
   list-style: none;
   display: inline-block;
 }
@@ -146,13 +164,6 @@ footer ul li a {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding: 0px;
-  }
-  nav {
-    margin: 0;
-    position: relative;
-    left: 0;
-    top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
