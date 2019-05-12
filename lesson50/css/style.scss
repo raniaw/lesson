@@ -40,11 +40,15 @@ $font-main: 'Josefin Slab',
 serif;
 $font-m:'Quicksand',
 sans-serif;
+$font-art:'Great Vibes',
+cursive;
 $font-wt: bolder;
 $font-col-white:white;
 $font-col-h4:#652011;
-$font-col-head:#34320c;
+$font-col-head:#1d5209;
 $font-col-txt:#544b4c;
+$bg-but-color:#652011;
+$bg-but-color1:#d22129;
 $bg-nav-color1: #d22129;
 $bg-nav-color2:#ff5b61;
 $bg-bord-col:#652011;
@@ -64,28 +68,14 @@ $f-txt-al-justify: justify;
 html,
 body {
     margin: 0;
-    border: 0;
-    // padding: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-// header {
-//     position: absolute;
-//     top: 0px;
-//     left: 0px;
-//     width: 100%;
-// }
-// nav {
-//     position: relative;
-//     margin-top: 0;
-//     left: 0;
-//     top: 0;
-// }
 header,
 nav,
 footer {
-    margin: 0 auto;
-    // padding: 20px;
+    margin: 0px;
     background-color: $bg-nav-color1;
     color: $font-col-white;
     font-family: $font-stack;
@@ -96,6 +86,7 @@ footer {
 header {
     position: relative;
     top: 0px;
+    padding: 5px;
     h1 {
         padding: 30px;
         font-size: $f-size5;
@@ -108,14 +99,27 @@ nav {
     box-shadow: $bg-box-shad-col1;
     text-align: $f-txt-al-center;
     ul {
-        margin: 0 auto;
         width: 100%;
-        margin-top: -44px;
+        margin: 0px;
+        padding: 0px;
         li {
             list-style: none;
             display: inline-block;
             padding: 20px 0px;
             a {
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size3;
+                padding: 20px 30px;
+            }
+        }
+        li:hover {
+            background-color: $bg-nav-color2;
+            list-style: none;
+            display: inline-block;
+            padding: 20px 0px;
+            a:hover {
+                background-color: $bg-nav-color2;
                 color: $font-col-white;
                 text-decoration: none;
                 font-size: $f-size3;
@@ -130,7 +134,7 @@ main {
         text-align: $f-txt-al-center;
         .card {
             box-shadow: $bg-box-shad-col2;
-            margin: 10px;
+            margin: 15px 5px;
             padding: 20px;
             border: 2px solid $bg-bord-col;
             display: inline-block;
@@ -138,10 +142,32 @@ main {
                 color: $font-col-h4;
                 text-align: $f-txt-al-center;
                 font-size: $f-size2;
+                font-family: $font-m;
             }
             p {
                 color: $font-col-txt;
                 font-size: $f-size1;
+                font-family: $font-main;
+            }
+            button {
+                background-color: $bg-but-color;
+                font-size: $f-size1;
+                font-family: $font-stack;
+                color: $font-col-white;
+                border-radius: 25px;
+                padding: 10px;
+                border: 1px solid $bg-but-color;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: $bg-but-color1;
+                font-size: $f-size1;
+                font-family: $font-stack;
+                color: $font-col-white;
+                border-radius: 25px;
+                padding: 10px;
+                border: 1px solid $bg-but-color1;
+                cursor: pointer;
             }
         }
     }
@@ -153,8 +179,10 @@ main {
     text-align: $f-txt-al-center;
     max-width: 100%;
     figure {
-        max-width: 100%;
+        width: 45%;
+        float: left;
         padding: 20px;
+        margin: 20px;
         border: 1px solid #652011;
         box-shadow: $bg-box-shad-col2;
         img {
@@ -162,20 +190,102 @@ main {
         }
     }
     article {
-        // p {}
+        width: 45%;
+        float: left;
+        position: relative;
+        left: 0px;
+        text-align: $f-txt-al-justify;
+        h3 {
+            color: $font-col-head;
+            font-size: $f-size3;
+            font-family: $font-art;
+            text-align: $f-txt-al-center;
+        }
+        p {
+            color: $font-col-txt;
+            text-align: $f-txt-al-justify;
+            margin: 10px 10px;
+            font-size: $f-size1;
+            padding: 10px 20px;
+            font-family: $font-m;
+        }
+    }
+}
+
+aside {
+    text-align: $f-txt-al-center;
+    width: 100%;
+    float: left;
+    position: relative;
+    left: 0px;
+    h3 {
+        color: $font-col-head;
+        font-size: $f-size3;
+        font-family: $font-art;
+    }
+    p {
+        color: $font-col-txt;
+        text-align: $f-txt-al-justify;
+        margin: 20px 10px;
+        font-size: $f-size1;
+        padding: 0px 10px;
+        font-family: $font-m;
+    }
+}
+
+section {
+    text-align: $f-txt-al-center;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    float: left;
+    h3 {
+        color: $font-col-head;
+        font-size: $f-size3;
+        font-family: $font-art;
+    }
+    p {
+        color: $font-col-txt;
+        text-align: $f-txt-al-justify;
+        margin: 20px 10px;
+        font-size: $f-size1;
+        padding: 0px 10px;
+        font-family: $font-m;
     }
 }
 
 footer {
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    box-shadow: $bg-box-shad-col1;
+    text-align: $f-txt-al-center;
     ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         li {
-            padding: 10px;
             list-style: none;
             display: inline-block;
+            padding: 10px 0px;
             a {
                 color: $font-col-white;
                 text-decoration: none;
                 font-size: $f-size2;
+                padding: 10px 30px;
+            }
+        }
+        li:hover {
+            background-color: $bg-nav-color2;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0px;
+            a:hover {
+                background-color: $bg-nav-color2;
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size2;
+                padding: 10px 30px;
             }
         }
     }
@@ -188,6 +298,7 @@ footer {
     li,
     main,
     figure,
+    article,
     .cards,
     .portion,
     aside,
@@ -197,18 +308,24 @@ footer {
         width: 100%;
         text-align: center;
         margin: 0 auto;
-        // padding: 0px;
     }
-    // header {
-    //     position: absolute;
-    //     top: 0px;
-    //     left: 0px;
-    //     // position: relative;
-    // }
-    // nav {
-    //     position: relative;
-    //     margin-top: 0px;
-    //     left: 0;
-    //     top: 0;
-    // }
+    .portion {
+        margin: 0px;
+        padding: 10px;
+        text-align: $f-txt-al-center;
+        max-width: 100%;
+        figure {
+            margin: 0px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #652011;
+            box-shadow: $bg-box-shad-col2;
+            img {
+                max-width: 100%;
+            }
+        }
+        article {
+            width: 100%;
+        }
+    }
 }

@@ -40,7 +40,7 @@
 html,
 body {
   margin: 0;
-  border: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ body {
 header,
 nav,
 footer {
-  margin: 0 auto;
+  margin: 0px;
   background-color: #d22129;
   color: white;
   font-family: "Didact Gothic", sans-serif;
@@ -59,6 +59,7 @@ footer {
 header {
   position: relative;
   top: 0px;
+  padding: 5px;
 }
 
 header h1 {
@@ -75,9 +76,9 @@ nav {
 }
 
 nav ul {
-  margin: 0 auto;
   width: 100%;
-  margin-top: -44px;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav ul li {
@@ -93,6 +94,21 @@ nav ul li a {
   padding: 20px 30px;
 }
 
+nav ul li:hover {
+  background-color: #ff5b61;
+  list-style: none;
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+nav ul li:hover a:hover {
+  background-color: #ff5b61;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 20px 30px;
+}
+
 main .cards {
   text-align: center;
 }
@@ -100,7 +116,7 @@ main .cards {
 main .cards .card {
   -webkit-box-shadow: 2px 1px 12px 3px #652011;
           box-shadow: 2px 1px 12px 3px #652011;
-  margin: 10px;
+  margin: 15px 5px;
   padding: 20px;
   border: 2px solid #652011;
   display: inline-block;
@@ -110,11 +126,35 @@ main .cards .card h4 {
   color: #652011;
   text-align: center;
   font-size: 1.5em;
+  font-family: "Quicksand", sans-serif;
 }
 
 main .cards .card p {
   color: #544b4c;
   font-size: 1em;
+  font-family: "Josefin Slab", serif;
+}
+
+main .cards .card button {
+  background-color: #652011;
+  font-size: 1em;
+  font-family: "Didact Gothic", sans-serif;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #652011;
+  cursor: pointer;
+}
+
+main .cards .card button:hover {
+  background-color: #d22129;
+  font-size: 1em;
+  font-family: "Didact Gothic", sans-serif;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #d22129;
+  cursor: pointer;
 }
 
 .portion {
@@ -125,8 +165,10 @@ main .cards .card p {
 }
 
 .portion figure {
-  max-width: 100%;
+  width: 45%;
+  float: left;
   padding: 20px;
+  margin: 20px;
   border: 1px solid #652011;
   -webkit-box-shadow: 2px 1px 12px 3px #652011;
           box-shadow: 2px 1px 12px 3px #652011;
@@ -136,16 +178,117 @@ main .cards .card p {
   max-width: 100%;
 }
 
+.portion article {
+  width: 45%;
+  float: left;
+  position: relative;
+  left: 0px;
+  text-align: justify;
+}
+
+.portion article h3 {
+  color: #1d5209;
+  font-size: 2em;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+
+.portion article p {
+  color: #544b4c;
+  text-align: justify;
+  margin: 10px 10px;
+  font-size: 1em;
+  padding: 10px 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+aside {
+  text-align: center;
+  width: 100%;
+  float: left;
+  position: relative;
+  left: 0px;
+}
+
+aside h3 {
+  color: #1d5209;
+  font-size: 2em;
+  font-family: "Great Vibes", cursive;
+}
+
+aside p {
+  color: #544b4c;
+  text-align: justify;
+  margin: 20px 10px;
+  font-size: 1em;
+  padding: 0px 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+section {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  float: left;
+}
+
+section h3 {
+  color: #1d5209;
+  font-size: 2em;
+  font-family: "Great Vibes", cursive;
+}
+
+section p {
+  color: #544b4c;
+  text-align: justify;
+  margin: 20px 10px;
+  font-size: 1em;
+  padding: 0px 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+footer {
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  -webkit-box-shadow: 2px 4px 8px 3px #652011;
+          box-shadow: 2px 4px 8px 3px #652011;
+  text-align: center;
+}
+
+footer ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 footer ul li {
-  padding: 10px;
   list-style: none;
   display: inline-block;
+  padding: 10px 0px;
 }
 
 footer ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  padding: 10px 30px;
+}
+
+footer ul li:hover {
+  background-color: #ff5b61;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+footer ul li:hover a:hover {
+  background-color: #ff5b61;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 10px 30px;
 }
 
 @media screen and (max-width: 600px) {
@@ -155,6 +298,7 @@ footer ul li a {
   li,
   main,
   figure,
+  article,
   .cards,
   .portion,
   aside,
@@ -164,6 +308,26 @@ footer ul li a {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+  }
+  .portion {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .portion figure {
+    margin: 0px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #652011;
+    -webkit-box-shadow: 2px 1px 12px 3px #652011;
+            box-shadow: 2px 1px 12px 3px #652011;
+  }
+  .portion figure img {
+    max-width: 100%;
+  }
+  .portion article {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
