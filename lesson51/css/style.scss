@@ -27,42 +27,108 @@
     font-family: 'Reem Kufi', sans-serif;
     font-family: 'Cinzel Decorative', cursive;
     font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
     font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
     font-family: 'Nixie One', cursive;
     font-family: 'Montserrat', sans-serif;
 
 */
 
 //variablen
-$font-stack: 'Didact Gothic',
-sans-serif;
+$font-stack: 'Poiret One',
+cursive;
 $font-main: 'Josefin Slab',
 serif;
 $font-m:'Quicksand',
 sans-serif;
-$font-art:'Great Vibes',
+$font-art:'Petit Formal Script',
 cursive;
 $font-wt: bolder;
+$font-wt-default:100;
 $font-col-white:white;
 $font-col-nav:#0f4207;
+$font-col-header:#0f4207;
 $font-col-head:#a40100;
 $font-col-txt:#544b4c;
 $bg-color:#f0fffa;
 $bg-but-color:#652011;
 $bg-but-color1:#189e03;
+$bg-nav-color1:#a40100;
 $bg-nav-color2: #0f4207;
 $bg-nav-color3:#138102;
 $bg-nav-color4:#ffc701;
 $bg-bord-col:#2b9401;
-$bg-box-shad-col1: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
-$bg-box-shad-col2: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+$bg-box-shad-col1: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+$bg-box-shad-col2: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
 $f-size1:1em;
-$f-size2:1.5em;
-$f-size3:2em;
-$f-size4:3em;
-$f-size5:4em;
+$f-size2:1.3em;
+$f-size3:1.8em;
+$f-size4:2.5em;
+$f-size5:3.3em;
 $f-txt-al-center:center;
 $f-txt-al-justify: justify;
+//mixin
+@mixin txt-format($text-color, $align, $font-family, $font-size, $font-weight) {
+    color: $text-color;
+    text-align: $align;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin link-format($text-color, $align, $bg-color, $font-size, $font-weight) {
+    color: $text-color;
+    text-align: $align;
+    $background: $bg-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin links {
+    transition: ease-in-out 500ms;
+    text-transform: uppercase;
+    &:hover {
+        color: $font-col-nav;
+        text-align: $f-txt-al-center;
+        background: $bg-nav-color4;
+        font-size: $f-size2;
+        font-weight: $font-wt;
+    }
+    &:active {
+        background: $bg-nav-color1;
+        color: $font-col-white;
+    }
+}
+
+@mixin links-unten {
+    transition: ease-in-out 500ms;
+    text-transform: lowercase;
+    &:hover {
+        color: $font-col-nav;
+        text-align: $f-txt-al-center;
+        background: $bg-nav-color4;
+        font-size: $f-size1;
+        font-weight: $font-wt;
+    }
+    &:active {
+        background: $bg-nav-color1;
+        color: $font-col-white;
+    }
+}
+
+%light-text {
+    float: left;
+    border: 1px solid $bg-bord-col;
+    background: $bg-color;
+    text-align: center;
+    color: $font-col-txt;
+    font-size: 1em;
+    padding: 40px;
+    font-family: $font-main;
+    font-weight: $font-wt;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -75,7 +141,6 @@ body {
     background: $bg-color;
 }
 
-header,
 nav,
 footer {
     margin: 0px;
@@ -87,15 +152,17 @@ footer {
 }
 
 header {
+    width: 100%;
     position: relative;
     top: 0px;
     padding: 5px;
     h1 {
+        @include txt-format($font-col-header, $f-txt-al-center, $font-stack, $f-size4, $font-wt);
         padding: 0px;
-        font-size: $f-size4;
     }
     h2 {
-        font-size: $f-size3;
+        @include txt-format($font-col-header, $f-txt-al-center, $font-stack, $f-size3, $font-wt);
+        // font-weight: bold;
     }
 }
 
@@ -115,34 +182,29 @@ nav {
             display: inline-block;
             padding: 10px 0px;
             a {
-                color: $font-col-white;
+                @include txt-format($font-col-white, $f-txt-al-center, $font-stack, $f-size2, $font-wt);
                 text-decoration: none;
-                font-size: $f-size2;
                 padding: 10px 30px;
+                @include links();
             }
         }
-        li:hover {
-            background-color: $bg-nav-color4;
-            list-style: none;
-            display: inline-block;
-            padding: 10px 0px;
-            a:hover {
-                background-color: $bg-nav-color4;
-                color: $font-col-white;
-                text-decoration: none;
-                font-size: $f-size2;
-                padding: 10px 30px;
-                color: $font-col-nav;
-            }
-        }
+        // li:hover {
+        //     background-color: $bg-nav-color4;
+        //     list-style: none;
+        //     display: inline-block;
+        //     padding: 10px 0px;
+        //     a:hover {
+        //         @include link-format($font-col-nav, $f-txt-al-center, $bg-nav-color4, $f-size2, $font-wt);
+        //         text-decoration: none;
+        //         padding: 10px 30px;
+        //     }
+        // }
     }
 }
 
 .portion {
-    // margin: 10px;
-    // padding: 10px;
-    // text-align: $f-txt-al-center;
-    // max-width: 100%;
+    width: 100%;
+    text-align: center;
     figure {
         width: 27%;
         display: flex;
@@ -157,48 +219,27 @@ nav {
             max-width: 100%;
         }
     }
-    article {
-        width: 45%;
-        float: left;
-        position: relative;
-        left: 0px;
-        text-align: $f-txt-al-justify;
-        h3 {
-            color: $font-col-head;
-            font-size: $f-size3;
-            font-family: $font-art;
-            text-align: $f-txt-al-center;
-        }
-        p {
-            color: $font-col-txt;
-            text-align: $f-txt-al-justify;
-            margin: 10px 10px;
-            font-size: $f-size1;
-            padding: 10px 20px;
-            font-family: $font-m;
-        }
-    }
 }
 
 section {
-    text-align: $f-txt-al-center;
     width: 100%;
     position: relative;
     left: 0px;
     float: left;
     h3 {
-        color: $font-col-head;
-        font-size: $f-size3;
-        font-family: $font-art;
+        @include txt-format($font-col-head, $f-txt-al-center, $font-art, $f-size2, $font-wt);
     }
     p {
-        color: $font-col-txt;
-        text-align: $f-txt-al-justify;
+        @include txt-format($font-col-txt, $f-txt-al-justify, $font-m, $f-size1, $font-wt-default);
         margin: 20px 10px;
-        font-size: $f-size1;
         padding: 0px 10px;
-        font-family: $font-m;
     }
+}
+
+.text {
+    @extend %light-text;
+    margin: 20px;
+    border-radius: 30%;
 }
 
 footer {
@@ -216,26 +257,23 @@ footer {
             display: inline-block;
             padding: 10px 0px;
             a {
-                color: $font-col-white;
+                @include txt-format($font-col-white, $f-txt-al-center, $font-stack, $f-size1, $font-wt);
                 text-decoration: none;
-                font-size: $f-size1;
                 padding: 10px 30px;
+                @include links-unten();
             }
         }
-        li:hover {
-            background-color: $bg-nav-color4;
-            list-style: none;
-            display: inline-block;
-            padding: 10px 0px;
-            a:hover {
-                background-color: $bg-nav-color4;
-                color: $font-col-white;
-                text-decoration: none;
-                font-size: $f-size1;
-                padding: 10px 30px;
-                color: $font-col-nav;
-            }
-        }
+        // li:hover {
+        //     background-color: $bg-nav-color4;
+        //     list-style: none;
+        //     display: inline-block;
+        //     padding: 10px 0px;
+        //     a:hover {
+        //         @include link-format($font-col-nav, $f-txt-al-center, $bg-nav-color4, $f-size1, $font-wt);
+        //         text-decoration: none;
+        //         padding: 10px 30px;
+        //     }
+        // }
     }
 }
 
@@ -250,7 +288,8 @@ footer {
     aside,
     section,
     footer {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         text-align: center;
         margin: 0 auto;

@@ -27,11 +27,25 @@
     font-family: 'Reem Kufi', sans-serif;
     font-family: 'Cinzel Decorative', cursive;
     font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
     font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
     font-family: 'Nixie One', cursive;
     font-family: 'Montserrat', sans-serif;
 
 */
+.text {
+  float: left;
+  border: 1px solid #2b9401;
+  background: #f0fffa;
+  text-align: center;
+  color: #544b4c;
+  font-size: 1em;
+  padding: 40px;
+  font-family: "Josefin Slab", serif;
+  font-weight: bolder;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -46,30 +60,38 @@ body {
   background: #f0fffa;
 }
 
-header,
 nav,
 footer {
   margin: 0px;
   background-color: #138102;
   color: white;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Poiret One", cursive;
   text-align: center;
   width: 100%;
 }
 
 header {
+  width: 100%;
   position: relative;
   top: 0px;
   padding: 5px;
 }
 
 header h1 {
+  color: #0f4207;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 2.5em;
+  font-weight: bolder;
   padding: 0px;
-  font-size: 3em;
 }
 
 header h2 {
-  font-size: 2em;
+  color: #0f4207;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 1.8em;
+  font-weight: bolder;
 }
 
 nav {
@@ -81,8 +103,8 @@ nav {
           justify-content: center;
   position: relative;
   top: 0px;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
-          box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+  -webkit-box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+          box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
   text-align: center;
 }
 
@@ -100,25 +122,33 @@ nav ul li {
 
 nav ul li a {
   color: white;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 1.3em;
+  font-weight: bolder;
   text-decoration: none;
-  font-size: 1.5em;
   padding: 10px 30px;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
+  text-transform: uppercase;
 }
 
-nav ul li:hover {
-  background-color: #ffc701;
-  list-style: none;
-  display: inline-block;
-  padding: 10px 0px;
-}
-
-nav ul li:hover a:hover {
-  background-color: #ffc701;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  padding: 10px 30px;
+nav ul li a:hover {
   color: #0f4207;
+  text-align: center;
+  background: #ffc701;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+nav ul li a:active {
+  background: #a40100;
+  color: white;
+}
+
+.portion {
+  width: 100%;
+  text-align: center;
 }
 
 .portion figure {
@@ -136,40 +166,15 @@ nav ul li:hover a:hover {
   padding: 20px;
   margin: 20px;
   border: 1px solid #2b9401;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
-          box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+  -webkit-box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+          box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
 }
 
 .portion figure img {
   max-width: 100%;
 }
 
-.portion article {
-  width: 45%;
-  float: left;
-  position: relative;
-  left: 0px;
-  text-align: justify;
-}
-
-.portion article h3 {
-  color: #a40100;
-  font-size: 2em;
-  font-family: "Great Vibes", cursive;
-  text-align: center;
-}
-
-.portion article p {
-  color: #544b4c;
-  text-align: justify;
-  margin: 10px 10px;
-  font-size: 1em;
-  padding: 10px 20px;
-  font-family: "Quicksand", sans-serif;
-}
-
 section {
-  text-align: center;
   width: 100%;
   position: relative;
   left: 0px;
@@ -178,25 +183,33 @@ section {
 
 section h3 {
   color: #a40100;
-  font-size: 2em;
-  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-family: "Petit Formal Script", cursive;
+  font-size: 1.3em;
+  font-weight: bolder;
 }
 
 section p {
   color: #544b4c;
   text-align: justify;
-  margin: 20px 10px;
-  font-size: 1em;
-  padding: 0px 10px;
   font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 20px 10px;
+  padding: 0px 10px;
+}
+
+.text {
+  margin: 20px;
+  border-radius: 30%;
 }
 
 footer {
   overflow: hidden;
   position: relative;
   top: 0px;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
-          box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+  -webkit-box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+          box-shadow: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
   text-align: center;
 }
 
@@ -214,25 +227,28 @@ footer ul li {
 
 footer ul li a {
   color: white;
-  text-decoration: none;
+  text-align: center;
+  font-family: "Poiret One", cursive;
   font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
   padding: 10px 30px;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
+  text-transform: lowercase;
 }
 
-footer ul li:hover {
-  background-color: #ffc701;
-  list-style: none;
-  display: inline-block;
-  padding: 10px 0px;
-}
-
-footer ul li:hover a:hover {
-  background-color: #ffc701;
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  padding: 10px 30px;
+footer ul li a:hover {
   color: #0f4207;
+  text-align: center;
+  background: #ffc701;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+footer ul li a:active {
+  background: #a40100;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -246,7 +262,13 @@ footer ul li:hover a:hover {
   aside,
   section,
   footer {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -262,8 +284,8 @@ footer ul li:hover a:hover {
     width: 100%;
     padding: 20px;
     border: #2b9401;
-    -webkit-box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
-            box-shadow: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+    -webkit-box-shadow: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
+            box-shadow: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
   }
   .portion figure img {
     max-width: 100%;
