@@ -1,0 +1,277 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+
+//variablen
+$font-stack: 'Didact Gothic',
+sans-serif;
+$font-main: 'Josefin Slab',
+serif;
+$font-m:'Quicksand',
+sans-serif;
+$font-art:'Great Vibes',
+cursive;
+$font-wt: bolder;
+$font-col-white:white;
+$font-col-nav:#0f4207;
+$font-col-head:#a40100;
+$font-col-txt:#544b4c;
+$bg-color:#f0fffa;
+$bg-but-color:#652011;
+$bg-but-color1:#189e03;
+$bg-nav-color2: #0f4207;
+$bg-nav-color3:#138102;
+$bg-nav-color4:#ffc701;
+$bg-bord-col:#2b9401;
+$bg-box-shad-col1: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+$bg-box-shad-col2: 1px 1px 2px 1px rgba(42, 147, 0, 0.682);
+$f-size1:1em;
+$f-size2:1.5em;
+$f-size3:2em;
+$f-size4:3em;
+$f-size5:4em;
+$f-txt-al-center:center;
+$f-txt-al-justify: justify;
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $bg-color;
+}
+
+header,
+nav,
+footer {
+    margin: 0px;
+    background-color: $bg-nav-color3;
+    color: $font-col-white;
+    font-family: $font-stack;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0px;
+    padding: 5px;
+    h1 {
+        padding: 0px;
+        font-size: $f-size4;
+    }
+    h2 {
+        font-size: $f-size3;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    box-shadow: $bg-box-shad-col1;
+    text-align: $f-txt-al-center;
+    ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0px;
+            a {
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size2;
+                padding: 10px 30px;
+            }
+        }
+        li:hover {
+            background-color: $bg-nav-color4;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0px;
+            a:hover {
+                background-color: $bg-nav-color4;
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size2;
+                padding: 10px 30px;
+                color: $font-col-nav;
+            }
+        }
+    }
+}
+
+.portion {
+    // margin: 10px;
+    // padding: 10px;
+    // text-align: $f-txt-al-center;
+    // max-width: 100%;
+    figure {
+        width: 27%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid $bg-bord-col;
+        box-shadow: $bg-box-shad-col1;
+        img {
+            max-width: 100%;
+        }
+    }
+    article {
+        width: 45%;
+        float: left;
+        position: relative;
+        left: 0px;
+        text-align: $f-txt-al-justify;
+        h3 {
+            color: $font-col-head;
+            font-size: $f-size3;
+            font-family: $font-art;
+            text-align: $f-txt-al-center;
+        }
+        p {
+            color: $font-col-txt;
+            text-align: $f-txt-al-justify;
+            margin: 10px 10px;
+            font-size: $f-size1;
+            padding: 10px 20px;
+            font-family: $font-m;
+        }
+    }
+}
+
+section {
+    text-align: $f-txt-al-center;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    float: left;
+    h3 {
+        color: $font-col-head;
+        font-size: $f-size3;
+        font-family: $font-art;
+    }
+    p {
+        color: $font-col-txt;
+        text-align: $f-txt-al-justify;
+        margin: 20px 10px;
+        font-size: $f-size1;
+        padding: 0px 10px;
+        font-family: $font-m;
+    }
+}
+
+footer {
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    box-shadow: $bg-box-shad-col1;
+    text-align: $f-txt-al-center;
+    ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0px;
+            a {
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size1;
+                padding: 10px 30px;
+            }
+        }
+        li:hover {
+            background-color: $bg-nav-color4;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 0px;
+            a:hover {
+                background-color: $bg-nav-color4;
+                color: $font-col-white;
+                text-decoration: none;
+                font-size: $f-size1;
+                padding: 10px 30px;
+                color: $font-col-nav;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    header,
+    nav,
+    ul,
+    li,
+    main,
+    figure,
+    .portion,
+    aside,
+    section,
+    footer {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .portion {
+        margin: 0px;
+        padding: 10px;
+        text-align: $f-txt-al-center;
+        width: 100%;
+        figure {
+            margin: 0px;
+            width: 100%;
+            padding: 20px;
+            border: $bg-bord-col;
+            box-shadow: $bg-box-shad-col2;
+            img {
+                max-width: 100%;
+            }
+        }
+        article {
+            width: 100%;
+        }
+    }
+}
