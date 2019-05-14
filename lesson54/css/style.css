@@ -1,0 +1,147 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+.title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  color: #a40100;
+}
+
+.container .ball1,
+.container .ball2,
+.container .ball3 {
+  position: absolute;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container .ball1 {
+  border: 2px solid #2b9401;
+  background-color: #189e03;
+  top: 0px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-name: at-rule;
+          animation-name: at-rule;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes at-rule {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+    top: 60%;
+  }
+}
+
+@keyframes at-rule {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+    top: 60%;
+  }
+}
+
+.container .ball2 {
+  border: 2px solid #ffc701;
+  background-color: #ffc701;
+  top: 50px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: at-rule;
+          animation-name: at-rule;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes at-rule {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+    top: 60%;
+  }
+}
+
+.container .ball3 {
+  border: 2px solid #652011;
+  background-color: #652011;
+  top: 150px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: at-rule;
+          animation-name: at-rule;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes at-rule {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+    top: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
