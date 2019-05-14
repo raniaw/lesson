@@ -1,0 +1,326 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+.animation-move {
+  height: 50px;
+  width: 50px;
+  background-color: #189e03;
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+@keyframes animation {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  border: 2px solid #2b9401;
+}
+
+.container .move {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #652011;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: forward;
+          animation-timing-function: forward;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0px;
+    background-color: #652011;
+  }
+  25% {
+    top: 150px;
+    left: 100px;
+    background-color: #ffc701;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+    background-color: #138102;
+  }
+  100% {
+    left: 0px;
+    background-color: #652011;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0px;
+    background-color: #652011;
+  }
+  25% {
+    top: 150px;
+    left: 100px;
+    background-color: #ffc701;
+  }
+  75% {
+    left: 200px;
+    top: 0px;
+    background-color: #138102;
+  }
+  100% {
+    left: 0px;
+    background-color: #652011;
+  }
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #a40100;
+  background-color: #a40100;
+}
+
+.container2 .animation-slide-in-up {
+  height: 60px;
+  width: 100%;
+  background-color: #a40100;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animation-slide-in-up;
+          animation-name: animation-slide-in-up;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation-slide-in-up {
+  from {
+    height: 60px;
+    background-color: #2b9401;
+  }
+  to {
+    height: 1px;
+    background-color: #2b9401;
+  }
+}
+
+@keyframes animation-slide-in-up {
+  from {
+    height: 60px;
+    background-color: #2b9401;
+  }
+  to {
+    height: 1px;
+    background-color: #2b9401;
+  }
+}
+
+.container3 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #a40100;
+  background-color: #a40100;
+}
+
+.container3 .animation-slide-in-down {
+  height: 60px;
+  width: 100%;
+  background-color: #2b9401;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animation-slide-in-down;
+          animation-name: animation-slide-in-down;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation-slide-in-down {
+  from {
+    height: 1px;
+    background-color: #2b9401;
+  }
+  to {
+    height: 60px;
+    background-color: #2b9401;
+  }
+}
+
+@keyframes animation-slide-in-down {
+  from {
+    height: 1px;
+    background-color: #2b9401;
+  }
+  to {
+    height: 60px;
+    background-color: #2b9401;
+  }
+}
+
+.container4 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #a40100;
+  background-color: #a40100;
+}
+
+.container4 .animation-slide-to-left {
+  height: 60px;
+  width: 100%;
+  background-color: #a40100;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animation-slide-to-left;
+          animation-name: animation-slide-to-left;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation-slide-to-left {
+  from {
+    width: 100%;
+    background-color: #2b9401;
+  }
+  to {
+    width: 0%;
+    background-color: #2b9401;
+  }
+}
+
+@keyframes animation-slide-to-left {
+  from {
+    width: 100%;
+    background-color: #2b9401;
+  }
+  to {
+    width: 0%;
+    background-color: #2b9401;
+  }
+}
+
+.container5 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #a40100;
+  background-color: #a40100;
+}
+
+.container5 .animation-slide-to-right {
+  height: 60px;
+  width: 100%;
+  background-color: #2b9401;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animation-slide-to-right;
+          animation-name: animation-slide-to-right;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animation-slide-to-right {
+  from {
+    width: 0%;
+    background-color: #2b9401;
+  }
+  to {
+    width: 100%;
+    background-color: #2b9401;
+  }
+}
+
+@keyframes animation-slide-to-right {
+  from {
+    width: 0%;
+    background-color: #2b9401;
+  }
+  to {
+    width: 100%;
+    background-color: #2b9401;
+  }
+}
+/*# sourceMappingURL=style.css.map */

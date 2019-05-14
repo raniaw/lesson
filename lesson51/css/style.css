@@ -118,32 +118,32 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0px;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  color: #0f4207;
+  text-align: center;
+  background: #ffc701;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+nav ul li:active {
+  background: #a40100;
+  color: white;
 }
 
 nav ul li a {
   color: white;
   text-align: center;
   font-family: "Poiret One", cursive;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bolder;
   text-decoration: none;
   padding: 10px 30px;
-  -webkit-transition: ease-in-out 500ms;
-  transition: ease-in-out 500ms;
-  text-transform: uppercase;
-}
-
-nav ul li a:hover {
-  color: #0f4207;
-  text-align: center;
-  background: #ffc701;
-  font-size: 1.3em;
-  font-weight: bolder;
-}
-
-nav ul li a:active {
-  background: #a40100;
-  color: white;
 }
 
 .portion {
@@ -223,6 +223,22 @@ footer ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 0px;
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
+  text-transform: lowercase;
+}
+
+footer ul li:hover {
+  color: #0f4207;
+  text-align: center;
+  background: #ffc701;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+footer ul li:active {
+  background: #a40100;
+  color: white;
 }
 
 footer ul li a {
