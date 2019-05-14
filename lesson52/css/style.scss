@@ -68,7 +68,8 @@ $f-size4:2.5em;
 $f-size5:3.3em;
 $f-txt-al-center:center;
 $f-txt-al-justify: justify;
-//mixin
+/////************   mixin  *************
+// ************  Animation  *************
 @mixin animation1 ($animation) {
     @keyframes animation {
         from {
@@ -187,6 +188,38 @@ $f-txt-al-justify: justify;
     }
 }
 
+/// ***************  Gradient ***************
+@mixin gradient($direction, $color1, $color2) {
+    background-image: linear-gradient($direction, $color1, $color2);
+}
+
+@mixin gradient2($direction, $color1, $color2, $color3) {
+    background-image: linear-gradient($direction, $color1, $color2, $color3);
+}
+
+//// ************** Style ****************
+@mixin superstyler($color, $f-size, $element) {
+    #{$element} {
+        background-color: $color;
+        font-size: $f-size;
+        &:hover {
+            background-color: lighten($color, 20%);
+        }
+    }
+}
+
+@mixin txt-styler($f-size) {
+    font-size: $f-size;
+    text-align: $f-txt-al-center;
+    font-family: $font-m;
+}
+
+///// Elementen, Selectors
+.title {
+    @include txt-styler(2em);
+}
+
+////// Animation
 .animation-move {
     height: 50px;
     width: 50px;
@@ -266,3 +299,54 @@ $f-txt-al-justify: justify;
         @include animation5(0.5s, 5s, animation-slide-to-right, alternate, forward, ease-in-out);
     }
 }
+
+//////////
+////////  Gradient
+.gradient1 {
+    height: 80px;
+    width: 600px;
+    @include gradient(to left, red, yellow);
+}
+
+.gradient2 {
+    height: 80px;
+    width: 600px;
+    @include gradient(to right, red, yellow);
+}
+
+.gradient3 {
+    height: 80px;
+    width: 300px;
+    @include gradient2(to top, red 0% 33%, yellow 33% 66%, black 66% 100%);
+}
+
+.gradient4 {
+    height: 80px;
+    width: 300px;
+    border: 1px solid grey;
+    @include gradient(to bottom, red 0% 50%, white 50% 100%);
+}
+
+.gradient5 {
+    height: 80px;
+    width: 300px;
+    border: 1px solid lightblue;
+    @include gradient2(to top, red 0% 33%, blue 33% 66%, white 66% 100%);
+}
+
+.gradient6 {
+    height: 80px;
+    width: 300px;
+    border: 1px solid lightblue;
+    @include gradient2(to top, red 0% 33%, white 33% 66%, red 66% 100%);
+}
+
+.gradient7 {
+    height: 80px;
+    width: 180px;
+    border: 1px solid lightblue;
+    @include gradient2(to left, blue 0% 33%, white 33% 66%, red 66% 100%);
+}
+
+//******** style *********
+@include superstyler(lightblue, 1.2em, '.text');

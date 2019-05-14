@@ -34,6 +34,12 @@
     font-family: 'Montserrat', sans-serif;
 
 */
+.title {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
 .animation-move {
   height: 50px;
   width: 50px;
@@ -322,5 +328,67 @@
     width: 100%;
     background-color: #2b9401;
   }
+}
+
+.gradient1 {
+  height: 80px;
+  width: 600px;
+  background-image: -webkit-gradient(linear, right top, left top, from(red), to(yellow));
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+.gradient2 {
+  height: 80px;
+  width: 600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.gradient3 {
+  height: 80px;
+  width: 300px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(33%, yellow), color-stop(66%, black));
+  background-image: linear-gradient(to top, red 0% 33%, yellow 33% 66%, black 66% 100%);
+}
+
+.gradient4 {
+  height: 80px;
+  width: 300px;
+  border: 1px solid grey;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(50%, white));
+  background-image: linear-gradient(to bottom, red 0% 50%, white 50% 100%);
+}
+
+.gradient5 {
+  height: 80px;
+  width: 300px;
+  border: 1px solid lightblue;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(33%, blue), color-stop(66%, white));
+  background-image: linear-gradient(to top, red 0% 33%, blue 33% 66%, white 66% 100%);
+}
+
+.gradient6 {
+  height: 80px;
+  width: 300px;
+  border: 1px solid lightblue;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(33%, white), color-stop(66%, red));
+  background-image: linear-gradient(to top, red 0% 33%, white 33% 66%, red 66% 100%);
+}
+
+.gradient7 {
+  height: 80px;
+  width: 180px;
+  border: 1px solid lightblue;
+  background-image: -webkit-gradient(linear, right top, left top, from(blue), color-stop(33%, white), color-stop(66%, red));
+  background-image: linear-gradient(to left, blue 0% 33%, white 33% 66%, red 66% 100%);
+}
+
+.text {
+  background-color: lightblue;
+  font-size: 1.2em;
+}
+
+.text:hover {
+  background-color: #fbfdfe;
 }
 /*# sourceMappingURL=style.css.map */
