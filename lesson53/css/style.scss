@@ -35,7 +35,8 @@
 
 */
 
-//variablen
+// ************    Variablen   **********
+// *** font-family  ***
 $font-stack: 'Poiret One',
 cursive;
 $font-main: 'Josefin Slab',
@@ -44,28 +45,35 @@ $font-m:'Quicksand',
 sans-serif;
 $font-art:'Petit Formal Script',
 cursive;
+// *** font-weight ***
 $font-wt: bolder;
 $font-wt-default:100;
+// *** font-color ***
 $font-col-white:white;
 $font-col-nav:#0f4207;
 $font-col-header:#0f4207;
 $font-col-head:#a40100;
 $font-col-txt:#544b4c;
+// *** backcround - color ***
 $bg-color:#f0fffa;
+$bg-color1:#2b9401;
 $bg-but-color:#652011;
 $bg-but-color1:#189e03;
+// *** navigation ***
 $bg-nav-color1:#a40100;
 $bg-nav-color2: #0f4207;
 $bg-nav-color3:#138102;
 $bg-nav-color4:#ffc701;
-$bg-bord-col:#2b9401;
+// *** shadow   ***
 $bg-box-shad-col1: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
 $bg-box-shad-col2: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
+// *** font-size ***
 $f-size1:1em;
 $f-size2:1.3em;
 $f-size3:1.8em;
 $f-size4:2.5em;
 $f-size5:3.3em;
+// *** text align ***
 $f-txt-al-center:center;
 $f-txt-al-justify: justify;
 /////************   Mixin  *************
@@ -87,7 +95,7 @@ $f-txt-al-justify: justify;
         font-family: $font-stack;
         color: $font-col-head;
     }
-    @else if $f-size <=2.0em and $f-size>1.2em {
+    @else if $f-size <=2.1em and $f-size>1.2em {
         font-size: $f-size;
         text-align: $f-txt-al-center;
         font-family: $font-art;
@@ -110,12 +118,12 @@ $f-txt-al-justify: justify;
 
 ///// Elementen, Selectors
 .title {
-    @include txt-styler(3.5em);
+    @include txt-styler($f-size4);
 }
 
 .main {
-    @include txt-styler(1.2em);
+    @include txt-styler($f-size1);
     h2 {
-        @include txt-styler(1.6em);
+        @include txt-styler($f-size2);
     }
 }
