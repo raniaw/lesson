@@ -1,0 +1,80 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+@media (max-width: 599px) {
+  .container {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  .header-title:before {
+    content: "for-phone-only";
+  }
+}
+
+@media (min-width: 599px) and (max-width: 800px) {
+  .container {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .header-title::before {
+    content: "for-tablet-only";
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+  .container {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .header-title::before {
+    content: "for-tablet-landscape-only";
+  }
+}
+
+@media (min-width: 1281px) {
+  .container {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+  .header-title::before {
+    content: "for-widescreening-only";
+  }
+}
+
+.header-title {
+  font-size: 1.8em;
+}
+/*# sourceMappingURL=media.css.map */

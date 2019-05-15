@@ -1,0 +1,116 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+.header-title {
+  font-size: 1.8em;
+}
+
+@media (min-width: 300px) {
+  .header-title:before {
+    content: "phone";
+  }
+}
+
+@media (min-width: 599px) {
+  .header-title:before {
+    content: "tablet";
+  }
+}
+
+@media (min-width: 801px) {
+  .header-title:before {
+    content: "tablet-landscape";
+  }
+}
+
+@media (min-width: 1281px) {
+  .header-title:before {
+    content: "desktop";
+  }
+}
+
+@media (min-width: 300px) {
+  .container {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  .container .container::before {
+    content: "";
+  }
+  .container:before {
+    content: "phone";
+  }
+}
+
+@media (min-width: 599px) {
+  .container {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .container .container::before {
+    content: "";
+  }
+  .container:before {
+    content: "tablet";
+  }
+}
+
+@media (min-width: 801px) {
+  .container {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  .container .container::before {
+    content: "";
+  }
+  .container:before {
+    content: "tablet-landscape";
+  }
+}
+
+@media (min-width: 1281px) {
+  .container {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+  .container .container::before {
+    content: "";
+  }
+  .container:before {
+    content: "desktop";
+  }
+}
+/*# sourceMappingURL=media.css.map */

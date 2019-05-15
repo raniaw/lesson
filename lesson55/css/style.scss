@@ -96,7 +96,17 @@ $f-txt-al-justify: justify;
     }
 }
 
-@mixin superstyler($color, $f-size, $element) {
+@mixin header-styler($color, $f-size, $bg) {
+    color: $color;
+    font-size: $f-size;
+    background-color: $bg;
+}
+
+@mixin pad($pad-var...) {
+    padding: $pad-var;
+}
+
+@mixin super-styler($color, $f-size, $element) {
     #{$element} {
         background-color: $color;
         font-size: $f-size;
@@ -135,8 +145,10 @@ $f-txt-al-justify: justify;
 }
 
 ///// Elementen, Selectors
-.title {
-    @include txt-styler($f-size4);
+h1 {
+    @include header-styler($font-col-header, $f-size3, $bg-color);
+    // @include pad(30px);
+    @include pad(20px 20px 30px 50px);
 }
 
 .cl1 {
