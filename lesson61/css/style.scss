@@ -89,85 +89,49 @@ $f-txt-al-justify: justify;
     border-left: $borderL;
 }
 
+@mixin triangle2($color, $direction) {
+    width: 0px;
+    height: 0px;
+    margin: 10px;
+    @if $direction=='up' {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid $color;
+    }
+    @else if $direction=='down' {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid $color;
+        border-bottom: 50px solid transparent;
+    }
+    @else if $direction=='left' {
+        border-left: 50px solid $color;
+        border-right: 50px solid transparent;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+    }
+    @else if $direction=='right' {
+        border-left: 50px solid transparent;
+        border-right: 50px solid $color;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+    }
+}
+
 //// ************** Style ****************
-// .container1 {
-//     margin: 0;
-//     height: 0px;
-//     width: 0px;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-top: 50px solid red;
-//     border-bottom: 50px solid transparent;
-//     padding: 0;
-// }
-// .container2 {
-//     margin: 0;
-//     height: 0px;
-//     width: 0px;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-top: 50px solid transparent;
-//     border-bottom: 50px solid yellow;
-//     padding: 0;
-// }
-// .container3 {
-//     margin: 0;
-//     height: 0px;
-//     width: 0px;
-//     border-left: 50px solid blue;
-//     border-right: 50px solid transparent;
-//     border-top: 50px solid transparent;
-//     border-bottom: 50px solid transparent;
-//     padding: 0;
-// }
-// .container4 {
-//     margin: 0;
-//     height: 0px;
-//     width: 0px;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid green;
-//     border-top: 50px solid transparent;
-//     border-bottom: 50px solid transparent;
-//     padding: 0;
-// }
-// .container5 {
-//     margin: 0;
-//     height: 0px;
-//     width: 0px;
-//     border-left: 50px solid red;
-//     border-right: 50px solid green;
-//     border-top: 50px solid blue;
-//     border-bottom: 50px solid yellow;
-//     padding: 0;
-// }
-// .left-arrow {
-//     border-color: transparent black;
-//     border-style: solid;
-//     border-width: 20px 20px 20px 0px;
-//     height: 0px;
-//     width: 0px;
-// }
-// .right-arrow {
-//     border-color: transparent blueviolet;
-//     border-style: solid;
-//     border-width: 20px 0px 20px 20px;
-//     height: 0px;
-//     width: 0px;
-// }
-// .down-arrow {
-//     border-color: red transparent;
-//     border-style: solid;
-//     border-width: 20px 20px 0px 20px;
-//     height: 0px;
-//     width: 0px;
-// }
-// .up-arrow {
-//     border-color: yellow transparent;
-//     border-style: solid;
-//     border-width: 0px 20px 20px 20px;
-//     height: 0px;
-//     width: 0px;
-// }
-.container1 {
+.container {
     @include triangle(0px, 0px, 50px solid red, 50px solid transparent, 50px solid transparent, 50px solid transparent)
+}
+
+.top {
+    @include triangle2(blue, 'down');
+}
+
+.right {
+    @include triangle2(red, 'right');
+}
+
+.right {
+    @include triangle2(yellow, 'bottom');
 }

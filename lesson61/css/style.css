@@ -34,12 +34,38 @@
     font-family: 'Montserrat', sans-serif;
 
 */
-.container1 {
+.container {
   height: 0px;
   width: 0px;
   border-top: 50px solid red;
   border-right: 50px solid transparent;
   border-bottom: 50px solid transparent;
   border-left: 50px solid transparent;
+}
+
+.top {
+  width: 0px;
+  height: 0px;
+  margin: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid blue;
+  border-bottom: 50px solid transparent;
+}
+
+.right {
+  width: 0px;
+  height: 0px;
+  margin: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid red;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+.right {
+  width: 0px;
+  height: 0px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
