@@ -1,0 +1,123 @@
+/* 
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uncial Antiqua', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Diplomata', cursive;
+    font-family: 'Allura', cursive;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Rochester', cursive;
+    font-family: 'Syncopate', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Petit Formal Script', cursive;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+*/
+.container1 {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid red;
+  border-bottom: 50px solid transparent;
+  padding: 0;
+}
+
+.container2 {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid yellow;
+  padding: 0;
+}
+
+.container3 {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid blue;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  padding: 0;
+}
+
+.container4 {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid green;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  padding: 0;
+}
+
+.container5 {
+  margin: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 50px solid red;
+  border-right: 50px solid green;
+  border-top: 50px solid blue;
+  border-bottom: 50px solid yellow;
+  padding: 0;
+}
+
+.left-arrow {
+  border-color: transparent black;
+  border-style: solid;
+  border-width: 20px 20px 20px 0px;
+  height: 0px;
+  width: 0px;
+}
+
+.right-arrow {
+  border-color: transparent blueviolet;
+  border-style: solid;
+  border-width: 20px 0px 20px 20px;
+  height: 0px;
+  width: 0px;
+}
+
+.down-arrow {
+  border-color: red transparent;
+  border-style: solid;
+  border-width: 20px 20px 0px 20px;
+  height: 0px;
+  width: 0px;
+}
+
+.up-arrow {
+  border-color: yellow transparent;
+  border-style: solid;
+  border-width: 0px 20px 20px 20px;
+  height: 0px;
+  width: 0px;
+}
+/*# sourceMappingURL=style.css.map */
