@@ -119,6 +119,8 @@ $f-txt-al-justify: justify;
 @mixin ball-styler($width, $height, $bord-rad) {
     width: $width;
     height: $height;
+    // width: random(150) + px;
+    // height: random(150) + px;
     border-radius: $bord-rad;
 }
 
@@ -169,7 +171,8 @@ $f-txt-al-justify: justify;
     }
     .ball3 {
         border: 2px solid $bg-but-color;
-        background-color: $bg-but-color;
+        // background-color: $bg-but-color;
+        background: hsla (random(365), 90, 80, 1);
         top: 150px;
         @include animation(2s, 3s, at-rule, alternate, ease-in-out, infinite);
     }

@@ -46,7 +46,6 @@
 .top {
   width: 0px;
   height: 0px;
-  margin: 10px;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   border-top: 50px solid blue;
@@ -56,16 +55,27 @@
 .right {
   width: 0px;
   height: 0px;
-  margin: 10px;
   border-left: 50px solid transparent;
   border-right: 50px solid red;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
 }
 
-.right {
+.bottom {
   width: 0px;
   height: 0px;
-  margin: 10px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid yellow;
+}
+
+.left {
+  width: 0px;
+  height: 0px;
+  border-left: 50px solid green;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,7 +92,6 @@ $f-txt-al-justify: justify;
 @mixin triangle2($color, $direction) {
     width: 0px;
     height: 0px;
-    margin: 10px;
     @if $direction=='up' {
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
@@ -132,6 +131,10 @@ $f-txt-al-justify: justify;
     @include triangle2(red, 'right');
 }
 
-.right {
-    @include triangle2(yellow, 'bottom');
+.bottom {
+    @include triangle2(yellow, 'up');
+}
+
+.left {
+    @include triangle2(green, 'left');
 }
