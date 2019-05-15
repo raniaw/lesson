@@ -383,6 +383,53 @@
   background-image: linear-gradient(to left, blue 0% 33%, white 33% 66%, red 66% 100%);
 }
 
+.ball {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #a40100;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: ball;
+          animation-name: ball;
+  animation-direction: alternate-reverse;
+  -webkit-animation-fill-mode: forward;
+          animation-fill-mode: forward;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes ball {
+  from {
+    background-color: #2b9401;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    background-color: lightblue;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
+@keyframes ball {
+  from {
+    background-color: #2b9401;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    background-color: lightblue;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
 .text {
   background-color: lightblue;
   font-size: 1.2em;

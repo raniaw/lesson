@@ -132,10 +132,12 @@ $f-txt-al-justify: justify;
     @keyframes at-rule {
         from {
             left: 0%;
+            transform: scale(1, 1);
         }
         to {
             left: 50%;
-            top: 60%
+            top: 60%;
+            transform: scale(0.5, 0.5);
         }
     }
 }
