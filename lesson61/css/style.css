@@ -35,89 +35,11 @@
 
 */
 .container1 {
-  margin: 0;
   height: 0px;
   width: 0px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
   border-top: 50px solid red;
-  border-bottom: 50px solid transparent;
-  padding: 0;
-}
-
-.container2 {
-  margin: 0;
-  height: 0px;
-  width: 0px;
-  border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid yellow;
-  padding: 0;
-}
-
-.container3 {
-  margin: 0;
-  height: 0px;
-  width: 0px;
-  border-left: 50px solid blue;
-  border-right: 50px solid transparent;
-  border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
-  padding: 0;
-}
-
-.container4 {
-  margin: 0;
-  height: 0px;
-  width: 0px;
   border-left: 50px solid transparent;
-  border-right: 50px solid green;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  padding: 0;
-}
-
-.container5 {
-  margin: 0;
-  height: 0px;
-  width: 0px;
-  border-left: 50px solid red;
-  border-right: 50px solid green;
-  border-top: 50px solid blue;
-  border-bottom: 50px solid yellow;
-  padding: 0;
-}
-
-.left-arrow {
-  border-color: transparent black;
-  border-style: solid;
-  border-width: 20px 20px 20px 0px;
-  height: 0px;
-  width: 0px;
-}
-
-.right-arrow {
-  border-color: transparent blueviolet;
-  border-style: solid;
-  border-width: 20px 0px 20px 20px;
-  height: 0px;
-  width: 0px;
-}
-
-.down-arrow {
-  border-color: red transparent;
-  border-style: solid;
-  border-width: 20px 20px 0px 20px;
-  height: 0px;
-  width: 0px;
-}
-
-.up-arrow {
-  border-color: yellow transparent;
-  border-style: solid;
-  border-width: 0px 20px 20px 20px;
-  height: 0px;
-  width: 0px;
 }
 /*# sourceMappingURL=style.css.map */
