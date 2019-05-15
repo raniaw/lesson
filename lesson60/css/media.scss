@@ -47,7 +47,7 @@ $font-art:'Petit Formal Script',
 cursive;
 // *** font-weight ***
 $font-wt: bolder;
-$font-wt-default:100;
+$font-wt-default:50;
 // *** font-color ***
 $font-col-white:white;
 $font-col-nav1:#0f4207;
@@ -83,13 +83,57 @@ $f-txt-al-justify: justify;
 $breakpoints:(1: 300px, 2: 599px, 3:801px, 4:1281px);
 //********* Mixin *********
 //******* Style *****
-.container {
+.container1 {
     margin: 0;
     height: 0px;
     width: 0px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-top: 100px solid red;
-    border-bottom: 100px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid red;
+    border-bottom: 50px solid transparent;
+    padding: 0;
+}
+
+.container2 {
+    margin: 0;
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid yellow;
+    padding: 0;
+}
+
+.container3 {
+    margin: 0;
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid blue;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    padding: 0;
+}
+
+.container4 {
+    margin: 0;
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid green;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    padding: 0;
+}
+
+.container5 {
+    margin: 0;
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid red;
+    border-right: 50px solid green;
+    border-top: 50px solid blue;
+    border-bottom: 50px solid yellow;
     padding: 0;
 }
