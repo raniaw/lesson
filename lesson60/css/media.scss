@@ -137,3 +137,35 @@ $breakpoints:(1: 300px, 2: 599px, 3:801px, 4:1281px);
     border-bottom: 50px solid yellow;
     padding: 0;
 }
+
+.left-arrow {
+    border-color: transparent black;
+    border-style: solid;
+    border-width: 20px 20px 20px 0px;
+    height: 0px;
+    width: 0px;
+}
+
+.right-arrow {
+    border-color: transparent blueviolet;
+    border-style: solid;
+    border-width: 20px 0px 20px 20px;
+    height: 0px;
+    width: 0px;
+}
+
+.down-arrow {
+    border-color: red transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+}
+
+.up-arrow {
+    border-color: yellow transparent;
+    border-style: solid;
+    border-width: 0px 20px 20px 20px;
+    height: 0px;
+    width: 0px;
+}
