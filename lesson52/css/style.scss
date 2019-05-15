@@ -188,6 +188,25 @@ $f-txt-al-justify: justify;
     }
 }
 
+@mixin animation6 ($delay, $duration, $animation-name, $direction, $fillmode, $timing-function) {
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation-name;
+    animation-direction: $direction;
+    animation-fill-mode: $fillmode;
+    animation-timing-function: $timing-function;
+    @keyframes ball {
+        from {
+            background-color: $bg-bord-col;
+            transform: scale(1, 1);
+        }
+        to {
+            background-color: lightblue;
+            transform: scale(2, 2);
+        }
+    }
+}
+
 /// ***************  Gradient ***************
 @mixin gradient($direction, $color1, $color2) {
     background-image: linear-gradient($direction, $color1, $color2);
@@ -350,3 +369,13 @@ $f-txt-al-justify: justify;
 
 //******** style *********
 @include superstyler(lightblue, 1.2em, '.text');
+.ball {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #a40100;
+    // @include animation6(2s, 3s, ball, alternate-reverse, forward, ease-in-out);
+}
