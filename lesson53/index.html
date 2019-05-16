@@ -33,9 +33,28 @@
 </head>
 
 <body>
+
+
+    <div class="nav">
+        <input type="checkbox" class="nav-check" id="nav-tog">
+        <label for="nav-tog" class="nav-button">
+                <span class="nav-icon"></span>
+            </label>
+        <div class="nav-bg"></div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#article">Article</a></li>
+                <li class="nav-item"><a href="#blume">Blume</a></li>
+                <li class="nav-item">
+                    <a href="#btn">Button</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <h1 class="title">Sass mixin</h1>
     <div class="main">
-        <h2>Article</h2>
+        <h2 id="article">Article</h2>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo earum repellat perferendis, dolorum saepe nostrum quidem consequuntur dignissimos maxime blanditiis aspernatur quisquam eius, in esse eligendi, reprehenderit distinctio possimus.
     </div>
     <div class="main2">
@@ -43,7 +62,7 @@
             <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo earum repellat perferendis, dolorum saepe nostrum quidem consequuntur dignissimos maxime blanditiis aspernatur quisquam eius, in esse eligendi, reprehenderit distinctio possimus. -->
         </p>
     </div>
-    <button class="btn">Click me</button>
+    <button id="btn" class="btn">Click me</button>
     <p class="par">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo earum repellat perferendis, dolorum saepe nostrum quidem consequuntur dignissimos maxime blanditiis aspernatur quisquam eius, in esse eligendi, reprehenderit distinctio possimus.
     </p>
@@ -52,7 +71,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nemo earum repellat perferendis, dolorum saepe nostrum quidem consequuntur dignissimos maxime blanditiis aspernatur quisquam eius, in esse eligendi, reprehenderit distinctio possimus.
     </p>
 
-    <div class="blatt1">
+    <div class="blatt1" id="blume">
 
     </div>
     <div class="blatt2">
