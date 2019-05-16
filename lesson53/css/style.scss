@@ -64,6 +64,8 @@ $bg-nav-color1:#a40100;
 $bg-nav-color2: #0f4207;
 $bg-nav-color3:#138102;
 $bg-nav-color4:#ffc701;
+// *** border-color ***
+$bg-bord-col: #189e03;
 // *** shadow   ***
 $bg-box-shad-col1: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
 $bg-box-shad-col2: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
@@ -117,6 +119,11 @@ $f-txt-al-justify: justify;
 }
 
 ///// Elementen, Selectors
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .title {
     @include txt-styler($f-size4);
 }
@@ -126,4 +133,137 @@ $f-txt-al-justify: justify;
     h2 {
         @include txt-styler($f-size2);
     }
+}
+
+.main2 {
+    width: 300px;
+    height: 400px;
+    border: 1px solid $bg-bord-col;
+    overflow: hidden;
+    .article {
+        width: 20vw; //20% von bildschirm - width
+        height: 30vh; //30% von bildschirm - height
+        background-color: $bg-color;
+        border: 1px solid $bg-bord-col;
+    }
+}
+
+.btn {
+    all: unset;
+    padding: 15px;
+    color: $font-col-white;
+    margin: 20px;
+    background-color: $bg-but-color1;
+    padding: 15px;
+}
+
+button {
+    background-color: $bg-but-color;
+    padding: 15px;
+    color: $font-col-white;
+    margin: 30px;
+}
+
+p {
+    background-color: $bg-color;
+    font-size: $f-size1;
+    color: $font-col-txt;
+    text-align: $f-txt-al-justify;
+    font-family: $font-main;
+    padding: 20px;
+    border: 1px solid $bg-bord-col;
+    margin: 10px;
+}
+
+.par {
+    //löscht alle Einstellungen und default auch. Der Block-Element wird als 'inline'-Element
+    all: unset;
+}
+
+.blatt1 {
+    position: absolute;
+    top: 871px;
+    left: 0px;
+    height: 150px;
+    width: 150px;
+    background-color: #0f4207;
+    -webkit-clip-path: polygon(61% 83%, 58% 78%, 54% 76%, 48% 75%, 39% 83%, 29% 83%, 25% 76%, 24% 69%, 29% 65%, 34% 62%, 41% 62%, 50% 64%, 55% 69%, 63% 79%, 62% 82%, 59% 84%);
+    clip-path: polygon(61% 83%, 58% 78%, 54% 76%, 48% 75%, 39% 83%, 29% 83%, 25% 76%, 24% 69%, 29% 65%, 34% 62%, 41% 62%, 50% 64%, 55% 69%, 63% 79%, 62% 82%, 59% 84%);
+}
+
+.blatt2 {
+    position: absolute;
+    top: 871px;
+    left: 35px;
+    height: 150px;
+    width: 150px;
+    background-color: #0f4207;
+    -webkit-clip-path: polygon(37% 88%, 38% 80%, 41% 72%, 47% 64%, 51% 60%, 56% 55%, 65% 57%, 69% 62%, 71% 69%, 65% 73%, 59% 73%, 53% 71%, 47% 72%, 40% 86%, 35% 89%);
+    clip-path: polygon(37% 88%, 38% 80%, 41% 72%, 47% 64%, 51% 60%, 56% 55%, 65% 57%, 69% 62%, 71% 69%, 65% 73%, 59% 73%, 53% 71%, 47% 72%, 40% 86%, 35% 89%);
+}
+
+.blatt3 {
+    position: absolute;
+    top: 871px;
+    left: 26px;
+    height: 150px;
+    width: 150px;
+    background-color: #0f4207;
+    -webkit-clip-path: polygon(45% 89%, 44% 84%, 44% 81%, 43% 76%, 42% 67%, 44% 61%, 46% 49%, 45% 43%, 43% 39%, 44% 38%, 48% 40%, 47% 52%, 43% 69%, 45% 89%);
+    clip-path: polygon(45% 89%, 44% 84%, 44% 81%, 43% 76%, 42% 67%, 44% 61%, 46% 49%, 45% 43%, 43% 39%, 44% 38%, 48% 40%, 47% 52%, 43% 69%, 45% 89%);
+}
+
+.blume1 {
+    position: absolute;
+    top: 845px;
+    left: 22px;
+    height: 150px;
+    width: 150px;
+    background-color: #a40100;
+    -webkit-clip-path: polygon(29% 34%, 32% 37%, 34% 40%, 35% 44%, 34% 50%, 38% 54%, 44% 58%, 50% 59%, 56% 56%, 56% 51%, 57% 46%, 58% 42%, 61% 36%, 64% 32%, 56% 34%, 51% 38%, 43% 40%, 38% 34%);
+    clip-path: polygon(29% 34%, 32% 37%, 34% 40%, 35% 44%, 34% 50%, 38% 54%, 44% 58%, 50% 59%, 56% 56%, 56% 51%, 57% 46%, 58% 42%, 61% 36%, 64% 32%, 56% 34%, 51% 38%, 43% 40%, 38% 34%);
+}
+
+.blume2 {
+    position: absolute;
+    top: 813px;
+    left: 36px;
+    height: 150px;
+    width: 150px;
+    background-color: #a40100;
+    -webkit-clip-path: polygon(45% 78%, 44% 72%, 46% 69%, 49% 65%, 53% 64%, 59% 64%, 61% 68%, 60% 73%, 56% 71%, 51% 73%, 45% 78%);
+    clip-path: polygon(45% 78%, 44% 72%, 46% 69%, 49% 65%, 53% 64%, 59% 64%, 61% 68%, 60% 73%, 56% 71%, 51% 73%, 45% 78%);
+}
+
+.blume3 {
+    position: absolute;
+    top: 813px;
+    left: 16px;
+    height: 150px;
+    width: 150px;
+    background-color: #a40100;
+    -webkit-clip-path: polygon(51% 75%, 49% 72%, 46% 70%, 40% 68%, 35% 67%, 32% 70%, 32% 74%, 34% 79%, 38% 75%, 44% 75%, 50% 79%, 51% 83%);
+    clip-path: polygon(51% 75%, 49% 72%, 46% 70%, 40% 68%, 35% 67%, 32% 70%, 32% 74%, 34% 79%, 38% 75%, 44% 75%, 50% 79%, 51% 83%);
+}
+
+.blume4 {
+    position: absolute;
+    top: 803px;
+    left: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: #a40100;
+    -webkit-clip-path: polygon(48% 79%, 43% 78%, 42% 74%, 41% 69%, 43% 65%, 44% 61%, 42% 59%, 48% 60%, 54% 57%, 54% 63%, 54% 69%, 54% 74%, 50% 79%);
+    clip-path: polygon(48% 79%, 43% 78%, 42% 74%, 41% 69%, 43% 65%, 44% 61%, 42% 59%, 48% 60%, 54% 57%, 54% 63%, 54% 69%, 54% 74%, 50% 79%);
+}
+
+.blume5 {
+    position: absolute;
+    top: 830px;
+    left: 18px;
+    height: 150px;
+    width: 150px;
+    background-color: #a40100;
+    -webkit-clip-path: ellipse(4% 12% at 50% 50%);
+    clip-path: ellipse(4% 12% at 50% 50%);
 }

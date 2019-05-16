@@ -131,7 +131,7 @@
 
 .container .ball3 {
   border: 2px solid #652011;
-  background: hsla 245, 90, 80, 1;
+  background-color: #652011;
   top: 150px;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
