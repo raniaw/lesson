@@ -268,4 +268,28 @@ p {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
+
+nav.nav {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+  z-index: 3;
+}
+
+nav.nav ul li {
+  list-style: none;
+}
+
+.nav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
 /*# sourceMappingURL=style.css.map */
