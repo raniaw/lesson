@@ -1,6 +1,7 @@
 /* 
     font-family: 'Architects Daughter', cursive;
     font-family: 'Great Vibes', cursive;
+     font-family: 'Gugi', cursive;
     font-family: 'Indie Flower', cursive;
     font-family: 'Josefin Slab', serif;
     font-family: 'Modak', cursive;
@@ -13,7 +14,7 @@
     font-family: 'Tangerine', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Uncial Antiqua', cursive;
-    font-family: 'Gugi', cursive;
+   font-family: 'Lato', sans-serif;
     font-family: 'Lobster', cursive;
     font-family: 'Righteous', cursive;
     font-family: 'Satisfy', cursive;
@@ -34,14 +35,52 @@
     font-family: 'Montserrat', sans-serif;
 
 */
-.row1 {
-  height: 100px;
-}
 
-@media screen and (max-width: 576px) {
-  .container {
-    border: 1px solid #189e03;
-    width: 80%;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+// ************    Variablen   **********
+// *** font-family  ***
+$font-stack: 'Poiret One',
+cursive;
+$font-main: 'Josefin Slab',
+serif;
+$font-m:'Quicksand',
+sans-serif;
+$font-art:'Petit Formal Script',
+cursive;
+// *** font-weight ***
+$font-wt: bolder;
+$font-wt-default:50;
+// *** font-color ***
+$font-col-white:white;
+$font-col-nav1:#0f4207;
+$font-col-nav2:#652011;
+$font-col-nav3:#a40100;
+$font-col-nav4:#ffc701;
+$font-col-header:#0f4207;
+$font-col-head:#a40100;
+$font-col-txt:#544b4c;
+// *** backcround - color ***
+$bg-color:#f0fffa;
+$bg-color1:#2b9401;
+$bg-but-color:#652011;
+$bg-but-color1:#189e03;
+// *** navigation ***
+$bg-nav-color1:#a40100;
+$bg-nav-color2: #0f4207;
+$bg-nav-color3:#138102;
+$bg-nav-color4:#ffc701;
+// *** shadow   ***
+$bg-box-shad-col1: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+$bg-box-shad-col2: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
+// *** font-size ***
+$f-size1:1em;
+$f-size2:1.3em;
+$f-size3:1.8em;
+$f-size4:2.5em;
+$f-size5:3.3em;
+// *** text align ***
+$f-txt-al-center:center;
+$f-txt-al-justify: justify;
+//*** breakpoints for devices
+$breakpoints:(1: 300px, 2: 599px, 3:801px, 4:1281px);
+//********* Mixin *********
+//******* Style *****
