@@ -226,16 +226,40 @@ p {
 }
 
 .nav-button:hover .nav-icon::before {
-  top: -5px;
+  top: 0px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .nav-button:hover .nav-icon::after {
-  top: 5px;
+  top: 0px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.nav-button:hover .nav-icon {
+  background-color: transparent;
 }
 
 .nav-check:checked ~ .nav-bg {
   -webkit-transform: scale(100);
           transform: scale(100);
+}
+
+.nav-check:checked ~ .nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-check:checked ~ .nav-button .nav-icon::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0px;
+}
+
+.nav-check:checked ~ .nav-button .nav-icon::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 0px;
 }
 
 .nav-check {
