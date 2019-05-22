@@ -223,18 +223,24 @@ p {
   content: '';
   position: absolute;
   left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-button:hover .nav-icon::before {
   top: 0px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-button:hover .nav-icon::after {
   top: 0px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-button:hover .nav-icon {
@@ -242,8 +248,8 @@ p {
 }
 
 .nav-check:checked ~ .nav-bg {
-  -webkit-transform: scale(100);
-          transform: scale(100);
+  -webkit-transform: scale(200);
+          transform: scale(200);
 }
 
 .nav-check:checked ~ .nav-button .nav-icon {
@@ -254,6 +260,17 @@ p {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   top: 0px;
+}
+
+.nav-check:checked ~ .nav.nav {
+  position: fixed;
+  text-align: center;
+  margin-top: 5px;
+  padding: 0;
+  opacity: 1;
+  z-index: 30;
+  -webkit-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
 }
 
 .nav-check:checked ~ .nav-button .nav-icon::after {
@@ -294,26 +311,41 @@ p {
 }
 
 nav.nav {
-  position: fixed;
-  top: 15%;
-  width: 100%;
+  opacity: 0;
+}
+
+nav.nav ul {
+  top: 50%;
+  left: 50%;
+  width: 100vw;
   text-align: center;
-  margin-top: 5px;
-  display: block;
-  z-index: 3;
 }
 
 nav.nav ul li {
   list-style: none;
 }
 
-.nav a {
-  padding: 8px;
+.nav a:link,
+.nav a:visited {
+  font-family: "Poiret One", cursive;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  -webkit-transition: .3s;
-  transition: .3s;
+  color: white;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 60%, white 60%);
+  background-size: 220%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.nav a:active,
+.nav a:hover {
+  background-position: 100%;
+  color: #0f4207;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 /*# sourceMappingURL=style.css.map */
