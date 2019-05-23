@@ -34,22 +34,54 @@
     font-family: 'Montserrat', sans-serif;
 
 */
-.form-container {
-  padding: 30px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 14px 0px #fcfcfc;
-          box-shadow: 0px 0px 14px 0px #fcfcfc;
-  position: absolute;
-  top: 20vh;
-  background-color: rgba(236, 231, 231, 0.697);
-  border: 1px solid #eee;
-}
 
-.my-form {
-  width: 100vw;
-  height: 100vh;
-  background: url(https://picsum.photos/id/755/1200/1200);
-  background-size: cover;
-  background-position: top;
+// ************    Variablen   **********
+// *** font-family  ***
+$font-stack: 'Poiret One',
+cursive;
+$font-main: 'Josefin Slab',
+serif;
+$font-m:'Quicksand',
+sans-serif;
+$font-art:'Petit Formal Script',
+cursive;
+// *** font-weight ***
+$font-wt: bolder;
+$font-wt-default:100;
+// *** font-color ***
+$font-col-white:white;
+$font-col-nav1:#0f4207;
+$font-col-nav2:#652011;
+$font-col-nav3:#a40100;
+$font-col-nav4:#ffc701;
+$font-col-header:#0f4207;
+$font-col-head:#a40100;
+$font-col-txt:#544b4c;
+// *** background - color ***
+$bg-color:#f0fffa;
+$bg-color1:#2b9401;
+$bg-but-color:#652011;
+$bg-but-color1:#189e03;
+$bord-color:#189e03;
+// *** navigation ***
+$bg-nav-color1:#a40100;
+$bg-nav-color2: #0f4207;
+$bg-nav-color3:#138102;
+$bg-nav-color4:#ffc701;
+// *** shadow   ***
+$bg-box-shad-col1: 2px 1px 18px 1px rgba(42, 147, 0, 0.682);
+$bg-box-shad-col2: 1px 1px 7px 1px rgba(42, 147, 0, 0.682);
+// *** font-size ***
+$f-size1:1em;
+$f-size2:1.3em;
+$f-size3:1.8em;
+$f-size4:2.5em;
+$f-size5:3.3em;
+// *** text align ***
+$f-txt-al-center:center;
+$f-txt-al-justify: justify;
+/////************   Mixin  *************
+//// ************** Style ****************
+.myshadow {
+    box-shadow: 1px 1px 23px #0d4496;
 }
-/*# sourceMappingURL=style.css.map */

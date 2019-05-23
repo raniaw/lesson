@@ -34,22 +34,8 @@
     font-family: 'Montserrat', sans-serif;
 
 */
-.form-container {
-  padding: 30px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 14px 0px #fcfcfc;
-          box-shadow: 0px 0px 14px 0px #fcfcfc;
-  position: absolute;
-  top: 20vh;
-  background-color: rgba(236, 231, 231, 0.697);
-  border: 1px solid #eee;
-}
-
-.my-form {
-  width: 100vw;
-  height: 100vh;
-  background: url(https://picsum.photos/id/755/1200/1200);
-  background-size: cover;
-  background-position: top;
+.myshadow {
+  -webkit-box-shadow: 1px 1px 23px #0d4496;
+          box-shadow: 1px 1px 23px #0d4496;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 /* 
     font-family: 'Architects Daughter', cursive;
     font-family: 'Great Vibes', cursive;
+     font-family: 'Gugi', cursive;
     font-family: 'Indie Flower', cursive;
     font-family: 'Josefin Slab', serif;
     font-family: 'Modak', cursive;
@@ -13,7 +14,7 @@
     font-family: 'Tangerine', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Uncial Antiqua', cursive;
-    font-family: 'Gugi', cursive;
+   font-family: 'Lato', sans-serif;
     font-family: 'Lobster', cursive;
     font-family: 'Righteous', cursive;
     font-family: 'Satisfy', cursive;
@@ -47,7 +48,7 @@ $font-art:'Petit Formal Script',
 cursive;
 // *** font-weight ***
 $font-wt: bolder;
-$font-wt-default:100;
+$font-wt-default:50;
 // *** font-color ***
 $font-col-white:white;
 $font-col-nav1:#0f4207;
@@ -57,12 +58,11 @@ $font-col-nav4:#ffc701;
 $font-col-header:#0f4207;
 $font-col-head:#a40100;
 $font-col-txt:#544b4c;
-// *** background - color ***
+// *** backcround - color ***
 $bg-color:#f0fffa;
 $bg-color1:#2b9401;
 $bg-but-color:#652011;
 $bg-but-color1:#189e03;
-$bord-color:#189e03;
 // *** navigation ***
 $bg-nav-color1:#a40100;
 $bg-nav-color2: #0f4207;
@@ -80,26 +80,20 @@ $f-size5:3.3em;
 // *** text align ***
 $f-txt-al-center:center;
 $f-txt-al-justify: justify;
-/////************   Mixin  *************
-//// ************** Style ****************
-.myshadow {}
-
-.form-container {
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 14px 0px #fcfcfc;
-    position: absolute;
-    top: 20vh;
-    background-color: rgba(236, 231, 231, 0.697);
-    border: 1px solid #eee;
+//*** breakpoints for devices
+$breakpoints:(1: 300px, 2: 599px, 3:801px, 4:1281px);
+//********* Mixin *********
+@mixin for-size-all {
+    @for $i from 1 through 4 {
+        @media (min-width: #{map-get( $breakpoints, $i)}) {
+            column-count: $i;
+            border: $i+px solid hsl(20*$i, 98%, 34%);
+            // border-radius: 20*$i+px; // funktioniert auch wie unten
+            border-radius: #{$i*20}px;
+            color: hsl(40*$i, 58%, 24%);
+            font-size: #{1.2*$i}em;
+        }
+    }
 }
 
-.my-form {
-    width: 100vw;
-    height: 100vh;
-    // background: url(https://picsum.photos/id/675/1200/1200);
-    // background: url(https://picsum.photos/id/385/1200/1200);
-    background: url(https://picsum.photos/id/755/1200/1200);
-    background-size: cover;
-    background-position: top;
-}
+//******* Style *****

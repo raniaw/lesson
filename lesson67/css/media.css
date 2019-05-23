@@ -1,6 +1,7 @@
 /* 
     font-family: 'Architects Daughter', cursive;
     font-family: 'Great Vibes', cursive;
+     font-family: 'Gugi', cursive;
     font-family: 'Indie Flower', cursive;
     font-family: 'Josefin Slab', serif;
     font-family: 'Modak', cursive;
@@ -13,7 +14,7 @@
     font-family: 'Tangerine', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Uncial Antiqua', cursive;
-    font-family: 'Gugi', cursive;
+   font-family: 'Lato', sans-serif;
     font-family: 'Lobster', cursive;
     font-family: 'Righteous', cursive;
     font-family: 'Satisfy', cursive;
@@ -34,22 +35,4 @@
     font-family: 'Montserrat', sans-serif;
 
 */
-.form-container {
-  padding: 30px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 14px 0px #fcfcfc;
-          box-shadow: 0px 0px 14px 0px #fcfcfc;
-  position: absolute;
-  top: 20vh;
-  background-color: rgba(236, 231, 231, 0.697);
-  border: 1px solid #eee;
-}
-
-.my-form {
-  width: 100vw;
-  height: 100vh;
-  background: url(https://picsum.photos/id/755/1200/1200);
-  background-size: cover;
-  background-position: top;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=media.css.map */
