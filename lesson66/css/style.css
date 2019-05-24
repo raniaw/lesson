@@ -45,11 +45,19 @@
   border: 1px solid #eee;
 }
 
+body {
+  background: url(https://picsum.photos/id/755/2200/2200);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 .my-form {
   width: 100vw;
   height: 100vh;
   background: url(https://picsum.photos/id/755/2200/2200);
-  background-size: 200%;
-  background-position: top;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=style.css.map */
