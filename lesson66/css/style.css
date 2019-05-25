@@ -34,6 +34,11 @@
     font-family: 'Montserrat', sans-serif;
 
 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .form-container {
   padding: 30px;
   border-radius: 25px;

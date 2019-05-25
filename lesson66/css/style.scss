@@ -84,6 +84,10 @@ $f-txt-al-justify: justify;
 //// ************** Style ****************
 .myshadow {}
 
+* {
+    box-sizing: border-box;
+}
+
 .form-container {
     padding: 30px;
     border-radius: 25px;
