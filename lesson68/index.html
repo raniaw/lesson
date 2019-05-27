@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Formular Bootstrap mit Scss</title>
+    <title>Formular Bootstrap</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,31 +32,26 @@
 </head>
 
 <body>
-    <div class="container-fluid my-form">
+    <div class="container-fluid ">
+        <div class="row justify-content-center text-info m-4">Bootstrap Kontaktformular</div>
         <div class="row justify-content-center">
             <div class="col-9 col-md-6 col-lg-4 col-sm-6 col-xl-3 ">
-                <div class="form-container">
-                    <form action="" class="form-group   ">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                        <label for="pwd">Password</label>
-                        <input type="password" id="pwd" class="form-control" aria-describedby="passwordHelpBlock">
-                        <small id="passwordHelpBlock" class="form-text text-muted">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not
-                            contain
-                            spaces, special characters, or emoji.
-                        </small>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="checkbox">
-                            <label class="custom-control-label" for="checkbox">Erinnerung hinzufügen</label>
+                <div class="form-container border border-info bg-light shadow-lg">
+                    <form action="https://formspree.io/rania_wittenberg@hotmail.com" method="POST" class="form-group ">
+                        <div class="form-group"> <label for="vollname">Name, Vorname</label>
+                            <input type="text" class="form-control" placeholder="Marita Musterfrau" name="name" id="vollname">
                         </div>
-                        <!-- <div class="form-check">
-                            <label for="checkbox"> <input type="checkbox" name="" id="checkbox">
-                                </label>
-                        </div> -->
-                        <input type="submit" class="btn btn-outline-secondary  btn-block" value="Einlogen">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control text-info" name="_replyto" id="email" aria-describedby="emailHelp" placeholder="marita.musterfrau@email.de">
+                            <small id="emailHelp" class="form-text text-muted">Wir werden Ihre E-Mail-Adresse auf keinen Fall an Dritte weitergeben</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nachricht">Nachricht</label>
+                            <textarea class="form-control" name="nachricht" id="nachricht" cols="30" placeholder="Ihre Nachricht..." rows="6"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-outline-info  btn-block" value="Einloggen">
+
                     </form>
                 </div>
             </div>
