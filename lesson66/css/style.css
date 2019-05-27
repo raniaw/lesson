@@ -51,8 +51,8 @@
 }
 
 body {
+  background-image: url(https://picsum.photos/id/755/2200/2800);
   margin: 0 auto;
-  background-image: url(../img/tasse.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
