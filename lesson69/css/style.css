@@ -136,7 +136,37 @@
   }
 }
 
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
 a.f {
   font-family: 'Gruppo', cursive;
+}
+
+.karte {
+  max-width: 100%;
+}
+
+figure > img {
+  max-width: 50%;
+}
+
+figure > img:hover {
+  max-width: 100%;
+}
+
+.h1-text {
+  font-family: 'Tangerine', cursive;
+}
+
+.article-text {
+  font-family: 'Josefin Slab', serif;
+}
+
+.span::first-letter {
+  font-size: 2.5em;
+  font-family: 'Tangerine', cursive;
 }
 /*# sourceMappingURL=style.css.map */
