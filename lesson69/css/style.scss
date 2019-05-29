@@ -169,18 +169,14 @@ figure>img:hover {
 .span::first-letter {
     font-size: 2.5em;
     font-family: 'Tangerine', cursive;
-    line-height: 10px;
-}
-
-i.fas {
-    color: blue;
+    line-height: 45px;
 }
 
 ul {
     list-style: none;
 }
 
-li:before {
+li.gradued:before {
     content: '\1F393';
     margin-left: 20px;
     margin-right: 10px;
