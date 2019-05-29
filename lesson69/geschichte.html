@@ -18,8 +18,8 @@
             <!-- Navbar brand -->
             <a class="navbar-brand f" href="#"><img class="navbar-brand" src="img/international-kl.png" alt=""> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -105,12 +105,15 @@
                 </h1>
             </div>
             <div class="row  p-3 m-3  border border-secondary">
-                <img class="karte col-12 rounded mx-auto d-block " src="img/Seidenstrasse_Zentralasien.jpg" alt="Seidenstrasse Zentralasien">
+                <div class="col">
+                    <img class="karte col-12 rounded mx-auto d-block " src="img/Seidenstrasse_Zentralasien.jpg" alt="Seidenstrasse Zentralasien">
+                </div>
             </div>
             <div class="row">
                 <div class="col">
                     <p class="text-justify span article-text justify-items-center col-12 px-5 mx-3">
-                        Usbekistan ist in seiner heutigen Form erst in den 1920er Jahren als Sowjetrepublik entstanden.</p>
+                        Usbekistan ist in seiner heutigen Form erst in den 1920er Jahren als Sowjetrepublik entstanden.
+                    </p>
                     <h3 class="justify-items-center col-12 px-5 mx-3 text-info font-weight-bold h3-text ">Vorislamische Zeit
                     </h3>
                     <p class="text-justify span article-text justify-items-center col-11 px-5 mx-5">
@@ -137,11 +140,30 @@
             </div>
             <div class="row">
                 <div class="row col-12 p-3 justify-content-center article-text">
-                    <figure class="float-left border border-info p-3">
-                        <img src="img/amir-timur.jpg" class="figure-img img-fluid rounded" alt="Amir Timur">
-                        <figcaption class="figure-caption text-right font-weight-bold text-info">Amir Timur
-                        </figcaption>
-                    </figure>
+
+                    <div class="btn float-left border border-info p-3" data-toggle="modal" data-target="#exampleModal">
+                        <figure>
+                            <img src="img/amir-timur.jpg" class="figure-img img-fluid rounded" alt="Amir Timur">
+                            <figcaption class="figure-caption text-right font-weight-bold text-info">Amir Timur
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog border rounded border-white p-3" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-info" id="exampleModalLabel">Amir Timur</h5>
+                                    <button type="button" class="close text-info" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true text-info">&times;</span>
+                                    </button>
+                                </div>
+
+                                <img class=" col modal-body" src="img/amir-timur-gr.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
                     <p class="text-justify span float-right col-12 col-md-6 col-lg-6 px-4 ">
                         Im Jahre 1220 drangen die Mongolen in Usbekistan ein. Diese Zeit gilt als sehr unbeständig. Es gab immer wieder Kriege unter den Nomaden. Am Ende dieser Zeit stand der neue, heutige usbekische Volksheld Timur Lenk (auch Tamerlan, in Usbekistan Amir Timur),
                         der sich 1370 zum Herrscher von ganz Transoxanien ausrief und den Titel eines Emirs annahm. Er gilt als Herrscher der Gegensätze, der die Wiederherstellung des Mongolischen Reiches anstrebte und dabei mit äußerster Brutalität vorging.
@@ -161,11 +183,30 @@
             </div>
             <div class="row">
                 <div class="row col-12 p-3 justify-content-center article-text">
-                    <figure class="float-left border border-info p-3">
-                        <img src="img/angriff-rus-kl.jpg" class="figure-img img-fluid rounded" alt="Angriff">
-                        <figcaption class="figure-caption text-right font-weight-bold text-info">Angriff
-                        </figcaption>
-                    </figure>
+
+                    <div class="btn float-left border border-info p-3" data-toggle="modal" data-target="#exampleModal2">
+                        <figure class="">
+                            <img src="img/angriff-rus-kl.jpg" class="figure-img img-fluid rounded" alt="Angriff">
+                            <figcaption class="figure-caption text-right font-weight-bold text-info">Angriff
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog border rounded border-white p-3" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-info" id="exampleModalLabel2">Angriff</h5>
+                                    <button type="button" class="close text-info" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true text-info">&times;</span>
+                                    </button>
+                                </div>
+
+                                <img class=" col modal-body" src="img/angriff.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
                     <p class="text-justify span float-right col-12 col-md-6 col-lg-6 px-4 ">
                         Im 19. Jahrhundert begann das Great Game (dt. Großes Spiel) zwischen dem Vereinigten Königreich und dem Russischen Reich um die Vorherrschaft in Zentralasien. Russland erlangte schließlich die Kolonialherrschaft über Usbekistan. 1868 zeigte sich schließlich
                         die militärische Überlegenheit Russlands gegenüber dem Emirat Buchara und dem Khanat Chiwa. Diese blieben allerdings als eigenständige Staaten unter russischem Protektorat bestehen. Das Khanat Kokand wurde hingegen vollständig
@@ -187,11 +228,30 @@
                         1924/1925 wurde aus der Autonomen Sozialistischen Sowjetrepublik Turkestan und den beiden Volksrepubliken Choresmien und Buchara die Usbekische Sozialistische Sowjetrepublik (Usbekische SSR). Diese erhielt 1925 den Mitgliedsstatus der Sowjetunion. Tadschikistan
                         wurde 1929 als selbständige Tadschikische SSR ausgegliedert, die Karakalpakische Autonome Sozialistische Sowjetrepublik (Karakalpakische ASSR) hingegen in Usbekistan eingegliedert. Erste Hauptstadt der Usbekischen SSR war Samarkand;
                         erst 1930 ging dieser Status an Taschkent über.
-                        <figure class="float-right border border-info p-3">
-                            <img src="img/flag-usbssr.png" class="figure-img img-fluid rounded" alt="Flagge UsbSSR">
-                            <figcaption class="figure-caption text-right font-weight-bold text-info">Flagge UsbSSR
-                            </figcaption>
-                        </figure>
+
+                        <div class="btn float-right border border-info p-3" data-toggle="modal" data-target="#exampleModal3">
+                            <figure>
+                                <img src="img/flag-usbssr.png" class="figure-img img-fluid rounded" alt="Flagge UsbSSR">
+                                <figcaption class="figure-caption text-right font-weight-bold text-info">Flagge UsbSSR
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade " id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog border rounded border-white p-3" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-info" id="exampleModalLabel3">FLagge der Usbekische Sowjet-Republick</h5>
+                                        <button type="button" class="text-info close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true text-info">&times;</span>
+                                            </button>
+                                    </div>
+
+                                    <img class="col modal-body" src="img/Flagge-usbssr.png" alt="">
+
+                                </div>
+                            </div>
+                        </div>
                     </p>
                 </div>
             </div>
@@ -217,11 +277,30 @@
             </div>
             <div class="row">
                 <div class="row col-12 p-3 justify-content-center article-text">
-                    <figure class="float-left border border-info p-3">
-                        <img src="img/globus-uzb-kl.jpg" class="figure-img img-fluid rounded" alt="Unabhängigkeitsdenkmal in Taschkent">
-                        <figcaption class="figure-caption text-right font-weight-bold text-info">Unabhängigkeitsdenkmal in Taschkent
-                        </figcaption>
-                    </figure>
+
+                    <div class="btn float-left border border-info p-3" data-toggle="modal" data-target="#exampleModal4">
+                        <figure>
+                            <img src="img/globus-uzb-kl.jpg" class="figure-img img-fluid rounded" alt="Unabhängigkeitsdenkmal in Taschkent">
+                            <figcaption class="figure-caption text-right font-weight-bold text-info">Unabhängigkeitsdenkmal in Taschkent
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog border rounded border-white p-3" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-info" id="exampleModalLabel4">Unabhängigkeitsdenkmal</h5>
+                                    <button type="button" class="close text-info" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true text-info">&times;</span>
+                                        </button>
+                                </div>
+
+                                <img class=" col modal-body" src="img/Globus.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
                     <p class="text-justify span float-right col-12 col-md-6 col-lg-6 px-4 ">
                         Am 20. Juni 1991 erklärte das Land seine Unabhängigkeit von der UdSSR. 1991 zerfiel die UdSSR. Präsident wurde Islom Karimov, der schon seit 1989 erster Parteisekretär in Usbekistan gewesen war und sein Amt als Präsident Usbekistans bis zu seinem Tode
                         2016 ausübte. In den 1990er Jahren gab es wiederholt innere Konflikte, vor allem im Ferghanatal im Osten des Landes. 1999 starben bei einem Bombenattentat in Taschkent 20 Menschen. Zu einer Serie von Bombenanschlägen kam es 2004.
