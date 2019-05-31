@@ -102,11 +102,11 @@
 
 .welcome {
     position: absolute;
-    top: 85px;
-    left: 245px;
+    // top: 85px;
+    // left: 245px;
     margin-left: auto;
     margin-right: auto;
-    @include animation(5.5, 3s, welcome, alternate, forward, ease-in-out);
+    @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out);
     transform: scale(1.2, 1.2);
     z-index: 5;
 }
