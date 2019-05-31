@@ -30,7 +30,6 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 2px solid red;
 }
 
 @-webkit-keyframes welcome {
