@@ -31,6 +31,28 @@
     .top-caroussel {
         height: 300px;
     }
+    /* Plane moves from left to right, the opacity changes from 0 to 1 back to 0 */
+    
+    @keyframes flugzeug {
+        0% {
+            transform: translate(100%, 100%);
+            opacity: 0;
+        }
+        50% {
+            transform: translate(25%, 30%);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(0%, 0%);
+            opacity: 0;
+        }
+    }
+    
+    .flugzeug {
+        height: 300px;
+        position: relative;
+        animation: flugzeug 7s forwards;
+    }
     
     @mixin animation($delay, $duration, $animation-name, $direction, $fillmode, $timing-function, $percent) {
         animation-delay: $delay;
@@ -40,21 +62,32 @@
         animation-fill-mode: $fillmode;
         animation-timing-function: $timing-function;
         @keyframes welcome {
-            from {
+            0% {
                 margin: 0;
                 position: absolute;
                 top: $percent;
                 left: 0%;
                 transform: translate(-50%, -50%);
                 transform: scale(0.01, 0.01);
+                opacity: 0;
             }
-            to {
+            50% {
                 margin: 0;
                 position: absolute;
                 top: $percent;
                 left: 0%;
                 transform: translate(-50%, -50%);
-                transform: scale(1, 1);
+                transform: scale(0.01, 0.01);
+                opacity: 0;
+            }
+            100% {
+                margin: 0;
+                position: absolute;
+                top: $percent;
+                left: 0%;
+                transform: translate(-50%, -50%);
+                transform: scale(0.1, 0.1);
+                opacity: 0;
             }
         }
     }
@@ -66,15 +99,24 @@
         top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+        @include animation(0.5s, 6s, welcome, alternate, forward, ease-in-out, 25%);
         z-index: 5;
         justify-content: center;
         align-content: center;
+        transition: opacity 7s ease-in-out;
     }
     
     h1 {
         font-size: 60px;
         font-weight: 600;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    .h2-text {
+        font-family: 'Marck Script', cursive;
     }
     
     a.f {
@@ -96,6 +138,10 @@
     
     .h1-text {
         font-family: 'Tangerine', cursive;
+    }
+    
+    a {
+        text-decoration: none;
     }
     
     .h3-text {
@@ -129,7 +175,7 @@
             position: absolute;
             top: 47.5%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 39%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 39%);
         }
     }
     
@@ -139,20 +185,20 @@
             position: absolute;
             top: 44%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
         }
     }
     
     @media screen and (max-width:740px) and (height:360px) and (orientation:landscape) {
         .welcome {
-            .welcome {
-                margin: 0;
-                position: absolute;
-                height: 100%;
-                top: calc((height-280px)/2)'px';
-                left: 50%;
-                @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 7.5%);
-            }
+            margin: 0;
+            position: absolute;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            @include animation(0.05s, 6s, welcome, alternate, forward, ease-in-out, 7.5%);
+            //transform: scale(0.5, 0.5);
+            transition: opacity scale 0.05s;
         }
     }
     
@@ -162,7 +208,7 @@
             position: absolute;
             top: 36%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
         }
     }
     
@@ -172,7 +218,7 @@
             position: absolute;
             top: 44.7%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
         }
     }
     
@@ -182,7 +228,7 @@
             position: absolute;
             top: 39%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
         }
     }
     
@@ -192,6 +238,6 @@
             position: absolute;
             top: 43.5%;
             left: 50%;
-            @include animation(1.5, 3s, welcome, alternate, forward, ease-in-out, 25%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
         }
     }
