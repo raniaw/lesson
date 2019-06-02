@@ -212,6 +212,17 @@ li.gradued:before {
   margin-right: 10px;
 }
 
+li.building:before {
+  content: '\1f3db \02735';
+  color: #17a2b8;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+li.building {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 440px) and (height: 640) and (orientation: portrait) {
   .welcome {
     margin: 0;
