@@ -66,28 +66,36 @@
                 margin: 0;
                 position: absolute;
                 top: $percent;
-                left: 0%;
                 transform: translate(-50%, -50%);
-                transform: scale(0.01, 0.01);
+                transform: scale(0.001, 0.001);
                 opacity: 0;
             }
-            50% {
-                margin: 0;
-                position: absolute;
-                top: $percent;
-                left: 0%;
-                transform: translate(-50%, -50%);
-                transform: scale(0.01, 0.01);
-                opacity: 0;
-            }
+            // 50% {
+            //     margin: 0;
+            //     position: absolute;
+            //     top: $percent;
+            //     left: 0%;
+            //     transform: translate(-50%, -50%);
+            //     transform: scale(0.001, 0.001);
+            //     opacity: 0;
+            // }
+            // 90% {
+            //     margin: 0;
+            //     position: absolute;
+            //     top: $percent;
+            //     left: 0%;
+            //     transform: translate(-50%, -50%);
+            //     transform: scale(0.8, 0.8);
+            //     opacity: 0.8;
+            // }
             100% {
                 margin: 0;
                 position: absolute;
                 top: $percent;
-                left: 0%;
-                transform: translate(-50%, -50%);
-                transform: scale(0.1, 0.1);
-                opacity: 0;
+                // left: 0%;
+                transform: translate(0%, -50%);
+                transform: scale(1, 1);
+                opacity: 1;
             }
         }
     }
@@ -96,14 +104,14 @@
         display: flex;
         margin: 0;
         position: absolute;
-        top: 47%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include animation(0.5s, 6s, welcome, alternate, forward, ease-in-out, 25%);
+        transform: translate(0%, -50%);
+        @include animation(0.5s, 6s, welcome, alternate, forward, ease-in-out, 14.9%);
         z-index: 5;
+        //top: 47%;
+        // left: 50%;
         justify-content: center;
         align-content: center;
-        transition: opacity 7s ease-in-out;
+        transition: all 7s ease-in-out;
     }
     
     h1 {
@@ -184,9 +192,9 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 47.5%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 39%);
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 50%);
+            // top: 15.5%;
+            left: 0%;
         }
     }
     
@@ -194,9 +202,9 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 44%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+            top: 50%;
+            left: 0%;
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 22%);
         }
     }
     
@@ -206,8 +214,8 @@
             position: absolute;
             height: 100%;
             top: 50%;
-            left: 50%;
-            @include animation(0.05s, 6s, welcome, alternate, forward, ease-in-out, 7.5%);
+            left: 0%;
+            @include animation(0.05s, 6s, welcome, alternate, forward, ease-in-out, 0%);
             //transform: scale(0.5, 0.5);
             transition: opacity scale 0.05s;
         }
@@ -217,9 +225,9 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 36%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+            top: 50%;
+            left: 0%;
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 33.8%);
         }
     }
     
@@ -227,9 +235,9 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 44.7%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+            top: 50%;
+            left: 0%;
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 21.2%);
         }
     }
     
@@ -237,9 +245,9 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 39%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+            top: 50%;
+            left: 0%;
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 29.7%);
         }
     }
     
@@ -247,8 +255,18 @@
         .welcome {
             margin: 0;
             position: absolute;
-            top: 43.5%;
-            left: 50%;
-            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+            top: 50%;
+            left: 0%;
+            @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 23%);
         }
     }
+    
+    // @media screen and (max-width:1368px) and (height:768px) and (orientation:landscape) {
+    //     .welcome {
+    //         margin: 0;
+    //         position: absolute;
+    //         top: 82.5%;
+    //         left: 50%;
+    //         @include animation(0.05, 6s, welcome, alternate, forward, ease-in-out, 25%);
+    //     }
+    // }
