@@ -443,6 +443,10 @@ li.building {
       opacity: 1;
     }
   }
+  .scene-tiere {
+    -webkit-perspective: 30px;
+            perspective: 30px;
+  }
 }
 
 @media screen and (max-width: 440px) and (height: 740px) and (orientation: portrait) {
@@ -507,6 +511,10 @@ li.building {
               transform: scale(1, 1);
       opacity: 1;
     }
+  }
+  .scene-tiere {
+    -webkit-perspective: 30px;
+            perspective: 30px;
   }
 }
 
@@ -576,6 +584,10 @@ li.building {
       opacity: 1;
     }
   }
+  .scene-tiere {
+    -webkit-perspective: 70px;
+            perspective: 70px;
+  }
 }
 
 @media screen and (max-width: 720px) and (height: 1280px) and (orientation: portrait) {
@@ -640,6 +652,10 @@ li.building {
               transform: scale(1, 1);
       opacity: 1;
     }
+  }
+  .scene-tiere {
+    -webkit-perspective: 70px;
+            perspective: 70px;
   }
 }
 
@@ -771,6 +787,10 @@ li.building {
       opacity: 1;
     }
   }
+  .scene-tiere {
+    -webkit-perspective: 120px;
+            perspective: 120px;
+  }
 }
 
 @media screen and (max-width: 1024px) and (height: 768px) and (orientation: landscape) {
@@ -835,6 +855,10 @@ li.building {
               transform: scale(1, 1);
       opacity: 1;
     }
+  }
+  .scene-tiere {
+    -webkit-perspective: 280px;
+            perspective: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
