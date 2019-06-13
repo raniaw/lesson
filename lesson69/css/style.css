@@ -201,15 +201,19 @@ li.building {
   cursor: pointer;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .scene-tiere {
   border: 1px solid #CCC;
   margin: 40px 0;
   position: relative;
   width: 300px;
   height: 282px;
-  margin: 80px auto;
-  -webkit-perspective: 400px;
-          perspective: 400px;
+  margin: 30px auto;
+  -webkit-perspective: 100px;
+          perspective: 100px;
   -webkit-box-shadow: 0px 1px 15px -2px #9b9b9b;
           box-shadow: 0px 1px 15px -2px #9b9b9b;
 }
@@ -449,7 +453,7 @@ li.building {
   }
 }
 
-@media screen and (max-width: 440px) and (height: 740px) and (orientation: portrait) {
+@media screen and (max-width: 440px) and (height: 846px) and (orientation: portrait) {
   .welcome {
     margin: 0;
     position: absolute;
@@ -513,12 +517,12 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 3000px;
-            perspective: 3000px;
+    -webkit-perspective: 70px;
+            perspective: 70px;
   }
 }
 
-@media screen and (max-width: 740px) and (height: 360px) and (orientation: landscape) {
+@media screen and (max-width: 846px) and (height: 360px) and (orientation: landscape) {
   .welcome {
     margin: 0;
     position: absolute;
@@ -584,6 +588,10 @@ li.building {
       opacity: 1;
     }
   }
+  .scene-tiere {
+    -webkit-perspective: 60px;
+            perspective: 60px;
+  }
 }
 
 @media screen and (max-width: 720px) and (height: 1280px) and (orientation: portrait) {
@@ -648,6 +656,10 @@ li.building {
               transform: scale(1, 1);
       opacity: 1;
     }
+  }
+  .scene-tiere {
+    -webkit-perspective: 70px;
+            perspective: 70px;
   }
 }
 
@@ -855,6 +867,13 @@ li.building {
   .scene-tiere {
     -webkit-perspective: 260px;
             perspective: 260px;
+  }
+}
+
+@media screen and (max-width: 1080x) and (height: 1920px) and (orientation: portrait) {
+  .scene-tiere {
+    -webkit-perspective: 500px;
+            perspective: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
