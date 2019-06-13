@@ -212,8 +212,8 @@ li.building {
   width: 300px;
   height: 282px;
   margin: 30px auto;
-  -webkit-perspective: 100px;
-          perspective: 100px;
+  -webkit-perspective: 400px;
+          perspective: 400px;
   -webkit-box-shadow: 0px 1px 15px -2px #9b9b9b;
           box-shadow: 0px 1px 15px -2px #9b9b9b;
 }
@@ -453,7 +453,7 @@ li.building {
   }
 }
 
-@media screen and (max-width: 440px) and (height: 846px) and (orientation: portrait) {
+@media screen and (max-width: 440px) and (max-height: 846px) and (orientation: portrait) {
   .welcome {
     margin: 0;
     position: absolute;
@@ -517,12 +517,12 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 70px;
-            perspective: 70px;
+    -webkit-perspective: 50px;
+            perspective: 50px;
   }
 }
 
-@media screen and (max-width: 846px) and (height: 360px) and (orientation: landscape) {
+@media screen and (max-width: 846px) and (max-height: 414px) and (orientation: landscape) {
   .welcome {
     margin: 0;
     position: absolute;
@@ -589,8 +589,8 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 60px;
-            perspective: 60px;
+    -webkit-perspective: 80px;
+            perspective: 80px;
   }
 }
 
@@ -658,8 +658,8 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 70px;
-            perspective: 70px;
+    -webkit-perspective: 180px;
+            perspective: 180px;
   }
 }
 
