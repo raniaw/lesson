@@ -27,6 +27,7 @@
     // cursive;
     ////***
     // *** -----------------------
+    $bg-color:rgba(23, 163, 184, 0.1);
     // **** Style ****
     .top-caroussel {
         height: 300px;
@@ -52,6 +53,10 @@
         height: 300px;
         position: relative;
         animation: flugzeug 7s forwards;
+    }
+    
+    .carousel-bg {
+        background: $bg-color;
     }
     
     @mixin animation($delay, $duration, $animation-name, $direction, $fillmode, $timing-function, $percent) {
@@ -196,6 +201,15 @@
     
     .cursor {
         cursor: pointer;
+    }
+    
+    .h-bt {
+        height: 140px;
+    }
+    
+    .fcapt-pos {
+        padding-top: 30px;
+        text-align: center;
     }
     
     .scene-tiere {
@@ -353,7 +367,7 @@
         transform: rotateY(336deg) translateZ(1411px);
     }
     
-    @media screen and (max-width:440px) and (height:640) and (orientation:portrait) {
+    @media screen and (width:360px) and (max-height:740) and (orientation:portrait) {
         .welcome {
             margin: 0;
             position: absolute;
@@ -362,7 +376,7 @@
             left: 0%;
         }
         .scene-tiere {
-            perspective: 100px;
+            perspective: 280px;
         }
     }
     
@@ -391,7 +405,7 @@
             transition: opacity scale 0.05s;
         }
         .scene-tiere {
-            perspective: 80px;
+            perspective: 210px;
         }
     }
     

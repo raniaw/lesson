@@ -45,6 +45,10 @@
           animation: flugzeug 7s forwards;
 }
 
+.carousel-bg {
+  background: rgba(23, 163, 184, 0.1);
+}
+
 .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +207,15 @@ li.building {
 
 .cursor {
   cursor: pointer;
+}
+
+.h-bt {
+  height: 140px;
+}
+
+.fcapt-pos {
+  padding-top: 30px;
+  text-align: center;
 }
 
 .scene-tiere {
@@ -385,7 +398,7 @@ li.building {
           transform: rotateY(336deg) translateZ(1411px);
 }
 
-@media screen and (max-width: 440px) and (height: 640) and (orientation: portrait) {
+@media screen and (width: 360px) and (max-height: 740) and (orientation: portrait) {
   .welcome {
     margin: 0;
     position: absolute;
@@ -448,8 +461,8 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 100px;
-            perspective: 100px;
+    -webkit-perspective: 280px;
+            perspective: 280px;
   }
 }
 
@@ -589,8 +602,8 @@ li.building {
     }
   }
   .scene-tiere {
-    -webkit-perspective: 80px;
-            perspective: 80px;
+    -webkit-perspective: 210px;
+            perspective: 210px;
   }
 }
 
