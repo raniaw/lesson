@@ -175,12 +175,29 @@ a {
 
 .article-text {
   font-family: 'Josefin Slab', serif;
+  font-size: 1.1em;
 }
 
 .span::first-letter {
   font-size: 2.5em;
   font-family: 'Tangerine', cursive;
-  line-height: 30px;
+  line-height: 35px;
+  initial-letter: 4;
+}
+
+.span-arrow::after {
+  position: absolute;
+  top: 10px;
+  content: '\1F963';
+  font-size: 1.8em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.span-arrow::first-letter {
+  font-size: 2.5em;
+  font-family: 'Tangerine', cursive;
+  line-height: 35px;
   initial-letter: 4 5;
 }
 
@@ -205,7 +222,7 @@ li.building {
   cursor: pointer;
 }
 
-.cursor {
+.cursor-img {
   cursor: pointer;
 }
 
