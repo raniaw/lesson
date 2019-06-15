@@ -265,66 +265,51 @@
         transition: transform 1s, opacity 1s;
     }
     
-    .carousel-cell-tiere:nth-child(15n+1) {
-        background: hsla( 0, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+2) {
-        background: hsla( 24, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+3) {
-        background: hsla( 48, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+4) {
-        background: hsla(96, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+5) {
-        background: hsla(120, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+6) {
-        background: hsla(144, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+7) {
-        background: hsla(168, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+8) {
-        background: hsla(192, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+9) {
-        background: hsla(216, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+10) {
-        background: hsla(240, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+11) {
-        background: hsla(264, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+12) {
-        background: hsla(288, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+13) {
-        background: hsla(312, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+14) {
-        background: hsla(336, 100%, 50%, 0.8);
-    }
-    
-    .carousel-cell-tiere:nth-child(15n+15) {
-        background: hsla(360, 100%, 50%, 0.8);
-    }
-    
+    // .carousel-cell-tiere:nth-child(15n+1) {
+    //     background: hsla( 0, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+2) {
+    //     background: hsla( 24, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+3) {
+    //     background: hsla( 48, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+4) {
+    //     background: hsla(96, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+5) {
+    //     background: hsla(120, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+6) {
+    //     background: hsla(144, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+7) {
+    //     background: hsla(168, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+8) {
+    //     background: hsla(192, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+9) {
+    //     background: hsla(216, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+10) {
+    //     background: hsla(240, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+11) {
+    //     background: hsla(264, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+12) {
+    //     background: hsla(288, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+13) {
+    //     background: hsla(312, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+14) {
+    //     background: hsla(336, 100%, 50%, 0.8);
+    // }
+    // .carousel-cell-tiere:nth-child(15n+15) {
+    //     background: hsla(360, 100%, 50%, 0.8);
+    // }
     .carousel-cell-tiere:nth-child(1) {
         transform: rotateY( 0deg) translateZ(1411px);
     }
