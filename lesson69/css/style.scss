@@ -170,7 +170,7 @@
     
     .article-text {
         font-family: 'Josefin Slab', serif;
-        font-size: 1.1em;
+        font-size: 1.18em;
     }
     
     .span::first-letter {
@@ -338,7 +338,7 @@
     .bg-info-kontakt {
         text-shadow: 0px 0px 25px 5px $color-info;
         background-color: $color-info;
-        opacity: 0.85;
+        opacity: 0.9;
     }
     
     .bg-kontakt {
@@ -352,6 +352,10 @@
     
     .leer {
         height: 80px;
+    }
+    
+    .kontakt-form {
+        font-size: 1.15em;
     }
     
     @media screen and (width:360px) and (height:640px) and (orientation:portrait) {
