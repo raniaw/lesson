@@ -187,10 +187,11 @@ a {
 
 .span-arrow::after {
   position: absolute;
-  top: 10px;
-  content: '\1F963';
-  padding-left: 5px;
+  top: 12px;
+  content: '' '\1F374 \1F35A';
+  padding-left: 0px;
   padding-right: 5px;
+  color: #17a2b8;
 }
 
 .span-arrow::first-letter {
