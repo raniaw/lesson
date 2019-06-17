@@ -1,8 +1,15 @@
+.none {
+  display: none;
+}
+
 .top-caroussel {
   height: 300px;
 }
 
-/* Plane moves from right to left, the opacity changes from 0 to 1 */
+/**  Animation flugzeug
+    **  Flugzeug bewegt sich von "right-bottom" zu "left-top",  
+    *    opacity wechselt sich von "0"zu "1" 
+    **/
 @-webkit-keyframes flugzeug {
   0% {
     -webkit-transform: translate(100%, 100%);

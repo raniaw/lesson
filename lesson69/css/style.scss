@@ -30,10 +30,17 @@
     $bg-color:rgba(23, 163, 184, 0.1);
     $color-info:#17a2b8;
     // **** Style ****
+    .none {
+        display: none;
+    }
+    
     .top-caroussel {
         height: 300px;
     }
-    /* Plane moves from right to left, the opacity changes from 0 to 1 */
+    /**  Animation flugzeug
+    **  Flugzeug bewegt sich von "right-bottom" zu "left-top",  
+    *    opacity wechselt sich von "0"zu "1" 
+    **/
     
     @keyframes flugzeug {
         0% {
