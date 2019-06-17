@@ -2,7 +2,7 @@
   height: 300px;
 }
 
-/* Plane moves from left to right, the opacity changes from 0 to 1 back to 0 */
+/* Plane moves from right to left, the opacity changes from 100% to 0% */
 @-webkit-keyframes flugzeug {
   0% {
     -webkit-transform: translate(100%, 100%);
@@ -392,13 +392,6 @@ li.building {
   font-size: 1.15em;
 }
 
-@media screen and (width: 360px) and (height: 640px) and (orientation: portrait) {
-  .scene-tiere {
-    -webkit-perspective: 50px;
-            perspective: 50px;
-  }
-}
-
 @media screen and (max-width: 440px) and (max-height: 846px) and (orientation: portrait) {
   .scene-tiere {
     -webkit-perspective: 50px;
@@ -408,15 +401,8 @@ li.building {
 
 @media screen and (max-width: 846px) and (max-height: 414px) and (orientation: landscape) {
   .scene-tiere {
-    -webkit-perspective: 210px;
-            perspective: 210px;
-  }
-}
-
-@media screen and (max-width: 846px) and (height: 360px) and (orientation: landscape) {
-  .scene-tiere {
-    -webkit-perspective: 70px;
-            perspective: 70px;
+    -webkit-perspective: 120px;
+            perspective: 120px;
   }
 }
 
