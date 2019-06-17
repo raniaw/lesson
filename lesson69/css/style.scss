@@ -165,10 +165,7 @@
     .span-arrow::after {
         position: absolute;
         top: 12px;
-        // content: '\FE40';
-        // content: '\1F963';
         content: '' '\1F374 \1F35A';
-        // font-size: 1.8em;
         padding-left: 0px;
         padding-right: 5px;
         color: $color-info;
