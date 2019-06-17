@@ -616,31 +616,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script>
-        var carousel_tiere = document.querySelector('.carousel-tiere');
-        var cellCount = 15;
-        var selectedIndex = 0;
-
-        function rotateCarousel() {
-            var angle = selectedIndex / cellCount * (-360);
-            carousel_tiere.style.transform = 'translateZ(-1411px) rotateY(' + angle + 'deg)';
-            console.log(carousel_tiere.style.transform);
-        }
-
-        var prevButton = document.querySelector('.previous-button');
-        prevButton.addEventListener('click', function() {
-            selectedIndex--;
-            console.log(selectedIndex);
-            rotateCarousel();
-        });
-
-        var nextButton = document.querySelector('.next-button');
-        nextButton.addEventListener('click', function() {
-            selectedIndex++;
-            console.log(selectedIndex);
-            rotateCarousel();
-        });
-    </script>
+    <script type="text/javascript" language="javascript" src="js/script.js"></script>
 
 </body>
 
