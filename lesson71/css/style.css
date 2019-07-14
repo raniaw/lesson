@@ -5,7 +5,7 @@ html {
 
 .parallax {
   background-image: url(/img/1.jpg);
-  height: 100%;
+  height: 30%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -15,7 +15,7 @@ html {
 
 .parallax2 {
   background-image: url(/img/2.jpg);
-  height: 100%;
+  height: 80%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -34,19 +34,19 @@ html {
 }
 
 .par {
-  height: 700px;
+  height: 200px;
   background-color: #33ff00;
   font-size: 36px;
 }
 
 .par2 {
-  height: 700px;
+  height: 130px;
   background-color: #fffb00;
   font-size: 36px;
 }
 
 .par3 {
-  height: 700px;
+  height: 200px;
   background-color: red;
   font-size: 36px;
 }
