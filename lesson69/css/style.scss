@@ -1,30 +1,10 @@
     //  *** Fonts ***
-    // font-family: 'Great Vibes',
+    // font-family: 'Grupo',
     // cursive;
     // font-family: 'Tangerine',
     // cursive;
-    // font-family: 'Poiret One',
-    // cursive;
-    // font-family: 'Josefin Slab',
+    // font-family: 'Josefin Slab', 
     // serif;
-    // font-family: 'Syncopate',
-    // sans-serif;
-    // font-family: 'Gruppo',
-    // cursive;
-    // font-family: 'Petit Formal Script',
-    // cursive;
-    // font-family: 'Kodchasan',
-    // sans-serif;
-    // font-family: 'Amita',
-    // cursive;
-    // font-family: 'Kurale',
-    // serif;
-    // font-family: 'Lovers Quarrel',
-    // cursive;
-    // font-family: 'Redressed',
-    // cursive;
-    // font-family: 'Glass Antiqua',
-    // cursive;
     ////***
     // *** -----------------------
     $bg-color:rgba(23, 163, 184, 0.1);
@@ -39,7 +19,7 @@
     }
     /**  Animation flugzeug
     **  Flugzeug bewegt sich von "right-bottom" zu "left-top",  
-    *    opacity wechselt sich von "0"zu "1" 
+    *    opacity wechselt sich von "0" zu "1" 
     **/
     
     @keyframes flugzeug {
@@ -62,10 +42,9 @@
         position: relative;
         animation: flugzeug 7s forwards;
     }
-    
-    .carousel-bg {
-        background: $bg-color;
-    }
+    /**
+    * eine mixin 'Animation' für die Animierung des 'Welcome'-Überschriften und Bild-'Welcome'
+    */
     
     @mixin animation($delay, $duration, $animation-name, $direction, $fillmode, $timing-function) {
         animation-delay: $delay;
@@ -94,6 +73,9 @@
             }
         }
     }
+    /**
+    * eine Welcome - Positionierung und animation
+    */
     
     .welcome {
         display: flex;
@@ -108,6 +90,12 @@
         transition: all 7s ease-in-out;
         transition: opacity scale 0.05s;
     }
+    
+    //
+    /**
+    * CSS für den Überschriften-Header
+    * haben alle ein font-Family und verschiedene Größen
+    */
     
     h1 {
         font-size: 60px;
@@ -135,6 +123,8 @@
     .h4-text {
         font-family: 'Tangerine', cursive;
     }
+    /* Ende Header
+    */
     
     a.f {
         font-family: 'Gruppo', cursive;
@@ -156,11 +146,18 @@
     a {
         text-decoration: none;
     }
+    /**
+    * Font für den Texten
+    */
     
     .article-text {
         font-family: 'Josefin Slab', serif;
         font-size: 1.18em;
     }
+    /**
+    * Erste Buchstabe beim Absatz hat andere Größe 
+    * und andere Schrift
+    */
     
     .span::first-letter {
         font-size: 2.5em;
@@ -168,17 +165,26 @@
         line-height: 35px;
         initial-letter: 4;
     }
+    /**
+    * Zwei Icons beim Rezept
+    * \1F374 -> Gabel und Messer
+    * \1F35A -> Schussel mit dem Reis
+    */
     
-    .span-arrow::after {
+    .span-rezept::after {
         position: absolute;
         top: 12px;
-        content: '' '\1F374 \1F35A';
+        content: '''\1F374 \1F35A';
         padding-left: 0px;
         padding-right: 5px;
         color: $color-info;
     }
+    /**
+    * Erste Buchstabe bei der Rezept-Beschriftung hat andere Größe 
+    * und andere Schrift
+    */
     
-    .span-arrow::first-letter {
+    .span-rezept::first-letter {
         font-size: 2.5em;
         font-family: 'Tangerine', cursive;
         line-height: 35px;
@@ -188,12 +194,18 @@
     ul {
         list-style: none;
     }
+    /**
+    * Icon gradued bei den Bildungslisten 
+    */
     
     li.gradued:before {
         content: '\1F393';
         margin-left: 20px;
         margin-right: 10px;
     }
+    /**
+    * Icon Gebäude mit dem Stern bei Sehenswürdigkeiten 
+    */
     
     li.building:before {
         content: '\1f3db \02735';
@@ -201,24 +213,35 @@
         margin-left: 20px;
         margin-right: 10px;
     }
+    /**
+    * Cursor Pointer anzeigen,
+    * bei Modal-Fenstern
+    */
     
-    li.building {
-        cursor: pointer;
-    }
-    
+    li.building,
     .cursor-img {
         cursor: pointer;
     }
+    /**
+    * Positionierung den Buttons beim Tier-Kaussell
+    */
     
     .h-bt {
         height: 140px;
         padding-top: 70px;
     }
+    /**
+    * Positionierung der Beschriftung beim Tier-Karussell
+    */
     
     .fcapt-pos {
         padding-top: 30px;
         text-align: center;
     }
+    /** 
+    * Eine Scene-Positioniierung beim Tier-Karussell Positionierung 
+    * wo die Bilder angezeigt werden.
+    */
     
     .scene-tiere {
         border: 1px solid #CCC;
@@ -230,6 +253,9 @@
         perspective: 400px;
         box-shadow: 0px 1px 15px -2px #9b9b9b;
     }
+    /**
+    * verschiebt ein Element entlang der Z-Achse
+    */
     
     .carousel-tiere {
         width: 100%;
@@ -239,6 +265,9 @@
         transform-style: preserve-3d;
         transition: transform 1s;
     }
+    /**
+    * Eine Positionierung und Größe des Tier-Bild
+    */
     
     .carousel-cell-tiere {
         position: absolute;
@@ -254,17 +283,23 @@
         text-align: center;
         transition: transform 1s, opacity 1s;
     }
+    /**
+    * Rotation von Tier-Bilder für 3D-Darstellung 
+    * Die Funktion transform: translateZ (Längeeongabe )verschiebt ein Element entlang der Z-Achse
+    * eine Längenangabe für die Verschiebung, Beachten Sie: Für die Längenangaben sind sowohl negative als auch positive Werte erlaubt.
+    * Mit  der Funktion transform: rotateY( Winkelgrad ) kann man ein Element um die Y-Achse drehen. 
+    */
     
     .carousel-cell-tiere:nth-child(1) {
-        transform: rotateY( 0deg) translateZ(1411px);
+        transform: rotateY(0deg) translateZ(1411px);
     }
     
     .carousel-cell-tiere:nth-child(2) {
-        transform: rotateY( 24deg) translateZ(1411px);
+        transform: rotateY(24deg) translateZ(1411px);
     }
     
     .carousel-cell-tiere:nth-child(3) {
-        transform: rotateY( 48deg) translateZ(1411px);
+        transform: rotateY(48deg) translateZ(1411px);
     }
     
     .carousel-cell-tiere:nth-child(4) {
@@ -315,11 +350,22 @@
         transform: rotateY(336deg) translateZ(1411px);
     }
     
+    .carousel-bg {
+        background: $bg-color;
+    }
+    /**
+    * CSS Tier-Karussell-Ende
+    */
+    
+    //
+    /**
+    * CSS -für Kontakt-form
+    */
+    
     .form-container {
         padding: 30px;
         border-radius: 25px;
         box-shadow: 0px 0px 24px 0px #fcfcfc;
-        // top: 20vh;
         background-color: rgba(236, 231, 231, 0.697);
         border: 1px solid #eee;
     }
@@ -339,6 +385,7 @@
         background-size: cover;
     }
     
+    //div ist leer für die Abstand zwischen Formular und Footer
     .leer {
         height: 80px;
     }
@@ -346,6 +393,15 @@
     .kontakt-form {
         font-size: 1.15em;
     }
+    /**
+    * CSS-Kontakt-Form-ende
+    **/
+    
+    //
+    /**
+    * Änderung der Perspektive beim Tier-Karussell 
+    * responsive Karussell
+    */
     
     @media screen and (max-width:440px) and (max-height:846px) and (orientation:portrait) {
         .scene-tiere {

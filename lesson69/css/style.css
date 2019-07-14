@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .none {
   display: none;
 }
@@ -8,7 +9,7 @@
 
 /**  Animation flugzeug
     **  Flugzeug bewegt sich von "right-bottom" zu "left-top",  
-    *    opacity wechselt sich von "0"zu "1" 
+    *    opacity wechselt sich von "0" zu "1" 
     **/
 @-webkit-keyframes flugzeug {
   0% {
@@ -52,10 +53,12 @@
           animation: flugzeug 7s forwards;
 }
 
-.carousel-bg {
-  background: rgba(23, 163, 184, 0.1);
-}
-
+/**
+    * eine mixin 'Animation' für die Animierung des 'Welcome'-Überschriften und Bild-'Welcome'
+    */
+/**
+    * eine Welcome - Positionierung und animation
+    */
 .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +139,10 @@
   }
 }
 
+/**
+    * CSS für den Überschriften-Header
+    * haben alle ein font-Family und verschiedene Größen
+    */
 h1 {
   font-size: 60px;
   font-weight: 600;
@@ -163,6 +170,8 @@ h4 {
   font-family: 'Tangerine', cursive;
 }
 
+/* Ende Header
+    */
 a.f {
   font-family: 'Gruppo', cursive;
 }
@@ -184,11 +193,18 @@ a {
   text-decoration: none;
 }
 
+/**
+    * Font für den Texten
+    */
 .article-text {
   font-family: 'Josefin Slab', serif;
   font-size: 1.18em;
 }
 
+/**
+    * Erste Buchstabe beim Absatz hat andere Größe 
+    * und andere Schrift
+    */
 .span::first-letter {
   font-size: 2.5em;
   font-family: 'Tangerine', cursive;
@@ -196,16 +212,25 @@ a {
   initial-letter: 4;
 }
 
-.span-arrow::after {
+/**
+    * Zwei Icons beim Rezept
+    * \1F374 -> Gabel und Messer
+    * \1F35A -> Schussel mit dem Reis
+    */
+.span-rezept::after {
   position: absolute;
   top: 12px;
-  content: '' '\1F374 \1F35A';
+  content: "" "🍴🍚";
   padding-left: 0px;
   padding-right: 5px;
   color: #17a2b8;
 }
 
-.span-arrow::first-letter {
+/**
+    * Erste Buchstabe bei der Rezept-Beschriftung hat andere Größe 
+    * und andere Schrift
+    */
+.span-rezept::first-letter {
   font-size: 2.5em;
   font-family: 'Tangerine', cursive;
   line-height: 35px;
@@ -216,12 +241,18 @@ ul {
   list-style: none;
 }
 
+/**
+    * Icon gradued bei den Bildungslisten 
+    */
 li.gradued:before {
   content: '\1F393';
   margin-left: 20px;
   margin-right: 10px;
 }
 
+/**
+    * Icon Gebäude mit dem Stern bei Sehenswürdigkeiten 
+    */
 li.building:before {
   content: '\1f3db \02735';
   color: #17a2b8;
@@ -229,24 +260,35 @@ li.building:before {
   margin-right: 10px;
 }
 
-li.building {
-  cursor: pointer;
-}
-
+/**
+    * Cursor Pointer anzeigen,
+    * bei Modal-Fenstern
+    */
+li.building,
 .cursor-img {
   cursor: pointer;
 }
 
+/**
+    * Positionierung den Buttons beim Tier-Kaussell
+    */
 .h-bt {
   height: 140px;
   padding-top: 70px;
 }
 
+/**
+    * Positionierung der Beschriftung beim Tier-Karussell
+    */
 .fcapt-pos {
   padding-top: 30px;
   text-align: center;
 }
 
+/** 
+    * Eine Scene-Positioniierung beim Tier-Karussell Positionierung 
+    * wo die Bilder angezeigt werden.
+    */
 .scene-tiere {
   border: 1px solid #CCC;
   margin: 40px 0;
@@ -260,6 +302,9 @@ li.building {
           box-shadow: 0px 1px 15px -2px #9b9b9b;
 }
 
+/**
+    * verschiebt ein Element entlang der Z-Achse
+    */
 .carousel-tiere {
   width: 100%;
   height: 100%;
@@ -274,6 +319,9 @@ li.building {
   transition: transform 1s, -webkit-transform 1s;
 }
 
+/**
+    * Eine Positionierung und Größe des Tier-Bild
+    */
 .carousel-cell-tiere {
   position: absolute;
   width: 280px;
@@ -292,6 +340,12 @@ li.building {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
+/**
+    * Rotation von Tier-Bilder für 3D-Darstellung 
+    * Die Funktion transform: translateZ (Längeeongabe )verschiebt ein Element entlang der Z-Achse
+    * eine Längenangabe für die Verschiebung, Beachten Sie: Für die Längenangaben sind sowohl negative als auch positive Werte erlaubt.
+    * Mit  der Funktion transform: rotateY( Winkelgrad ) kann man ein Element um die Y-Achse drehen. 
+    */
 .carousel-cell-tiere:nth-child(1) {
   -webkit-transform: rotateY(0deg) translateZ(1411px);
           transform: rotateY(0deg) translateZ(1411px);
@@ -367,6 +421,16 @@ li.building {
           transform: rotateY(336deg) translateZ(1411px);
 }
 
+.carousel-bg {
+  background: rgba(23, 163, 184, 0.1);
+}
+
+/**
+    * CSS Tier-Karussell-Ende
+    */
+/**
+    * CSS -für Kontakt-form
+    */
 .form-container {
   padding: 30px;
   border-radius: 25px;
@@ -399,6 +463,13 @@ li.building {
   font-size: 1.15em;
 }
 
+/**
+    * CSS-Kontakt-Form-ende
+    **/
+/**
+    * Änderung der Perspektive beim Tier-Karussell 
+    * responsive Karussell
+    */
 @media screen and (max-width: 440px) and (max-height: 846px) and (orientation: portrait) {
   .scene-tiere {
     -webkit-perspective: 50px;

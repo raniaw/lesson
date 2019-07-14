@@ -1,0 +1,53 @@
+body,
+html {
+  height: 100%;
+}
+
+.parallax {
+  background-image: url(/img/1.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url(/img/2.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url(/img/3.jpg);
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.par {
+  height: 700px;
+  background-color: #33ff00;
+  font-size: 36px;
+}
+
+.par2 {
+  height: 700px;
+  background-color: #fffb00;
+  font-size: 36px;
+}
+
+.par3 {
+  height: 700px;
+  background-color: red;
+  font-size: 36px;
+}
+/*# sourceMappingURL=style.css.map */
